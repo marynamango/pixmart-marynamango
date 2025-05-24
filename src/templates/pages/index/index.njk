@@ -1,5 +1,362 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-index page content
-{% endblock %}
+  <main class="main-container">
+    <section class="promo">
+      <div class="promo__content-wrapper">
+        <h1 class="promo__title">Craft Your Success with Our <span class="promo__highlight">Digital</span> Assets</h1>
+        <p class="promo__desc">
+          From our inspiring illustrations to dynamic UI/UX kits, elevate your
+          projects with our premium digital design resources.
+        </p>
+        <div class="promo__buttons">
+          <a href="#" class="button button--primary" target="_blank">Shop Now</a>
+          <a href="#" class="button button--tertiary button--icon-left" target="_blank">
+            <img src="#" alt="Play icon" width="24" height="24"/>Watch About Us</a>
+        </div>
+      </div>
+      <img src="#" alt="Events platform promotion" width="624" height="554"/>
+    </section>
+
+    <section class="assets">
+      <h2 class="sr-only">Browse by Asset Category</h2>
+      <ul class="assets__list">
+        <li class="assets__item">
+          <a class="assets-card" href="#">
+            <img
+                  class="assets-card__img"
+                  src="img/ui-kits-1x.webp"
+                  alt="UI Kits icon"
+                  width="150"
+                  height="150"
+            />
+            <span class="assets-card__name">UI Kits</span>
+          </a>
+        </li>
+        <li class="assets__item">
+          <a class="assets-card" href="#">
+            <img
+                  class="assets-card__img"
+                  src="img/social-media-1x.webp"
+                  alt="Social media icon"
+                  width="150"
+                  height="150"
+            />
+            <span class="assets-card__name">Social Media</span>
+          </a>
+        </li>
+        <li class="assets__item">
+          <a class="assets-card" href="#">
+            <img
+                  class="assets-card__img"
+                  src="img/presentation-1x.webp"
+                  alt="Presentation icon"
+                  width="150"
+                  height="150"
+            />
+            <span class="assets-card__name">Presentation</span>
+          </a>
+        </li>
+        <li class="assets__item">
+          <a class="assets-card" href="#">
+            <img
+                  class="assets-card__img"
+                  src="img/fonts-1x.webp"
+                  alt="Fonts icon"
+                  width="150"
+                  height="150"
+            />
+            <span class="assets-card__name">Fonts</span>
+          </a>
+        </li>
+        <li class="assets__item">
+          <a class="assets-card" href="#">
+            <img
+                  class="assets-card__img"
+                  src="img/illustrations-1x.webp"
+                  alt="Illustrations icon"
+                  width="150"
+                  height="150"
+            />
+            <span class="assets-card__name">Illustrations</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="categories">
+      <div class="section-header">
+        <span class="section-header__label">Categories</span>
+        <h2 class="section-header__title">Discover Assets for Every Projects</h2>
+        <p class="section-header__desc">
+            From fonts and icons to mockups and templates, our comprehensive categories ensure that you find exactly what you need to your projects.
+          </p>
+        <a href="#" class="button button--primary">Shop Now</a>
+      </div>
+
+      <div class="categories__grid">
+        <!-- LEFT COLUMN -->
+        <div class="categories__column">
+          <a href="#" class="categories__link">
+            <svg class="icon categories__icon">
+              <use href="/img/sprite.svg#icon-templates"></use>
+            </svg>
+            <h3 class="categories__subtitle">Templates</h3>
+            <div class="tags">
+              <span class="tags__text">For all needs</span>
+              <span class="tags__text">Modern</span>
+            </div>
+          </a>
+
+          <a href="#" class="categories__link">
+            <svg class="icon categories__icon">
+              <use href="/img/sprite.svg#icon-app-icons"></use>
+            </svg>
+            <h3 class="categories__subtitle">App Icons</h3>
+            <div class="tags">
+              <span class="tags__text">High-quality</span>
+              <span class="tags__text">Elegant</span>
+            </div>
+          </a>
+
+          <!-- BOTTOM LEFT CROPPED CARD -->
+          <div class="categories__link categories__link--cropped"></div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="categories__column">
+          <!-- TOP RIGHT CROPPED CARD -->
+          <div class="categories__link categories__link--cropped"></div>
+
+          <a href="#" class="categories__link">
+            <svg class="icon categories__icon">
+              <use href="/img/sprite.svg#icon-slides"></use>
+            </svg>
+            <h3 class="categories__subtitle">Slides</h3>
+            <div class="tags">
+              <span class="tags__text">Pitch-ready</span>
+              <span class="tags__text">Creative</span>
+            </div>
+          </a>
+
+          <a href="#" class="categories__link">
+            <svg class="icon categories__icon">
+              <use href="/img/sprite.svg#icon-design-tools"></use>
+            </svg>
+            <h3 class="categories__subtitle">Design Tools</h3>
+            <div class="tags">
+              <span class="tags__text">Easy to use</span>
+              <span class="tags__text">Unique</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="products__header">
+        <div class="section-header">
+          <span class="section-header__label">Trending</span>
+          <h2 class="section-header__title">Popular Products</h2>
+        </div>
+        <div class="products__controls">
+          <button type="button" class="button button--secondary button--icon">
+            <img src="#" alt="Chevron left" width="24" height="24"/>
+          </button>
+          <button type="button" class="button button--secondary button--icon">
+            <img src="#" alt="Chevron right" width="24" height="24"/>
+          </button>
+        </div>
+      </div>
+
+      <div class="products__slider">
+        <article class="product-card">
+          <a class="product-card__link" href="#">
+            <div class="badge badge--icon badge--ribbon">
+              <img src="icons/trophy.svg" alt="Trophy" width="24" height="24"/>
+            </div>
+            <img class="product-card__img" src="img/travel-hero.webp" alt="Travel page template" width="305" height="272" loading="lazy"/>
+          </a>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Travel Hero</h3>
+            <span class="product-card__price">€29.99</span>
+          </div>
+          <div class="product-card__tags">
+            <span class="product-card__tag">Adventure</span>
+            <span class="product-card__tag">Journey</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-card__link" href="#">
+            <div class="badge badge--icon badge--ribbon">
+              <img src="icons/trophy.svg" alt="Trophy" width="24" height="24"/>
+            </div>
+            <img class="product-card__img" src="img/healthcare-pro.webp" alt="Healthcare page template" width="305" height="272" loading="lazy"/>
+          </a>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Healthcare Pro</h3>
+            <span class="product-card__price">€15.99</span>
+          </div>
+          <div class="product-card__tags">
+            <span class="product-card__tag">Medical</span>
+            <span class="product-card__tag">Wellness</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-card__link" href="#">
+            <img class="product-card__img" src="img/foodish-delight.webp" alt="Foodish page template" width="305" height="272" loading="lazy"/>
+          </a>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Foodish Delight</h3>
+            <span class="product-card__price">€31.99</span>
+          </div>
+          <div class="product-card__tags">
+            <span class="product-card__tag">Catering</span>
+            <span class="product-card__tag">Food</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-card__link" href="#">
+            <img class="product-card__img" src="img/real-estate.webp" alt="Real Estate page template" width="305" height="272" loading="lazy"/>
+          </a>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Travel Hero</h3>
+            <span class="product-card__price">€40.99</span>
+          </div>
+          <div class="product-card__tags">
+            <span class="product-card__tag">Modern</span>
+            <span class="product-card__tag">Homes</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="pricing">
+      <div class="section-header">
+        <span class="section-header__label">Pricing plan</span>
+        <h2 class="section-header__title">Choose The Perfect Plan for Creative Potential</h2>
+      </div>
+      <div class="pricing__plans">
+        <article class="pricing-card">
+          <h3 class="pricing-card__title">Standard Membership</h3>
+          <p class="pricing-card__price">€14.99 <span class="pricing-card__period">/ Month</span></p>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__benefit">Enhanced Resource Access</li>
+            <li class="pricing-card__benefit">Monthly Credits</li>
+            <li class="pricing-card__benefit">Priority Customer Support</li>
+            <li class="pricing-card__benefit">Community Features Access</li>
+          </ul>
+          <button class="button button--secondary">Subscribe</button>
+        </article>
+
+        <article class="pricing-card pricing-card--highlighted">
+          <div class="badge badge--bestseller badge--ribbon">Best Seller</div>
+          <h3 class="pricing-card__title">Plus Membership</h3>
+          <p class="pricing-card__price">€29.99 <span class="pricing-card__period">/ Month</span></p>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__benefit">All Standard Benefits</li>
+            <li class="pricing-card__benefit">Increased Monthly Credits</li>
+            <li class="pricing-card__benefit">Early Access to New Releases</li>
+            <li class="pricing-card__benefit">Member-Only Offers</li>
+          </ul>
+          <button class="button button--primary">Subscribe</button>
+        </article>
+
+        <article class="pricing-card">
+          <h3 class="pricing-card__title">Pro Membership</h3>
+          <p class="pricing-card__price">€49.99 <span class="pricing-card__period">/ Month</span></p>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__benefit">All Plus Benefits</li>
+            <li class="pricing-card__benefit">Unlimited Downloads</li>
+            <li class="pricing-card__benefit">Custom Licensing</li>
+            <li class="pricing-card__benefit">Direct Creator Collaboration</li>
+          </ul>
+          <button class="button button--secondary">Subscribe</button>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="section-header">
+        <span class="section-header__label">F.A.Q</span>
+        <h2 class="section-header__title">Answers to Your Questions</h2>
+        <button class="button button--secondary">Ask Us A Question</button>
+      </div>
+      <div class="faq__container">
+        <details class="faq__details">
+          <summary class="faq__summary">Can I request a refund?</summary>
+          <div class="faq__content">
+            <p class="faq__answer">Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download.</p>
+          </div>
+        </details>
+        <details class="faq__details" open>
+          <summary class="faq__summary">How do I access my purchased products?</summary>
+          <div class="faq__content">
+            <p class="faq__answer">Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download.</p>
+          </div>
+        </details>
+        <details class="faq__details">
+          <summary class="faq__summary">Are there any discounts for bulk purchases?</summary>
+          <div class="faq__content">
+            <p class="faq__answer">Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download.</p>
+          </div>
+        </details>
+        <details class="faq__details">
+          <summary class="faq__summary">What payment methods do you accept here?</summary>
+          <div class="faq__content">
+            <p class="faq__answer">Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download.</p>
+          </div>
+        </details>
+        <details class="faq__details">
+          <summary class="faq__summary">Can I sell my digital products on this marketplace?</summary>
+          <div class="faq__content">
+            <p class="faq__answer">Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="articles">
+      <div class="section-header">
+        <h2 class="section-header__title">Latest Expert</h2>
+        <a href="#">Explore All Articles
+            <svg class="icon icon-small">
+            <use href="/img/sprite.svg#chevron-right"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="articles__list">
+        <article class="articles__item">
+          <img
+                class="articles__img"
+                src="img/blog-1x.webp"
+                alt="Creative blog"
+                width="624"
+                height="702"
+          />
+          <h3 class="articles__subtitle">Creative Blog</h3>
+          <time class="articles__date" datetime="2024-04-15">
+              15 APRIL 2024
+            </time>
+        </article>
+        <article class="articles__item">
+          <img
+                class="articles__img"
+                src="img/best-dishes-1x.webp"
+                alt="Creative blog"
+                width="624"
+                height="702"
+          />
+          <h3 class="articles__subtitle">Best Dishes</h3>
+          <time class="articles__date" datetime="2024-05-05">
+              5 MAY 2024
+            </time>
+        </article>
+      </section>
+    </main>
+  {% endblock %}
