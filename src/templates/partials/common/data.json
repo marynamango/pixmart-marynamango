@@ -4,10 +4,15 @@
     "img": "logo",
     "alt": "Pixmart logo"
   },
-  "navLinks": [
-    { "href": "index.html", "label": "About" },
-    { "href": "blog.html", "label": "Blog" }
-  ],
+  "header": {
+    "nav": [
+      { "href": "/", "text": "About" },
+      { "href": "/products", "text": "Products" },
+      { "href": "/creators", "text": "Creators" },
+      { "href": "/blog", "text": "Blog" },
+      { "href": "/contact", "text": "Contact" }
+    ]
+  },
   "search": {
     "placeholder": "Search for Digital Assets",
     "action": "/search"
