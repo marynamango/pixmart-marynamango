@@ -11,10 +11,34 @@
       { "href": "/creators", "text": "Creators" },
       { "href": "/blog", "text": "Blog" },
       { "href": "/contact", "text": "Contact" }
-    ]
+    ],
+    "search": {
+      "class": "search search--header",
+      "action": "/search",
+      "name": "q",
+      "type": "search",
+      "placeholder": "Search for Digital Assets",
+      "inputClass": "search__input",
+      "buttonClass": "icon search__button search__button--desktop-hidden",
+      "buttonType": "submit",
+      "icon": "search"
+    }
   },
-  "search": {
-    "placeholder": "Search for Digital Assets",
-    "action": "/search"
+  "footer": {
+    "newsletter": {
+      "title": "Subscribe to Design Newsletter",
+      "form": {
+        "class": "newsletter__form",
+        "action": "/subscribe",
+        "method": "post",
+        "name": "email",
+        "type": "email",
+        "placeholder": "Enter your email address ...",
+        "inputClass": "newsletter__input",
+        "buttonClass": "button button--primary",
+        "buttonType": "submit",
+        "buttonText": "Subscribe"
+      }
+    }
   }
 }

@@ -1,0 +1,19 @@
+<form class="{{ form.class }}" action="{{ form.action }}" method="{{ form.method | default('get') }}">
+            <input
+              class="{{ form.inputClass }}"
+              type="{{ form.type | default('text') }}"
+              name="{{ form.name }}"
+              placeholder="{{ form.placeholder }}"
+              minlength="{{ form.minlength | default(3) }}"
+              required />
+
+            <button class="{{ form.buttonClass }}" type="{{ form.buttonType }}">
+              {% if form.icon %}
+                <svg class="{{ form.iconClass | default('form__icon') }}" aria-hidden="true" focusable="false">
+                  <use href="/img/sprite.svg#{{ form.icon }}"></use>
+                </svg>
+              {% elseif form.buttonText %}
+                {{ form.buttonText }}
+              {% endif %}
+            </button>
+          </form>
