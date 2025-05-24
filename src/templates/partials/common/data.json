@@ -21,7 +21,8 @@
       "inputClass": "search__input",
       "buttonClass": "icon search__button search__button--desktop-hidden",
       "buttonType": "submit",
-      "icon": "search"
+      "icon": "search",
+      "ariaLabel": "Search"
     }
   },
   "footer": {

@@ -7,7 +7,11 @@
               minlength="{{ form.minlength | default(3) }}"
               required />
 
-            <button class="{{ form.buttonClass }}" type="{{ form.buttonType }}">
+            <button
+              class="{{ form.buttonClass }}"
+              type="{{ form.buttonType }}"
+              {% if form.ariaLabel %}aria-label="{{ form.ariaLabel }}"{% endif %}>
+              
               {% if form.icon %}
                 <svg class="{{ form.iconClass | default('form__icon') }}" aria-hidden="true" focusable="false">
                   <use href="/img/sprite.svg#{{ form.icon }}"></use>
