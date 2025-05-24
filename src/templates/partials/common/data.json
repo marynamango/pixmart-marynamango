@@ -1,0 +1,15 @@
+{
+  "logo": {
+    "url": "/",
+    "img": "logo",
+    "alt": "Pixmart logo"
+  },
+  "navLinks": [
+    { "href": "index.html", "label": "About" },
+    { "href": "blog.html", "label": "Blog" }
+  ],
+  "search": {
+    "placeholder": "Search for Digital Assets",
+    "action": "/search"
+  }
+}

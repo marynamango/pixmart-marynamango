@@ -1,0 +1,11 @@
+{% if logo.url %}
+  <a class="logo" href="{{ logo.url }}">
+    <svg class="logo__img" role="img" aria-label="{{ logo.alt }}" focusable="false">
+      <use href="/img/sprite.svg#{{ logo.img }}"></use>
+    </svg>
+  </a>
+{% else %}
+  <svg class="logo__img" role="img" aria-label="{{ logo.alt }}" focusable="false">
+    <use href="/img/sprite.svg#{{ logo.img }}"></use>
+  </svg>
+{% endif %}
