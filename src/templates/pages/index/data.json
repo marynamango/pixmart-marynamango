@@ -52,11 +52,14 @@
       }
     ]
   },
-  "assets": [
-    { "name": "UI Kits", "icon": "ui-kits", "href": "#" },
-    { "name": "Social Media", "icon": "social-media", "href": "#" },
-    { "name": "Presentation", "icon": "presentation", "href": "#" },
-    { "name": "Fonts", "icon": "fonts", "href": "#" },
-    { "name": "Illustrations", "icon": "illustrations", "href": "#" }
-  ]
+  "assets": {
+    "heading": "Browse by Asset Category",
+    "items": [
+      { "name": "UI Kits", "icon": "ui-kits", "href": "#" },
+      { "name": "Social Media", "icon": "social-media", "href": "#" },
+      { "name": "Presentation", "icon": "presentation", "href": "#" },
+      { "name": "Fonts", "icon": "fonts", "href": "#" },
+      { "name": "Illustrations", "icon": "illustrations", "href": "#" }
+    ]
+  }
 }
