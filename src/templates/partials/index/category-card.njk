@@ -1,0 +1,9 @@
+<a href="{{ item.href }}" class="category-card">
+  <svg class="category-card__icon">
+    <use href="/img/sprite.svg#{{ item.icon }}"></use>
+  </svg>
+  <h3 class="category-card__title">{{ item.title }}</h3>
+  
+  {% set tags = item.tags %}
+  {% include "partials/components/tags.njk" %}
+</a>

@@ -6,74 +6,7 @@
 
     {% include "partials/index/assets.njk" %}
 
-    <section class="categories">
-      <div class="section-header">
-        <span class="section-header__label">Categories</span>
-        <h2 class="section-header__title">Discover Assets for Every Projects</h2>
-        <p class="section-header__desc">
-            From fonts and icons to mockups and templates, our comprehensive categories ensure that you find exactly what you need to your projects.
-          </p>
-        <a href="#" class="button button--primary">Shop Now</a>
-      </div>
-
-      <div class="categories__grid">
-        <!-- LEFT COLUMN -->
-        <div class="categories__column">
-          <a href="#" class="categories__link">
-            <svg class="icon categories__icon">
-              <use href="/img/sprite.svg#icon-templates"></use>
-            </svg>
-            <h3 class="categories__subtitle">Templates</h3>
-            <div class="tags">
-              <span class="tags__text">For all needs</span>
-              <span class="tags__text">Modern</span>
-            </div>
-          </a>
-
-          <a href="#" class="categories__link">
-            <svg class="icon categories__icon">
-              <use href="/img/sprite.svg#icon-app-icons"></use>
-            </svg>
-            <h3 class="categories__subtitle">App Icons</h3>
-            <div class="tags">
-              <span class="tags__text">High-quality</span>
-              <span class="tags__text">Elegant</span>
-            </div>
-          </a>
-
-          <!-- BOTTOM LEFT CROPPED CARD -->
-          <div class="categories__link categories__link--cropped"></div>
-        </div>
-
-        <!-- RIGHT COLUMN -->
-        <div class="categories__column">
-          <!-- TOP RIGHT CROPPED CARD -->
-          <div class="categories__link categories__link--cropped"></div>
-
-          <a href="#" class="categories__link">
-            <svg class="icon categories__icon">
-              <use href="/img/sprite.svg#icon-slides"></use>
-            </svg>
-            <h3 class="categories__subtitle">Slides</h3>
-            <div class="tags">
-              <span class="tags__text">Pitch-ready</span>
-              <span class="tags__text">Creative</span>
-            </div>
-          </a>
-
-          <a href="#" class="categories__link">
-            <svg class="icon categories__icon">
-              <use href="/img/sprite.svg#icon-design-tools"></use>
-            </svg>
-            <h3 class="categories__subtitle">Design Tools</h3>
-            <div class="tags">
-              <span class="tags__text">Easy to use</span>
-              <span class="tags__text">Unique</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
+    {% include "partials/index/categories.njk" %}
 
     <section class="products">
       <div class="products__header">

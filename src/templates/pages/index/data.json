@@ -61,5 +61,47 @@
       { "name": "Fonts", "icon": "fonts", "href": "#" },
       { "name": "Illustrations", "icon": "illustrations", "href": "#" }
     ]
+  },
+  "categories": {
+    "header": {
+      "label": "Categories",
+      "title": "Discover Assets for Every Projects",
+      "description": "From fonts and icons to mockups and templates, our comprehensive categories ensure that you find exactly what you need to your projects.",
+      "button": {
+        "text": "Shop Now",
+        "url": "#",
+        "modFirst": "primary"
+      }
+    },
+    "items": [
+      {
+        "title": "Templates",
+        "icon": "icon-templates",
+        "modifier": "templates",
+        "tags": ["For all needs", "Modern"],
+        "href": "#"
+      },
+      {
+        "title": "App Icons",
+        "icon": "icon-app-icons",
+        "modifier": "app-icons",
+        "tags": ["High-quality", "Elegant"],
+        "href": "#"
+      },
+      {
+        "title": "Slides",
+        "icon": "icon-slides",
+        "modifier": "slides",
+        "tags": ["Pitch-ready", "Creative"],
+        "href": "#"
+      },
+      {
+        "title": "Design Tools",
+        "icon": "icon-design-tools",
+        "modifier": "design-tools",
+        "tags": ["Easy to use", "Unique"],
+        "href": "#"
+      }
+    ]
   }
 }
