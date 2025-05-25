@@ -1,0 +1,10 @@
+<section class="assets">
+  <h2 class="sr-only">Browse by Asset Category</h2>
+  <ul class="assets__list">
+    {% for item in assets %}
+      <li class="assets__item">
+        {% include "partials/index/assets-card.njk" %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>

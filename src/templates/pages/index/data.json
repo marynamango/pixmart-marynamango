@@ -51,5 +51,12 @@
         "class": "promo__icon--theme"
       }
     ]
-  }
+  },
+  "assets": [
+    { "name": "UI Kits", "icon": "ui-kits", "href": "#" },
+    { "name": "Social Media", "icon": "social-media", "href": "#" },
+    { "name": "Presentation", "icon": "presentation", "href": "#" },
+    { "name": "Fonts", "icon": "fonts", "href": "#" },
+    { "name": "Illustrations", "icon": "illustrations", "href": "#" }
+  ]
 }
