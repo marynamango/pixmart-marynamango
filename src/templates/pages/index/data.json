@@ -2,5 +2,54 @@
   "title": "About",
   "logo": {
     "url": null
+  },
+  "promo": {
+    "title": "Craft Your Success with Our <span class=\"promo__highlight\">Digital</span> Assets",
+    "description": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
+    "buttons": [
+      {
+        "text": "Shop Now",
+        "url": "#",
+        "modFirst": "primary",
+        "typeAttr": "button"
+      },
+      {
+        "text": "Watch About Us",
+        "url": "#",
+        "modFirst": "tertiary",
+        "modSecond": "icon-left",
+        "icon": {
+          "name": "play"
+        },
+        "typeAttr": "button"
+      }
+    ],
+    "images": [
+      {
+        "src": "#",
+        "alt": "About Eventify platform",
+        "class": "promo__image--about"
+      },
+      {
+        "src": "#",
+        "alt": "Event program and pricing",
+        "class": "promo__image--program"
+      },
+      {
+        "src": "#",
+        "alt": "Screens for event website",
+        "class": "promo__image--screens"
+      }
+    ],
+    "icons": [
+      {
+        "name": "bezier",
+        "class": "promo__icon--bezier"
+      },
+      {
+        "name": "theme",
+        "class": "promo__icon--theme"
+      }
+    ]
   }
 }

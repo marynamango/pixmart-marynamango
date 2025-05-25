@@ -2,21 +2,7 @@
 
 {% block content %}
   <main class="main-container">
-    <section class="promo">
-      <div class="promo__content-wrapper">
-        <h1 class="promo__title">Craft Your Success with Our <span class="promo__highlight">Digital</span> Assets</h1>
-        <p class="promo__desc">
-          From our inspiring illustrations to dynamic UI/UX kits, elevate your
-          projects with our premium digital design resources.
-        </p>
-        <div class="promo__buttons">
-          <a href="#" class="button button--primary" target="_blank">Shop Now</a>
-          <a href="#" class="button button--tertiary button--icon-left" target="_blank">
-            <img src="#" alt="Play icon" width="24" height="24"/>Watch About Us</a>
-        </div>
-      </div>
-      <img src="#" alt="Events platform promotion" width="624" height="554"/>
-    </section>
+    {% include "partials/index/promo.njk" %}
 
     <section class="assets">
       <h2 class="sr-only">Browse by Asset Category</h2>
