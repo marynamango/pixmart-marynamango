@@ -20,9 +20,8 @@
           {% set form = header.search %}
           {% include "partials/components/input-form.njk" %}
 
-          <a href="#" class="button button--primary button--only-icon">
-            <img src="#" alt="Shop icon" width="24" height="24" />
-          </a>
+          {% set button = header.button %}
+          {% include "partials/components/button.njk" %}
         </div>
       </div>
     </header>

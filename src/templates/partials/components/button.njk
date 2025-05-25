@@ -1,0 +1,39 @@
+{% set classes = "button" %}
+{% if button.modFirst %}{% set classes = classes + " button--" + button.modFirst %}{% endif %}
+{% if button.modSecond %}{% set classes = classes + " button--" + button.modSecond %}{% endif %}
+{% if button.modThird %}{% set classes = classes + " button--" + button.modThird %}{% endif %}
+
+{% if button.url %}
+    <a
+      href="{{ button.url }}"
+      class="{{ classes }}"
+      target="{% if button.target %}_blank{% else %}_self{% endif %}"
+      {% if button.ariaLabel %}aria-label="{{ button.ariaLabel }}"{% endif %}
+    >
+      {% if button.icon %}
+        <svg class="icon" aria-hidden="true" focusable="false">
+          <use href="/img/sprite.svg#{{ button.icon.name }}"></use>
+        </svg>
+      {% endif %}
+
+      {% if button.text %}
+        <span class="button__text">{{ button.text }}</span>
+      {% endif %}
+    </a>
+{% else %}
+    <button
+      type="{{ button.typeAttr | default('button') }}"
+      class="{{ classes }}"
+      {% if button.ariaLabel %}aria-label="{{ button.ariaLabel }}"{% endif %}
+    >
+      {% if button.icon %}
+        <svg class="icon" aria-hidden="true" focusable="false">
+          <use href="/img/sprite.svg#{{ button.icon.name }}"></use>
+        </svg>
+      {% endif %}
+
+      {% if button.text %}
+        <span class="button__text">{{ button.text }}</span>
+      {% endif %}
+    </button>
+{% endif %}

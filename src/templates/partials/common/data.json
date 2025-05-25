@@ -23,6 +23,13 @@
       "buttonType": "submit",
       "icon": "search",
       "ariaLabel": "Search"
+    },
+    "button": {
+      "url": "#",
+      "modFirst": "primary",
+      "modSecond": "only-icon",
+      "icon": { "name": "cart" },
+      "ariaLabel": "Open shopping cart"
     }
   },
   "footer": {
