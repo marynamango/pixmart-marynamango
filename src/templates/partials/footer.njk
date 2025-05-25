@@ -1,130 +1,42 @@
 <footer class="footer">
   <div class="footer__wrapper">
     <div class="footer__col">
-
       {% include "partials/components/logo.njk" %}
-
       <p class="footer__text">
-        Your premium digital assets solution with high quality and comprehensive range of products and services.
+        {{ footer.description }}
       </p>
     </div>
 
     <div class="footer__col">
-      <div class="footer-nav">
-        <strong class="footer-nav__title">Company</strong>
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="index.html">Homepage v1</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="index.html">Homepage v2</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="index.html">Homepage v3</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="index.html">About Us</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="index.html">About Us</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="blog.html">Blog Articles</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-nav">
-        <strong class="footer-nav__title">Products</strong>
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="index.html">Website</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="index.html">Mobile App</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="index.html">Social Media Feeds</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="index.html">Presentation</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="products.html">Product Mockups</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="index.html">Illustrations</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-nav">
-        <strong class="footer-nav__title">Account</strong>
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Your Cart</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Check Out</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Refund Policy</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Company Policy</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="contact-us.html">Send A Message</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Customer Support</a>
-          </li>
-        </ul>
-      </div>
+     {% for group in footer.nav %}
+        {% set nav = group %}
+        {% include "partials/components/footer-nav.njk" %}
+      {% endfor %}
     </div>
   </div>
 
   <div class="footer__wrapper">
-    <ul class="social">
-      <li class="social__item">
-        <a class="social__link" href="{{ item.url }}">
-          <svg class="icon social__icon" aria-hidden="true" focusable="false">
-            <use href="/img/sprite.svg#{{ item.name }}"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="{{ item.url }}">
-          <svg class="icon social__icon" aria-hidden="true" focusable="false">
-            <use href="/img/sprite.svg#{{ item.name }}"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="{{ item.url }}">
-          <svg class="icon social__icon" aria-hidden="true" focusable="false">
-            <use href="/img/sprite.svg#{{ item.name }}"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+    {% include "partials/components/social.njk" %}
+
     <div class="footer__newsletter newsletter">
       <h2 class="newsletter__title">{{ footer.newsletter.title }}</h2>
-
       {% set form = footer.newsletter.form %}
       {% include "partials/components/input-form.njk" %}
-      
     </div>
   </div>
 
   <div class="footer__bottom">
     <nav class="footer-nav footer__legal">
-      <a class="footer-nav__link" href="#">Privacy Policy</a>
-      <a class="footer-nav__link" href="#">Terms and Condition</a>
-      <a class="footer-nav__link" href="#">Site Map</a>
+      <ul class="footer-nav__list">
+        {% for link in footer.legal %}
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="{{ link.href }}">{{ link.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
     </nav>
     <p class="footer__copyright">
-      Copyright © 2024 Pixmart. All rights reserved.
+      {{ footer.copyright }}
     </p>
   </div>
 </footer>
