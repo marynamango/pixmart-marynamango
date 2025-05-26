@@ -3,54 +3,11 @@
 {% block content %}
   <main class="main-container">
     {% include "partials/index/promo.njk" %}
-
     {% include "partials/index/assets.njk" %}
-
     {% include "partials/index/categories.njk" %}
-
     {% include "partials/index/products.njk" %}
-
     {% include "partials/index/pricing.njk" %}
-
     {% include "partials/index/faq.njk" %}
-
-    <section class="articles">
-      <div class="section-header">
-        <h2 class="section-header__title">Latest Expert</h2>
-        <a href="#">Explore All Articles
-            <svg class="icon icon-small">
-            <use href="/img/sprite.svg#chevron-right"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="articles__list">
-        <article class="articles__item">
-          <img
-                class="articles__img"
-                src="img/blog-1x.webp"
-                alt="Creative blog"
-                width="624"
-                height="702"
-          />
-          <h3 class="articles__subtitle">Creative Blog</h3>
-          <time class="articles__date" datetime="2024-04-15">
-              15 APRIL 2024
-            </time>
-        </article>
-        <article class="articles__item">
-          <img
-                class="articles__img"
-                src="img/best-dishes-1x.webp"
-                alt="Creative blog"
-                width="624"
-                height="702"
-          />
-          <h3 class="articles__subtitle">Best Dishes</h3>
-          <time class="articles__date" datetime="2024-05-05">
-              5 MAY 2024
-            </time>
-        </article>
-      </div>
-    </section>
+    {% include "partials/index/articles.njk" %}
   </main>
 {% endblock %}

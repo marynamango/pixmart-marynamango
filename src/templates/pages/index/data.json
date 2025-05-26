@@ -297,5 +297,47 @@
         "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
       }
     ]
+  },
+  "articles": {
+    "header": {
+      "title": "Latest Expert",
+      "link": {
+        "url": "#",
+        "text": "Explore All Articles",
+        "icon": "chevron-right"
+      }
+    },
+    "items": [
+      {
+        "title": "Creative Blog",
+        "datetime": "2024-04-15",
+        "date": "15 APRIL 2024",
+        "badge": {
+          "text": "TAG",
+          "modFirst": "round"
+        },
+        "image": {
+          "src": "img/creative-blog-1x.webp",
+          "alt": "Creative blog article",
+          "width": 624,
+          "height": 702
+        }
+      },
+      {
+        "title": "Best Dishes",
+        "datetime": "2024-05-05",
+        "date": "5 MAY 2024",
+        "badge": {
+          "text": "TAG",
+          "modFirst": "round"
+        },
+        "image": {
+          "src": "img/best-dishes-1x.webp",
+          "alt": "Best dishes article",
+          "width": 624,
+          "height": 702
+        }
+      }
+    ]
   }
 }

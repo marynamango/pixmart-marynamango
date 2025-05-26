@@ -1,0 +1,24 @@
+<article class="articles__item">
+  <a href="{{ article.url }}" class="article-card__media">
+    {% if article.badge %}
+      {% set badge = article.badge %}
+      {% include "partials/components/badge.njk" %}
+    {% endif %}
+
+    <img
+      src="{{ article.image.src }}"
+      alt="{{ article.image.alt }}"
+      width="{{ article.image.width }}"
+      height="{{ article.image.height }}"
+      loading="lazy"
+    />
+  </a>
+
+  <h3 class="articles__subtitle">
+    <a href="{{ article.url }}">{{ article.title }}</a>
+  </h3>
+
+  <time class="articles__date" datetime="{{ article.datetime }}">
+    {{ article.date }}
+  </time>
+</article>
