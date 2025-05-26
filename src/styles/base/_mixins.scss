@@ -1,0 +1,61 @@
+//Typography Mixins
+@mixin heading-main {
+  font-size: var(--font-size-title-main);
+  line-height: var(--line-height-title-main);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-secondary);
+  letter-spacing: -0.5px;
+}
+
+@mixin heading-title {
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-secondary);
+  letter-spacing: -0.5px;
+}
+
+@mixin heading-subtitle {
+  font-size: var(--font-size-subtitle);
+  line-height: var(--line-height-subtitle);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-secondary);
+}
+
+@mixin text-xl {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-secondary);
+}
+
+@mixin text-lg ($lh: var(--line-height-lg), $fw: var(--font-weight-medium)) {
+  font-size: var(--font-size-lg);
+  line-height: $lh; //Assets title/promo desc 28px, details/membership 26px
+  font-weight: $fw; //Assets title/promo desc 500, details/membership 700
+  font-family: var(--font-secondary);
+}
+
+@mixin text-base ($fw: var(--font-weight-base)) {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  font-weight: $fw; //buttons need 600
+}
+
+@mixin text-md($fw: var(--font-weight-base)) {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+  font-weight: $fw; //subscribe btn/select/explore link needs 600, badges 500, placeholder/benefits 400
+}
+
+@mixin text-sm($fw: var(--font-weight-base)) {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  font-weight: $fw; //nav/filters need 600, subscribe placeholder 400
+}
+
+@mixin text-xs {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  font-weight: var(--font-weight-base);
+}

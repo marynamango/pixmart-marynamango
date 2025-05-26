@@ -1,0 +1,71 @@
+/* Breakpoints */
+$screen-mobile: 440px;
+$screen-laptop: 1024px;
+$screen-desk: 1440px;
+
+:root {
+--font-primary: "Libre Franklin", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+--font-secondary: "Plus Jakarta Sans", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif;
+
+--font-size-title-main: 52px;
+--line-height-title-main: 62px;
+
+--font-size-title: 36px;
+--line-height-title: 48px;
+
+--font-size-subtitle: 28px;
+--line-height-subtitle: 36px;
+
+--font-size-xl: 24px;
+--line-height-xl: 32px;
+
+--font-size-lg: 20px;
+--line-height-lg: 28px;
+
+--line-height-lg-short: 26px;
+
+--font-size-base: 18px;
+--line-height-base: 28px;
+
+--font-size-md: 16px;
+--line-height-md: 24px;
+
+--font-size-sm: 14px;
+--line-height-sm: 20px;
+
+--font-size-xs: 12px;
+--line-height-xs: 16px;
+
+--font-weight-base: 400;
+--font-weight-medium: 500;
+--font-weight-semibold: 600;
+--font-weight-bold: 700;
+
+/* Colors */
+--color-primary: rgb(13 13 21 / 1);
+--color-secondary: rgb(34 34 34 / 1);
+--color-muted: rgb(42 53 65 / 0.85);
+--color-muted-light: rgb(42 53 65 / 0.7);
+--color-terms: rgb(231 238 247 / 0.66);
+--color-accent: rgb(2 101 220 / 1);
+
+--color-icon-accent: rgb(15 115 246 / 1);
+--color-icon-white: rgb(248 247 255 / 1);
+--color-button-white: rgb(245 248 251 / 1);
+--color-border-default: rgb(29 54 83 / 0.17);
+--color-border-dark: rgb(39 53 68 / 0.55);
+
+--background-color: rgb(255 255 255 / 1);
+--background-color-secondary: rgb(240 246 253 / 1);
+--bacground-color-cards: rgba(244 247 250 / 1);
+--background-label-new: rgb(0 119 114 / 1);
+
+/* Paddings */
+--padding-button: 18px 32px;
+--padding-button-small: 8px;
+--padding-button-big: 20px;
+--padding-button-lg: 20px 40px;
+--padding-filters: 6px 12px;
+--padding-clear: 8px 20px;
+--padding-search: 10px 12px;
+}

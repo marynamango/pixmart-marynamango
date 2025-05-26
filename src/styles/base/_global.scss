@@ -1,0 +1,36 @@
+@use "../base/mixins" as *;
+@use "../base/variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-base);
+  line-height: var(--line-height-base);
+  color: var(--color-primary);
+  background-color: var(--background-color);
+  min-width: 440px;
+}
+
+a,
+a:link,
+a:visited,
+a.button,
+button {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  @include heading-main;
+  color: var(--color-primary);
+  margin-block: 0;
+}
