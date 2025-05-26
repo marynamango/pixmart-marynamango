@@ -4,14 +4,7 @@
         {% include "partials/components/section-header.njk" %}
         
         <div class="products__controls">
-          {% for control in products.controls %}
-            {% set button = {
-              typeAttr: "button",
-              modFirst: "secondary",
-              modSecond: "only-icon",
-              icon: { name: control.icon },
-              ariaLabel: control.ariaLabel
-            } %}
+          {% for button in products.controls %}
             {% include "partials/components/button.njk" %}
           {% endfor %}
         </div>

@@ -111,12 +111,18 @@
     },
     "controls": [
       {
-        "icon": "chevron-left",
-        "ariaLabel": "Scroll left"
+        "icon": { "name": "chevron-left" },
+        "ariaLabel": "Scroll left",
+        "typeAttr": "button",
+        "modFirst": "secondary",
+        "modSecond": "only-icon"
       },
       {
-        "icon": "chevron-right",
-        "ariaLabel": "Scroll right"
+        "icon": { "name": "chevron-right" },
+        "ariaLabel": "Scroll right",
+        "typeAttr": "button",
+        "modFirst": "secondary",
+        "modSecond": "only-icon"
       }
     ],
     "items": [
@@ -133,7 +139,13 @@
         },
         "title": "Travel Hero",
         "price": "€29.99",
-        "tags": ["Adventure", "Journey"]
+        "tags": ["Adventure", "Journey"],
+        "hoverButton": {
+          "text": "Go to product",
+          "url": "#",
+          "modFirst": "primary",
+          "modSecond": "overlay"
+        }
       },
       {
         "url": "#",
@@ -148,7 +160,13 @@
         },
         "title": "Healthcare Pro",
         "price": "€15.99",
-        "tags": ["Medical", "Wellness"]
+        "tags": ["Medical", "Wellness"],
+        "hoverButton": {
+          "text": "Go to product",
+          "url": "#",
+          "modFirst": "primary",
+          "modSecond": "overlay"
+        }
       },
       {
         "url": "#",
@@ -158,7 +176,13 @@
         },
         "title": "Foodish Delight",
         "price": "€31.99",
-        "tags": ["Catering", "Food"]
+        "tags": ["Catering", "Food"],
+        "hoverButton": {
+          "text": "Go to product",
+          "url": "#",
+          "modFirst": "primary",
+          "modSecond": "overlay"
+        }
       },
       {
         "url": "#",
@@ -168,7 +192,13 @@
         },
         "title": "Real Estate",
         "price": "€40.99",
-        "tags": ["Modern", "Homes"]
+        "tags": ["Modern", "Homes"],
+        "hoverButton": {
+          "text": "Go to product",
+          "url": "#",
+          "modFirst": "primary",
+          "modSecond": "overlay"
+        }
       }
     ]
   }
