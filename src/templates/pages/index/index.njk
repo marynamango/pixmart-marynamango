@@ -10,51 +10,7 @@
 
     {% include "partials/index/products.njk" %}
 
-    <section class="pricing">
-      <div class="section-header">
-        <span class="section-header__label">Pricing plan</span>
-        <h2 class="section-header__title">Choose The Perfect Plan for Creative Potential</h2>
-      </div>
-      <div class="pricing__plans">
-        <article class="pricing-card">
-          <h3 class="pricing-card__title">Standard Membership</h3>
-          <p class="pricing-card__price">€14.99 <span class="pricing-card__period">/ Month</span></p>
-          <ul class="pricing-card__features">
-            <li class="pricing-card__benefit">Enhanced Resource Access</li>
-            <li class="pricing-card__benefit">Monthly Credits</li>
-            <li class="pricing-card__benefit">Priority Customer Support</li>
-            <li class="pricing-card__benefit">Community Features Access</li>
-          </ul>
-          <button class="button button--secondary">Subscribe</button>
-        </article>
-
-        <article class="pricing-card pricing-card--highlighted">
-          <div class="badge badge--bestseller badge--ribbon">Best Seller</div>
-          <h3 class="pricing-card__title">Plus Membership</h3>
-          <p class="pricing-card__price">€29.99 <span class="pricing-card__period">/ Month</span></p>
-          <ul class="pricing-card__features">
-            <li class="pricing-card__benefit">All Standard Benefits</li>
-            <li class="pricing-card__benefit">Increased Monthly Credits</li>
-            <li class="pricing-card__benefit">Early Access to New Releases</li>
-            <li class="pricing-card__benefit">Member-Only Offers</li>
-          </ul>
-          <button class="button button--primary">Subscribe</button>
-        </article>
-
-        <article class="pricing-card">
-          <h3 class="pricing-card__title">Pro Membership</h3>
-          <p class="pricing-card__price">€49.99 <span class="pricing-card__period">/ Month</span></p>
-          <ul class="pricing-card__features">
-            <li class="pricing-card__benefit">All Plus Benefits</li>
-            <li class="pricing-card__benefit">Unlimited Downloads</li>
-            <li class="pricing-card__benefit">Custom Licensing</li>
-            <li class="pricing-card__benefit">Direct Creator Collaboration</li>
-          </ul>
-          <button class="button button--secondary">Subscribe</button>
-        </article>
-
-      </div>
-    </section>
+    {% include "partials/index/pricing.njk" %}
 
     <section class="faq">
       <div class="section-header">

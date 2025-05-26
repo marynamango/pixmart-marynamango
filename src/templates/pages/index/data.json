@@ -201,5 +201,67 @@
         }
       }
     ]
+  },
+  "pricing": {
+    "header": {
+      "label": "Pricing plan",
+      "title": "Choose The Perfect Plan for Creative Potential"
+    },
+    "plans": [
+      {
+        "title": "Standard Membership",
+        "price": "€14.99",
+        "period": "Month",
+        "benefits": [
+          "Enhanced Resource Access",
+          "Monthly Credits",
+          "Priority Customer Support",
+          "Community Features Access"
+        ],
+        "button": {
+          "text": "Subscribe",
+          "modFirst": "secondary",
+          "url": "#"
+        }
+      },
+      {
+        "title": "Plus Membership",
+        "price": "€29.99",
+        "period": "Month",
+        "highlighted": true,
+        "badge": {
+          "text": "Best Seller",
+          "modFirst": "bestseller",
+          "modSecond": "ribbon"
+        },
+        "benefits": [
+          "All Standard Benefits",
+          "Increased Monthly Credits",
+          "Early Access to New Releases",
+          "Member-Only Offers"
+        ],
+        "button": {
+          "text": "Subscribe",
+          "modFirst": "primary",
+          "url": "#"
+        }
+      },
+      {
+        "title": "Pro Membership",
+        "price": "€49.99",
+        "period": "Month",
+        "benefits": [
+          "All Plus Benefits",
+          "Unlimited Downloads",
+          "Custom Licensing",
+          "Direct Creator Collaboration"
+        ],
+        "button": {
+          "text": "Subscribe",
+          "modFirst": "secondary",
+          "url": "#"
+        }
+      }
+    ]
   }
 }
