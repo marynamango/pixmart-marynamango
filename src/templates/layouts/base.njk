@@ -11,8 +11,10 @@
   <title>{{ title }}</title>
 </head>
 <body>
-{% include "partials/header.njk" %}
-{% block content %}default content{% endblock %}
-{% include "partials/footer.njk" %}
+  <div class="layout-container">
+    {% include "partials/header.njk" %}
+    {% block content %}default content{% endblock %}
+    {% include "partials/footer.njk" %}
+  </div>
 </body>
 </html>
