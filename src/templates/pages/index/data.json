@@ -103,5 +103,75 @@
         "href": "#"
       }
     ]
+  },
+  "products": {
+    "header": {
+      "label": "Trending",
+      "title": "Popular Products"
+    },
+    "controls": [
+      {
+        "icon": "chevron-left",
+        "ariaLabel": "Scroll left"
+      },
+      {
+        "icon": "chevron-right",
+        "ariaLabel": "Scroll right"
+      }
+    ],
+    "items": [
+      {
+        "url": "#",
+        "badge": {
+          "isIcon": true,
+          "icon": "trophy",
+          "modFirst": "icon",
+          "modSecond": "ribbon"
+        },
+        "image": {
+          "src": "img/travel-hero.webp",
+          "alt": "Travel page template"
+        },
+        "title": "Travel Hero",
+        "price": "€29.99",
+        "tags": ["Adventure", "Journey"]
+      },
+      {
+        "url": "#",
+        "badge": {
+          "isIcon": true,
+          "icon": "trophy",
+          "modFirst": "icon",
+          "modSecond": "ribbon"
+        },
+        "image": {
+          "src": "img/healthcare-pro.webp",
+          "alt": "Healthcare page template"
+        },
+        "title": "Healthcare Pro",
+        "price": "€15.99",
+        "tags": ["Medical", "Wellness"]
+      },
+      {
+        "url": "#",
+        "image": {
+          "src": "img/foodish-delight.webp",
+          "alt": "Foodish page template"
+        },
+        "title": "Foodish Delight",
+        "price": "€31.99",
+        "tags": ["Catering", "Food"]
+      },
+      {
+        "url": "#",
+        "image": {
+          "src": "img/real-estate.webp",
+          "alt": "Real Estate page template"
+        },
+        "title": "Real Estate",
+        "price": "€40.99",
+        "tags": ["Modern", "Homes"]
+      }
+    ]
   }
 }

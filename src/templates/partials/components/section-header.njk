@@ -1,0 +1,18 @@
+<div class="section-header">
+  {% if header.label %}
+    <span class="section-header__label">{{ header.label }}</span>
+  {% endif %}
+  
+  {% if header.title %}
+    <h2 class="section-header__title">{{ header.title }}</h2>
+  {% endif %}
+  
+  {% if header.description %}
+    <p class="section-header__desc">{{ header.description }}</p>
+  {% endif %}
+  
+  {% if header.button %}
+    {% set button = header.button %}
+    {% include "partials/components/button.njk" %}
+  {% endif %}
+</div>

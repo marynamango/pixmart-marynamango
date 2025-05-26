@@ -1,0 +1,26 @@
+<section class="products">
+      <div class="products__header">
+        {% set header = products.header %}
+        {% include "partials/components/section-header.njk" %}
+        
+        <div class="products__controls">
+          {% for control in products.controls %}
+            {% set button = {
+              typeAttr: "button",
+              modFirst: "secondary",
+              modSecond: "only-icon",
+              icon: { name: control.icon },
+              ariaLabel: control.ariaLabel
+            } %}
+            {% include "partials/components/button.njk" %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="products__slider">
+        {% for product in products.items %}
+          {% set item = product %}
+          {% include "partials/index/product-card.njk" %}
+        {% endfor %}
+      </div>
+    </section>
