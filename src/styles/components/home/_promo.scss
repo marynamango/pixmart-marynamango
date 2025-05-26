@@ -1,0 +1,39 @@
+@use "../base/base" as *;
+
+.promo {
+  padding-block: 32px 64px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 36px;
+
+  @include tab {
+    padding-block: 120px 110px;
+    flex-direction: row;
+  }
+
+  @include desk {
+    padding-block: 120px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__highlight {
+    color: var(--color-accent);
+  }
+
+  &__desc {
+    @include text-lg($lh: 28px, $fw: 500);
+    margin-block: 0;
+    color: var(--color-muted);
+  }
+
+  &__actions {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+}

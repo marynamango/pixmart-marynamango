@@ -1,3 +1,18 @@
+@use "../base/variables" as *;
+
+//Breakpoint Mixins
+@mixin desk {
+  @media screen and (min-width: #{$screen-desk}) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (min-width: #{$screen-tab}) {
+    @content;
+  }
+}
+
 //Typography Mixins
 @mixin heading-main {
   font-size: var(--font-size-title-main);
