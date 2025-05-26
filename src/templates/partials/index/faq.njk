@@ -1,0 +1,10 @@
+<section class="faq faq--padding">
+  {% set header = faq.header %}
+  {% include "partials/components/section-header.njk" %}
+
+  <div class="faq__container">
+    {% for question in faq.items %}
+      {% include "partials/index/faq-item.njk" %}
+    {% endfor %}
+  </div>
+</section>

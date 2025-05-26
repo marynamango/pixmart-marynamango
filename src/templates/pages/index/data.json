@@ -1,4 +1,343 @@
 {
-  "title": "test",
-  "h1": ""
+  "title": "About",
+  "logo": {
+    "url": null
+  },
+  "promo": {
+    "title": "Craft Your Success with Our <span class=\"promo__highlight\">Digital</span> Assets",
+    "description": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
+    "buttons": [
+      {
+        "text": "Shop Now",
+        "url": "#",
+        "modFirst": "primary",
+        "typeAttr": "button"
+      },
+      {
+        "text": "Watch About Us",
+        "url": "#",
+        "modFirst": "tertiary",
+        "modSecond": "icon-left",
+        "icon": {
+          "name": "play"
+        },
+        "typeAttr": "button"
+      }
+    ],
+    "images": [
+      {
+        "src": "#",
+        "alt": "About Eventify platform",
+        "class": "promo__image--about"
+      },
+      {
+        "src": "#",
+        "alt": "Event program and pricing",
+        "class": "promo__image--program"
+      },
+      {
+        "src": "#",
+        "alt": "Screens for event website",
+        "class": "promo__image--screens"
+      }
+    ],
+    "icons": [
+      {
+        "name": "bezier",
+        "class": "promo__icon--bezier"
+      },
+      {
+        "name": "theme",
+        "class": "promo__icon--theme"
+      }
+    ]
+  },
+  "assets": {
+    "heading": "Browse by Asset Category",
+    "items": [
+      { "name": "UI Kits", "icon": "ui-kits", "href": "#" },
+      { "name": "Social Media", "icon": "social-media", "href": "#" },
+      { "name": "Presentation", "icon": "presentation", "href": "#" },
+      { "name": "Fonts", "icon": "fonts", "href": "#" },
+      { "name": "Illustrations", "icon": "illustrations", "href": "#" }
+    ]
+  },
+  "categories": {
+    "header": {
+      "label": "Categories",
+      "title": "Discover Assets for Every Projects",
+      "description": "From fonts and icons to mockups and templates, our comprehensive categories ensure that you find exactly what you need to your projects.",
+      "button": {
+        "text": "Shop Now",
+        "url": "#",
+        "modFirst": "primary"
+      }
+    },
+    "items": [
+      {
+        "title": "Templates",
+        "icon": "icon-templates",
+        "modifier": "templates",
+        "tags": ["For all needs", "Modern"],
+        "href": "#"
+      },
+      {
+        "title": "App Icons",
+        "icon": "icon-app-icons",
+        "modifier": "app-icons",
+        "tags": ["High-quality", "Elegant"],
+        "href": "#"
+      },
+      {
+        "title": "Slides",
+        "icon": "icon-slides",
+        "modifier": "slides",
+        "tags": ["Pitch-ready", "Creative"],
+        "href": "#"
+      },
+      {
+        "title": "Design Tools",
+        "icon": "icon-design-tools",
+        "modifier": "design-tools",
+        "tags": ["Easy to use", "Unique"],
+        "href": "#"
+      }
+    ]
+  },
+  "products": {
+    "header": {
+      "label": "Trending",
+      "title": "Popular Products"
+    },
+    "controls": [
+      {
+        "icon": { "name": "chevron-left" },
+        "ariaLabel": "Scroll left",
+        "typeAttr": "button",
+        "modFirst": "secondary",
+        "modSecond": "only-icon"
+      },
+      {
+        "icon": { "name": "chevron-right" },
+        "ariaLabel": "Scroll right",
+        "typeAttr": "button",
+        "modFirst": "secondary",
+        "modSecond": "only-icon"
+      }
+    ],
+    "items": [
+      {
+        "url": "#",
+        "badge": {
+          "icon": "trophy",
+          "modFirst": "icon",
+          "modSecond": "ribbon"
+        },
+        "image": {
+          "src": "img/travel-hero.webp",
+          "alt": "Travel page template"
+        },
+        "title": "Travel Hero",
+        "price": "€29.99",
+        "tags": ["Adventure", "Journey"],
+        "hoverButton": {
+          "text": "Go to product",
+          "url": "#",
+          "modFirst": "primary",
+          "modSecond": "overlay"
+        }
+      },
+      {
+        "url": "#",
+        "badge": {
+          "icon": "trophy",
+          "modFirst": "icon",
+          "modSecond": "ribbon"
+        },
+        "image": {
+          "src": "img/healthcare-pro.webp",
+          "alt": "Healthcare page template"
+        },
+        "title": "Healthcare Pro",
+        "price": "€15.99",
+        "tags": ["Medical", "Wellness"],
+        "hoverButton": {
+          "text": "Go to product",
+          "url": "#",
+          "modFirst": "primary",
+          "modSecond": "overlay"
+        }
+      },
+      {
+        "url": "#",
+        "image": {
+          "src": "img/foodish-delight.webp",
+          "alt": "Foodish page template"
+        },
+        "title": "Foodish Delight",
+        "price": "€31.99",
+        "tags": ["Catering", "Food"],
+        "hoverButton": {
+          "text": "Go to product",
+          "url": "#",
+          "modFirst": "primary",
+          "modSecond": "overlay"
+        }
+      },
+      {
+        "url": "#",
+        "image": {
+          "src": "img/real-estate.webp",
+          "alt": "Real Estate page template"
+        },
+        "title": "Real Estate",
+        "price": "€40.99",
+        "tags": ["Modern", "Homes"],
+        "hoverButton": {
+          "text": "Go to product",
+          "url": "#",
+          "modFirst": "primary",
+          "modSecond": "overlay"
+        }
+      }
+    ]
+  },
+  "pricing": {
+    "header": {
+      "label": "Pricing plan",
+      "title": "Choose The Perfect Plan for Creative Potential"
+    },
+    "plans": [
+      {
+        "title": "Standard Membership",
+        "price": "€14.99",
+        "period": "Month",
+        "benefits": [
+          "Enhanced Resource Access",
+          "Monthly Credits",
+          "Priority Customer Support",
+          "Community Features Access"
+        ],
+        "button": {
+          "text": "Subscribe",
+          "modFirst": "secondary",
+          "url": "#"
+        }
+      },
+      {
+        "title": "Plus Membership",
+        "price": "€29.99",
+        "period": "Month",
+        "highlighted": true,
+        "badge": {
+          "text": "Best Seller",
+          "modFirst": "bestseller",
+          "modSecond": "ribbon"
+        },
+        "benefits": [
+          "All Standard Benefits",
+          "Increased Monthly Credits",
+          "Early Access to New Releases",
+          "Member-Only Offers"
+        ],
+        "button": {
+          "text": "Subscribe",
+          "modFirst": "primary",
+          "url": "#"
+        }
+      },
+      {
+        "title": "Pro Membership",
+        "price": "€49.99",
+        "period": "Month",
+        "benefits": [
+          "All Plus Benefits",
+          "Unlimited Downloads",
+          "Custom Licensing",
+          "Direct Creator Collaboration"
+        ],
+        "button": {
+          "text": "Subscribe",
+          "modFirst": "secondary",
+          "url": "#"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "header": {
+      "label": "F.A.Q",
+      "title": "Answers to Your Questions",
+      "button": {
+        "url": "#",
+        "modFirst": "secondary",
+        "text": "Ask Us A Question"
+      }
+    },
+    "items": [
+      {
+        "question": "Can I request a refund?",
+        "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+      },
+      {
+        "question": "How do I access my purchased products?",
+        "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download.",
+        "open": true
+      },
+      {
+        "question": "Are there any discounts for bulk purchases?",
+        "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+      },
+      {
+        "question": "What payment methods do you accept here?",
+        "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+      },
+      {
+        "question": "Can I sell my digital products on this marketplace?",
+        "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+      }
+    ]
+  },
+  "articles": {
+    "header": {
+      "title": "Latest Expert",
+      "link": {
+        "url": "#",
+        "text": "Explore All Articles",
+        "icon": "chevron-right"
+      }
+    },
+    "items": [
+      {
+        "title": "Creative Blog",
+        "datetime": "2024-04-15",
+        "date": "15 APRIL 2024",
+        "badge": {
+          "text": "TAG",
+          "modFirst": "round"
+        },
+        "image": {
+          "src": "img/creative-blog-1x.webp",
+          "alt": "Creative blog article",
+          "width": 624,
+          "height": 702
+        }
+      },
+      {
+        "title": "Best Dishes",
+        "datetime": "2024-05-05",
+        "date": "5 MAY 2024",
+        "badge": {
+          "text": "TAG",
+          "modFirst": "round"
+        },
+        "image": {
+          "src": "img/best-dishes-1x.webp",
+          "alt": "Best dishes article",
+          "width": 624,
+          "height": 702
+        }
+      }
+    ]
+  }
 }

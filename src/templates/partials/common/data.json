@@ -1,0 +1,105 @@
+{
+  "header": {
+    "logo": {
+      "url": "/",
+      "img": "logo",
+      "alt": "Pixmart logo"
+    },
+    "nav": [
+      { "href": "/", "text": "About" },
+      { "href": "/products", "text": "Products" },
+      { "href": "/creators", "text": "Creators" },
+      { "href": "/blog", "text": "Blog" },
+      { "href": "/contact", "text": "Contact" }
+    ],
+    "search": {
+      "class": "search search--header",
+      "action": "/search",
+      "name": "q",
+      "type": "search",
+      "placeholder": "Search for Digital Assets",
+      "inputClass": "search__input",
+      "buttonClass": "icon search__button search__button--desktop-hidden",
+      "buttonType": "submit",
+      "icon": "search",
+      "ariaLabel": "Search"
+    },
+    "button": {
+      "url": "#",
+      "modFirst": "primary",
+      "modSecond": "only-icon",
+      "icon": { "name": "cart" },
+      "ariaLabel": "Open shopping cart"
+    }
+  },
+  "footer": {
+    "logo": {
+      "url": "/",
+      "img": "logo",
+      "alt": "Pixmart logo",
+      "modifier": "large"
+    },
+    "description": "Your premium digital assets solution with high quality and comprehensive range of products and services.",
+    "nav": [
+      {
+        "title": "Company",
+        "links": [
+          { "text": "Homepage v1", "href": "/" },
+          { "text": "Homepage v2", "href": "/" },
+          { "text": "Homepage v3", "href": "/" },
+          { "text": "About Us", "href": "/" },
+          { "text": "About Us", "href": "/" },
+          { "text": "Blog Articles", "href": "/blog" }
+        ]
+      },
+      {
+        "title": "Products",
+        "links": [
+          { "text": "Website", "href": "/" },
+          { "text": "Mobile App", "href": "/" },
+          { "text": "Social Media Feeds", "href": "/" },
+          { "text": "Presentation", "href": "/" },
+          { "text": "Product Mockups", "href": "/products" },
+          { "text": "Illustrations", "href": "/" }
+        ]
+      },
+      {
+        "title": "Account",
+        "links": [
+          { "text": "Your Cart", "href": "#" },
+          { "text": "Check Out", "href": "#" },
+          { "text": "Refund Policy", "href": "#" },
+          { "text": "Company Policy", "href": "#" },
+          { "text": "Send A Message", "href": "/contact" },
+          { "text": "Customer Support", "href": "#" }
+        ]
+      }
+    ],
+    "social": [
+      { "name": "twitter", "url": "#" },
+      { "name": "facebook", "url": "#" },
+      { "name": "telegram", "url": "#" }
+    ],
+    "newsletter": {
+      "title": "Subscribe to Design Newsletter",
+      "form": {
+        "class": "newsletter__form",
+        "action": "/subscribe",
+        "method": "post",
+        "name": "email",
+        "type": "email",
+        "placeholder": "Enter your email address ...",
+        "inputClass": "newsletter__input",
+        "buttonClass": "button button--primary",
+        "buttonType": "submit",
+        "buttonText": "Subscribe"
+      }
+    },
+    "legal": [
+      { "text": "Privacy Policy", "href": "#" },
+      { "text": "Terms and Condition", "href": "#" },
+      { "text": "Site Map", "href": "#" }
+    ],
+    "copyright": "Copyright © 2024 Pixmart. All rights reserved."
+  }
+}

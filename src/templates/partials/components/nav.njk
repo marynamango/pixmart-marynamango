@@ -1,0 +1,9 @@
+<nav class="nav" id="nav" hidden>
+  <ul class="nav__list">
+    {% for link in header.nav %}
+      <li class="nav__item">
+        <a href="{{ link.href }}" class="nav__link">{{ link.text }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

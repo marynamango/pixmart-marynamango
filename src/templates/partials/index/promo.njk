@@ -1,0 +1,34 @@
+{% set promo = promo or {} %}
+<section class="promo">
+  <div class="promo__content">
+    <h1 class="promo__title">
+      {{ promo.title | safe }}
+    </h1>
+    <p class="promo__desc">
+      {{ promo.description }}
+    </p>
+    <div class="promo__actions">
+      {% for button in promo.buttons %}
+        {% include "partials/components/button.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="promo__media">
+    <div class="promo__visual">
+      <div class="promo__images">
+        {% for image in promo.images %}
+          <img src="{{ image.src }}" alt="{{ image.alt }}" class="promo__image {{ image.class }}">
+        {% endfor %}
+      </div>
+
+      <div class="promo__icons">
+        {% for icon in promo.icons %}
+          <svg class="promo__icon {{ icon.class }}" aria-hidden="true" focusable="false">
+            <use href="/img/sprite.svg#{{ icon.name }}"></use>
+          </svg>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
