@@ -1,0 +1,6 @@
+<details class="faq__details" {% if question.open %}open{% endif %}>
+  <summary class="faq__summary">{{ question.question }}</summary>
+  <div class="faq__content">
+    <p class="faq__answer">{{ question.answer }}</p>
+  </div>
+</details>
