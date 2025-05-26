@@ -1,20 +1,12 @@
 <section class="categories">
-      <div class="section-header">
-        <span class="section-header__label">{{ categories.header.label }}</span>
-        <h2 class="section-header__title">{{ categories.header.title }}</h2>
-        <p class="section-header__desc">
-          {{ categories.header.description }}
-        </p>
-        
-        {% set button = categories.header.button %}
-        {% include "partials/components/button.njk" %}
-      </div>
+  {% set header = categories.header %}
+  {% include "partials/components/section-header.njk" %}
 
-      <div class="categories__container">
-        <div class="categories__column">
-          {% for item in categories.items %}
-            {% include "partials/index/category-card.njk" %}
-          {% endfor %}
-        </div>
-      </div>
-    </section>
+  <div class="categories__container">
+    <div class="categories__column">
+      {% for item in categories.items %}
+        {% include "partials/index/category-card.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
