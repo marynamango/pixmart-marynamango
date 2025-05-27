@@ -3,6 +3,9 @@
 .layout-container {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.section-wrapper {
   padding-inline: 16px;
 
   @include tab {
@@ -12,4 +15,8 @@
   @include desk {
     padding-inline: 80px;
   }
+}
+
+.section-fullwidth {
+  padding-inline: 0;
 }
