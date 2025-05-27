@@ -1,0 +1,26 @@
+@use "../base/base" as *;
+
+.products {
+  padding-block: 0 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  @include tab {
+    padding-block: 0 120px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+  }
+
+  &__slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    align-items: center;
+  }
+}

@@ -1,0 +1,24 @@
+@use "../base/base" as *;
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    @include heading-subtitle;
+    color: var(--color-primary);
+    margin-block: 0 8px;
+  }
+
+  &__price {
+    @include text-md($fw: 500);
+    color: var(--color-accent);
+  }
+}
