@@ -19,8 +19,20 @@
 
   &__slider {
     display: flex;
-    overflow-x: auto;
+    overflow-x: auto; //Check later if i need to make it visible
     gap: 16px;
     align-items: center;
+
+    &--padding {
+      padding-inline: 16px 0;
+
+      @include tab {
+        padding-inline: 40px 0;
+      }
+
+      @include desk {
+        padding-inline: 80px;
+      }
+    }
   }
 }

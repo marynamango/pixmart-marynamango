@@ -148,7 +148,8 @@
           "text": "Go to product",
           "url": "#",
           "modFirst": "primary",
-          "modSecond": "overlay"
+          "modSecond": "overlay",
+          "modThird": "full"
         }
       },
       {
@@ -169,7 +170,8 @@
           "text": "Go to product",
           "url": "#",
           "modFirst": "primary",
-          "modSecond": "overlay"
+          "modSecond": "overlay",
+          "modThird": "full"
         }
       },
       {
@@ -185,7 +187,8 @@
           "text": "Go to product",
           "url": "#",
           "modFirst": "primary",
-          "modSecond": "overlay"
+          "modSecond": "overlay",
+          "modThird": "full"
         }
       },
       {
@@ -201,7 +204,8 @@
           "text": "Go to product",
           "url": "#",
           "modFirst": "primary",
-          "modSecond": "overlay"
+          "modSecond": "overlay",
+          "modThird": "full"
         }
       }
     ]
@@ -225,6 +229,7 @@
         "button": {
           "text": "Subscribe",
           "modFirst": "secondary",
+          "modSecond": "full",
           "url": "#"
         }
       },
@@ -247,6 +252,7 @@
         "button": {
           "text": "Subscribe",
           "modFirst": "primary",
+          "modSecond": "full",
           "url": "#"
         }
       },
@@ -263,6 +269,7 @@
         "button": {
           "text": "Subscribe",
           "modFirst": "secondary",
+          "modSecond": "full",
           "url": "#"
         }
       }
