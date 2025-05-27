@@ -16,7 +16,8 @@
     padding-inline: 80px;
   }
 }
-.assets .section-wrapper {
+
+.assets.section-wrapper {
     padding-right: 0;
 
     @include tab {
@@ -27,7 +28,3 @@
       padding-right: 80px;
     }
   }
-  
-.section-fullwidth {
-  padding-inline: 0;
-}

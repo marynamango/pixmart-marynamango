@@ -1,12 +1,14 @@
-<section class="categories">
+<section class="categories section-wrapper">
   {% set header = categories.header %}
   {% include "partials/components/section-header.njk" %}
 
   <div class="categories__container">
-    <div class="categories__column">
-      {% for item in categories.items %}
-        {% include "partials/index/category-card.njk" %}
-      {% endfor %}
-    </div>
+    {% for column in categories.columns %}
+      <div class="categories__column">
+        {% for item in column %}
+          {% include "partials/index/category-card.njk" %}
+        {% endfor %}
+      </div>
+    {% endfor %}
   </div>
 </section>

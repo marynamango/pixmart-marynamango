@@ -73,35 +73,39 @@
         "modFirst": "primary"
       }
     },
-    "items": [
-      {
-        "title": "Templates",
-        "icon": "icon-templates",
-        "modifier": "templates",
-        "tags": ["For all needs", "Modern"],
-        "href": "#"
-      },
-      {
-        "title": "App Icons",
-        "icon": "icon-app-icons",
-        "modifier": "app-icons",
-        "tags": ["High-quality", "Elegant"],
-        "href": "#"
-      },
-      {
-        "title": "Slides",
-        "icon": "icon-slides",
-        "modifier": "slides",
-        "tags": ["Pitch-ready", "Creative"],
-        "href": "#"
-      },
-      {
-        "title": "Design Tools",
-        "icon": "icon-design-tools",
-        "modifier": "design-tools",
-        "tags": ["Easy to use", "Unique"],
-        "href": "#"
-      }
+    "columns": [
+      [
+        {
+          "title": "Templates",
+          "icon": "icon-templates",
+          "modifier": "templates",
+          "tags": ["For all needs", "Modern"],
+          "href": "#"
+        },
+        {
+          "title": "Slides",
+          "icon": "icon-slides",
+          "modifier": "slides",
+          "tags": ["Pitch-ready", "Creative"],
+          "href": "#"
+        }
+      ],
+      [
+        {
+          "title": "App Icons",
+          "icon": "icon-app-icons",
+          "modifier": "app-icons",
+          "tags": ["High-quality", "Elegant"],
+          "href": "#"
+        },
+        {
+          "title": "Design Tools",
+          "icon": "icon-design-tools",
+          "modifier": "design-tools",
+          "tags": ["Easy to use", "Unique"],
+          "href": "#"
+        }
+      ]
     ]
   },
   "products": {
