@@ -1,27 +1,33 @@
 <div class="section-header">
-  {% if header.label %}
-    <span class="section-header__label">{{ header.label }}</span>
-  {% endif %}
+  <div class="section-header__text">
+    {% if header.label %}
+      <span class="section-header__label">{{ header.label }}</span>
+    {% endif %}
   
-  {% if header.title %}
-    <h2 class="section-header__title">{{ header.title }}</h2>
-  {% endif %}
+    {% if header.title %}
+      <h2 class="section-header__title">{{ header.title }}</h2>
+    {% endif %}
   
-  {% if header.description %}
-    <p class="section-header__desc">{{ header.description }}</p>
-  {% endif %}
-  
+    {% if header.description %}
+      <p class="section-header__desc">{{ header.description }}</p>
+    {% endif %}
+  </div>
+
   {% if header.button %}
-    {% set button = header.button %}
-    {% include "partials/components/button.njk" %}
+    <div class="section-header__button">
+      {% set button = header.button %}
+      {% include "partials/components/button.njk" %}
+    </div>
   {% endif %}
 
   {% if header.link %}
-    <a href="{{ header.link.url }}">
-      {{ header.link.text }}
-      <svg class="icon icon-small" aria-hidden="true" focusable="false">
-        <use href="/img/sprite.svg#{{ header.link.icon }}"></use>
-      </svg>
-    </a>
+    <div class="section-header__link">
+      <a href="{{ header.link.url }}">
+        {{ header.link.text }}
+        <svg class="icon icon-small" aria-hidden="true" focusable="false">
+          <use href="/img/sprite.svg#{{ header.link.icon }}"></use>
+        </svg>
+      </a>
+    </div>
   {% endif %}
 </div>
