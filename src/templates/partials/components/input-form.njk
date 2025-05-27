@@ -13,7 +13,7 @@
               {% if form.ariaLabel %}aria-label="{{ form.ariaLabel }}"{% endif %}>
               
               {% if form.icon %}
-                <svg class="{{ form.iconClass | default('form__icon') }}" aria-hidden="true" focusable="false">
+                <svg class="icon{% if form.iconClass %} {{ form.iconClass }}{% else %} form__icon{% endif %}" aria-hidden="true" focusable="false">
                   <use href="/img/sprite.svg#{{ form.icon }}"></use>
                 </svg>
               {% elseif form.buttonText %}
