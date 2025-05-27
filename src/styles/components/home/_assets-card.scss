@@ -1,0 +1,24 @@
+@use "../base/base" as *;
+
+.assets-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  &__icon-wrapper {
+    background-color: var(--bacground-color-cards);
+    padding: 37px;
+    border-radius: 20px;
+  }
+
+  &__icon {
+    width: 150px;
+    height: 150px;
+  }
+
+  &__name {
+    @include text-lg;
+    color: var(--color-primary);
+  }
+}

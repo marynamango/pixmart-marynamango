@@ -8,18 +8,21 @@
   );
   padding-block: 32px 64px;
 
+  @include tab {
+    padding-block: 120px 110px;
+  }
+
+  @include desk {
+    padding-block: 120px;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column-reverse;
     gap: 36px;
 
     @include tab {
-      padding-block: 120px 110px;
       flex-direction: row;
-    }
-
-    @include desk {
-      padding-block: 120px;
     }
   }
 

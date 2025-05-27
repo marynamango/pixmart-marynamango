@@ -1,10 +1,12 @@
 <section class="assets">
-  <h2 class="sr-only">{{ assets.heading }}</h2>
-  <ul class="assets__list">
-    {% for item in assets.items %}
-      <li class="assets__item">
-        {% include "partials/index/assets-card.njk" %}
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="section-wrapper">
+    <h2 class="sr-only">{{ assets.heading }}</h2>
+    <ul class="assets__list">
+      {% for item in assets.items %}
+        <li class="assets__item">
+          {% include "partials/index/assets-card.njk" %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>

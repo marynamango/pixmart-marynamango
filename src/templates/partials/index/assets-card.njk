@@ -1,6 +1,8 @@
 <a class="assets-card" href="{{ item.href }}">
-  <svg class="assets-card__img" aria-hidden="true" focusable="false" width="150" height="150">
-    <use href="/img/sprite.svg#{{ item.icon }}"></use>
-  </svg>
+  <div class="assets-card__icon-wrapper">
+    <svg class="assets-card__icon" aria-hidden="true" focusable="false">
+      <use href="/img/sprite.svg#{{ item.icon }}"></use>
+    </svg>
+  </div>
   <span class="assets-card__name">{{ item.name }}</span>
 </a>
