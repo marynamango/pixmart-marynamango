@@ -1,21 +1,23 @@
 <header class="header section-wrapper">
       <div class="header__wrapper">
-        <div class="header__burger-group">
-          <button
-            type="button"
-            class="header__menu"
-            aria-label="Toggle menu"
-            aria-expanded="false"
-            aria-controls="nav">
-            <span class="header__menu-icon"></span>
-          </button>
+        <div class="header__nav-group">
+          <div class="header__burger-group">
+            <button
+              type="button"
+              class="header__menu"
+              aria-label="Toggle menu"
+              aria-expanded="false"
+              aria-controls="nav">
+              <span class="header__menu-icon"></span>
+            </button>
           
-          {% set logo = header.logo %}
-          {% set disableLogoLink = disableLogoLink | default(false) %}
-          {% include "partials/components/logo.njk" %}
-        </div>
+            {% set logo = header.logo %}
+            {% set disableLogoLink = disableLogoLink | default(false) %}
+            {% include "partials/components/logo.njk" %}
+          </div>
 
-        {% include "partials/components/nav.njk" %}
+          {% include "partials/components/nav.njk" %}
+        </div>
 
         <div class="header__actions">
         

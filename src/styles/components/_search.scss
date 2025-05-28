@@ -1,0 +1,17 @@
+@use "../base/base" as *;
+
+.search {
+  &__input {
+    padding: var(--padding-search);
+    border: 1px solid var(--color-border-default);
+    border-radius: 8px;
+
+    &--mobile-hidden {
+      display: none;
+
+      @include tab {
+        display: block;
+      }
+    }
+  }
+}

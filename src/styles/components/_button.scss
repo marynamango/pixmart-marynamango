@@ -19,6 +19,7 @@
   &--secondary {
     color: var(--color-primary);
     border-color: var(--color-border-default);
+    background-color: transparent;
   }
 
   &--tertiary {
@@ -36,5 +37,11 @@
 
   &--full {
     width: 100%;
+  }
+
+  &--tab-hidden {
+    @include tab {
+      display: none;
+    }
   }
 }

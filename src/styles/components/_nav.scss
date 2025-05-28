@@ -1,0 +1,28 @@
+@use "../base/base" as *;
+
+.nav {
+  @include text-base($fw: 600);
+  
+
+  @include tab {
+    @include text-sm($fw: 600);
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @include tab {
+      flex-direction: row;
+    }
+  }
+
+  &__link {
+    color: var(--color-primary);
+    padding: var(--padding-filters);
+  }
+}

@@ -7,7 +7,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 24px
+    gap: 32px
+  }
+
+  &__nav-group {
+    display: flex;
+    align-items: center;
+    gap: 32px;
   }
 
   &__burger-group {

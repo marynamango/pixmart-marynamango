@@ -18,8 +18,8 @@
       "name": "q",
       "type": "search",
       "placeholder": "Search for Digital Assets",
-      "inputClass": "search__input",
-      "buttonClass": "search__button search__button--desktop-hidden",
+      "inputClass": "search__input search__input--mobile-hidden",
+      "buttonClass": "button button--secondary button--only-icon button--tab-hidden",
       "buttonType": "submit",
       "icon": "search",
       "ariaLabel": "Search"
