@@ -28,3 +28,9 @@
     padding-right: 80px;
   }
 }
+
+.faq.section-wrapper {
+  @include tab {
+    padding-inline: 80px;
+  }
+}

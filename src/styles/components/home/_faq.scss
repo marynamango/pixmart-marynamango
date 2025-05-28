@@ -1,0 +1,45 @@
+@use "../base/base" as *;
+
+.faq {
+  padding-block: 0 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  @include tab {
+    padding-block: 0 120px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__item {
+    box-shadow: 0px 4px 40px var(--color-shadow);
+    padding: 24px;
+    border-radius: 10px;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+  }
+
+  &__item[open] {
+    box-shadow: none;
+    outline-color: var(--color-accent);
+  }
+
+  &__question {
+    @include text-lg($fw: 700, $lh: var(--line-height-lg-short));
+    list-style: none;
+  }
+
+  &__content {
+    padding-top: 16px;
+  }
+
+  &__answer {
+    @include text-md;
+    margin-block: 0;
+  }
+}
