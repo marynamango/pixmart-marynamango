@@ -21,8 +21,8 @@
   {% endif %}
 
   {% if header.link %}
-    <div class="section-header__link">
-      <a href="{{ header.link.url }}">
+    <div class="section-header__link-wrapper">
+      <a class="section-header__link" href="{{ header.link.url }}">
         {{ header.link.text }}
         <svg class="icon icon-small" aria-hidden="true" focusable="false">
           <use href="/img/sprite.svg#{{ header.link.icon }}"></use>

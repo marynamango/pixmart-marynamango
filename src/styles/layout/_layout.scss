@@ -5,6 +5,14 @@
   margin: 0 auto;
 }
 
+.main-container {
+  padding-bottom: 64px;
+
+  @include tab {
+    padding-bottom: 120px;
+  }
+}
+
 .section-wrapper {
   padding-inline: 16px;
 

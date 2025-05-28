@@ -26,4 +26,9 @@
   &__desc {
     margin-block: 0;
   }
+
+  &__link {
+    @include text-md($fw: 600);
+    color: var(--color-accent);
+  }
 }
