@@ -1,0 +1,16 @@
+@use "../base/base" as *;
+
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+
+  &__link {
+    display: inline-flex;
+    padding: var(--padding-icon-big);
+    border: 2px solid var(--color-border-default);
+    border-radius: 8px;
+  }
+}

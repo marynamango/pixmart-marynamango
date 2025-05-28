@@ -81,7 +81,7 @@
       { "name": "telegram", "url": "#" }
     ],
     "newsletter": {
-      "title": "Subscribe to Design Newsletter",
+      "title": "Subscribe to<br> Design Newsletter",
       "form": {
         "class": "newsletter__form",
         "action": "/subscribe",
@@ -90,7 +90,7 @@
         "type": "email",
         "placeholder": "Enter your email address ...",
         "inputClass": "newsletter__input",
-        "buttonClass": "button button--primary",
+        "buttonClass": "button button--primary newsletter__button",
         "buttonType": "submit",
         "buttonText": "Subscribe"
       }

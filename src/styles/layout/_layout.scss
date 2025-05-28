@@ -37,7 +37,8 @@
   }
 }
 
-.faq.section-wrapper {
+.faq.section-wrapper,
+.footer__bottom.section-wrapper {
   @include tab {
     padding-inline: 80px;
   }

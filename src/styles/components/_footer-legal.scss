@@ -1,0 +1,28 @@
+@use "../base/base" as *;
+
+.footer-legal {
+  &__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:first-child)::before {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 16px;
+      background-color: var(--color-terms);
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+  }
+
+  &__link {
+    color: var(--color-terms)
+  }
+}
