@@ -13,6 +13,14 @@
   }
 }
 
+//Layout Mixins
+@mixin visually-hidden {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
 //Typography Mixins
 @mixin heading-main {
   font-size: var(--font-size-title-main);

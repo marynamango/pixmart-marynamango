@@ -16,5 +16,67 @@
     {% block content %}default content{% endblock %}
     {% include "partials/footer.njk" %}
   </div>
+<script>
+(function () {
+  console.log("burgerMenu script loaded");
+  burgerMenu();
+})();
+
+function burgerMenu() {
+  const toggleBtn = document.querySelector(".header__menu");
+  const nav = document.querySelector("nav#nav"); // or use ".nav" if you prefer
+
+  console.log("toggleBtn:", toggleBtn);
+  console.log("nav:", nav);
+  const stopTransitionClass = "no-transition";
+  let isResizing = false;
+
+  if (!toggleBtn || !nav) return;
+
+  // Toggle menu open/closed
+  toggleBtn.addEventListener("click", () => {
+    const isOpen = toggleBtn.classList.toggle("is-open");
+    nav.hidden = !isOpen;
+    toggleBtn.setAttribute("aria-expanded", isOpen);
+  });
+
+  // Debounce function to throttle resize/orientation events
+  function debounce(func, wait) {
+    let timeout;
+    return function (...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+  }
+
+  // On resize/orientation change, close the menu
+  const handleResize = debounce(() => {
+    if (!nav.hidden) {
+      nav.hidden = true;
+      toggleBtn.classList.remove("is-open");
+      toggleBtn.setAttribute("aria-expanded", false);
+    }
+  }, 100);
+
+  ["resize", "orientationchange"].forEach((event) => {
+    window.addEventListener(event, handleResize);
+  });
+
+  // Prevent transition glitches during resizing
+  const handleResizeEnd = debounce(() => {
+    document.body.classList.remove(stopTransitionClass);
+    isResizing = false;
+  }, 100);
+
+  window.addEventListener("resize", () => {
+    if (!isResizing) {
+      document.body.classList.add(stopTransitionClass);
+      isResizing = true;
+    } else {
+      handleResizeEnd();
+    }
+  });
+}
+</script>
 </body>
 </html>
