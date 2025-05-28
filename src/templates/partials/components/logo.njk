@@ -4,7 +4,7 @@
   {% set logoClass = logoClass + " logo__img--" + modifier %}
 {% endif %}
 
-{% if logo.url %}
+{% if not disableLogoLink %}
   <a class="logo" href="{{ logo.url }}">
     <svg class="{{ logoClass }}" role="img" aria-label="{{ logo.alt }}" focusable="false">
       <use href="/img/sprite.svg#{{ logo.img }}"></use>

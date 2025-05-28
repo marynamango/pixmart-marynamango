@@ -1,8 +1,6 @@
 {
   "title": "About",
-  "logo": {
-    "url": null
-  },
+  "disableLogoLink": true,
   "promo": {
     "title": "Craft Your Success with Our <span class=\"promo__highlight\">Digital</span> Assets",
     "description": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
