@@ -28,7 +28,10 @@
       "url": "#",
       "modFirst": "primary",
       "modSecond": "only-icon",
-      "icon": { "name": "cart" },
+      "icon": {
+        "name": "cart",
+        "class": "icon--white"
+      },
       "ariaLabel": "Open shopping cart"
     }
   },
