@@ -25,19 +25,67 @@
     ],
     "images": [
       {
-        "src": "#",
+        "key": "about",
         "alt": "About Eventify platform",
-        "class": "promo__image--about"
+        "class": "promo__image--about",
+        "width": 131,
+        "height": 197,
+        "sources": {
+          "desktop": {
+            "1x": "eventify-about-desktop-1x",
+            "2x": "eventify-about-desktop-2x"
+          },
+          "tab": {
+            "1x": "eventify-about-tab-1x",
+            "2x": "eventify-about-tab-2x"
+          },
+          "mobile": {
+            "1x": "eventify-about-mobile-1x",
+            "2x": "eventify-about-mobile-2x"
+          }
+        }
       },
       {
-        "src": "#",
+        "key": "program",
         "alt": "Event program and pricing",
-        "class": "promo__image--program"
+        "class": "promo__image--program",
+        "width": 171,
+        "height": 96,
+        "sources": {
+          "desktop": {
+            "1x": "eventify-program-desktop-1x",
+            "2x": "eventify-program-desktop-2x"
+          },
+          "tab": {
+            "1x": "eventify-program-tab-1x",
+            "2x": "eventify-program-tab-2x"
+          },
+          "mobile": {
+            "1x": "eventify-program-mobile-1x",
+            "2x": "eventify-program-mobile-2x"
+          }
+        }
       },
       {
-        "src": "#",
+        "key": "screens",
         "alt": "Screens for event website",
-        "class": "promo__image--screens"
+        "class": "promo__image--screens",
+        "width": 242,
+        "height": 140,
+        "sources": {
+          "desktop": {
+            "1x": "eventify-screens-desktop-1x",
+            "2x": "eventify-screens-desktop-2x"
+          },
+          "tab": {
+            "1x": "eventify-screens-tab-1x",
+            "2x": "eventify-screens-tab-2x"
+          },
+          "mobile": {
+            "1x": "eventify-screens-mobile-1x",
+            "2x": "eventify-screens-mobile-2x"
+          }
+        }
       }
     ],
     "icons": [
