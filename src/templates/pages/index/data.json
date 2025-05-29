@@ -132,7 +132,9 @@
       {
         "url": "#",
         "badge": {
-          "icon": "trophy",
+          "icon": {
+            "name": "trophy"
+          },
           "modFirst": "icon",
           "modSecond": "ribbon"
         },
@@ -154,7 +156,9 @@
       {
         "url": "#",
         "badge": {
-          "icon": "trophy",
+          "icon": {
+            "name": "trophy"
+          },
           "modFirst": "icon",
           "modSecond": "ribbon"
         },
