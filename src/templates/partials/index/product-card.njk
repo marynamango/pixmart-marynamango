@@ -5,14 +5,13 @@
       {% include "partials/components/badge.njk" %}
     {% endif %}
 
-    <img
-      class="product-card__img"
-      src="{{ item.image.src }}"
-      alt="{{ item.image.alt }}"
-      width="305"
-      height="272"
-      loading="lazy"
-    />
+    {% set folder = item.image.folder %}
+    {% set basename = item.image.basename %}
+    {% set alt = item.image.alt %}
+    {% set width = item.image.width %}
+    {% set height = item.image.height %}
+    {% set class = "product-card__img" %}
+    {% include "partials/components/picture.njk" %}
   </a>
 
   <div class="product-card__overlay">
