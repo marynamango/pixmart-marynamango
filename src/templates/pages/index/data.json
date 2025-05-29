@@ -17,7 +17,8 @@
         "modFirst": "tertiary",
         "modSecond": "icon-left",
         "icon": {
-          "name": "play"
+          "name": "play",
+          "class": "icon--accent"
         },
         "typeAttr": "button"
       }
