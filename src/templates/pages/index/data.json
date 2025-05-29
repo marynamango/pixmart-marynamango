@@ -392,10 +392,8 @@
           "modFirst": "round"
         },
         "image": {
-          "src": "img/creative-blog-1x.webp",
-          "alt": "Creative blog article",
-          "width": 624,
-          "height": 702
+          "basename": "creative-blog",
+          "alt": "Creative blog article"
         }
       },
       {
@@ -407,10 +405,8 @@
           "modFirst": "round"
         },
         "image": {
-          "src": "img/best-dishes-1x.webp",
-          "alt": "Best dishes article",
-          "width": 624,
-          "height": 702
+          "basename": "best-dishes",
+          "alt": "Best dishes article"
         }
       }
     ]
