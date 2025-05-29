@@ -17,7 +17,8 @@
         "modFirst": "tertiary",
         "modSecond": "icon-left",
         "icon": {
-          "name": "play"
+          "name": "play",
+          "class": "icon--accent"
         },
         "typeAttr": "button"
       }
@@ -75,14 +76,14 @@
       [
         {
           "title": "Templates",
-          "icon": "icon-templates",
+          "icon": "ui-kits",
           "modifier": "templates",
           "tags": ["For all needs", "Modern"],
           "href": "#"
         },
         {
           "title": "Slides",
-          "icon": "icon-slides",
+          "icon": "presentation",
           "modifier": "slides",
           "tags": ["Pitch-ready", "Creative"],
           "href": "#"
@@ -91,14 +92,14 @@
       [
         {
           "title": "App Icons",
-          "icon": "icon-app-icons",
+          "icon": "social-media",
           "modifier": "app-icons",
           "tags": ["High-quality", "Elegant"],
           "href": "#"
         },
         {
           "title": "Design Tools",
-          "icon": "icon-design-tools",
+          "icon": "illustrations",
           "modifier": "design-tools",
           "tags": ["Easy to use", "Unique"],
           "href": "#"
@@ -131,7 +132,9 @@
       {
         "url": "#",
         "badge": {
-          "icon": "trophy",
+          "icon": {
+            "name": "trophy"
+          },
           "modFirst": "icon",
           "modSecond": "ribbon"
         },
@@ -153,7 +156,9 @@
       {
         "url": "#",
         "badge": {
-          "icon": "trophy",
+          "icon": {
+            "name": "trophy"
+          },
           "modFirst": "icon",
           "modSecond": "ribbon"
         },
@@ -286,23 +291,28 @@
     "items": [
       {
         "question": "Can I request a refund?",
+        "icon": "chevron-right",
         "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
       },
       {
         "question": "How do I access my purchased products?",
+        "icon": "chevron-right",
         "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download.",
         "open": true
       },
       {
         "question": "Are there any discounts for bulk purchases?",
+        "icon": "chevron-right",
         "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
       },
       {
         "question": "What payment methods do you accept here?",
+        "icon": "chevron-right",
         "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
       },
       {
         "question": "Can I sell my digital products on this marketplace?",
+        "icon": "chevron-right",
         "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
       }
     ]

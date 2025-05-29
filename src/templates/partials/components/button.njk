@@ -11,7 +11,7 @@
       {% if button.ariaLabel %}aria-label="{{ button.ariaLabel }}"{% endif %}
     >
       {% if button.icon %}
-        <svg class="icon" aria-hidden="true" focusable="false">
+        <svg class="icon{% if button.icon.class %} {{ button.icon.class }}{% endif %}" aria-hidden="true" focusable="false">
           <use href="/img/sprite.svg#{{ button.icon.name }}"></use>
         </svg>
       {% endif %}
@@ -27,7 +27,7 @@
       {% if button.ariaLabel %}aria-label="{{ button.ariaLabel }}"{% endif %}
     >
       {% if button.icon %}
-        <svg class="icon" aria-hidden="true" focusable="false">
+        <svg class="icon{% if button.icon.class %} {{ button.icon.class }}{% endif %}" aria-hidden="true" focusable="false">
           <use href="/img/sprite.svg#{{ button.icon.name }}"></use>
         </svg>
       {% endif %}

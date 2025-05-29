@@ -30,5 +30,7 @@
   &__link {
     @include text-md($fw: 600);
     color: var(--color-accent);
+    display: inline-flex;
+    gap: 8px;
   }
 }

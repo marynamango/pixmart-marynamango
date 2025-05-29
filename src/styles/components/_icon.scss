@@ -3,4 +3,16 @@
 .icon {
   width: 24px;
   height: 24px;
+
+  &--white {
+    color: var(--color-icon-white);
+  }
+
+  &--black {
+    color: var(--color-primary);
+  }
+
+  &--accent {
+    color: var(--color-accent);
+  }
 }

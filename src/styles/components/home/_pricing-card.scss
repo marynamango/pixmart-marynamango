@@ -44,7 +44,18 @@
     flex-direction: column;
     gap: 16px;
     margin: 0;
-    padding: 40px 0 40px 32px;
+    padding: 40px 0;
     border-top: 1px solid rgb(31 50 71 / 0.27);
+  }
+
+  &__benefit {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
   }
 }

@@ -32,6 +32,27 @@
   &__question {
     @include text-lg($fw: 700, $lh: var(--line-height-lg-short));
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  &__icon-wrapper {
+    display: inline-flex;
+    padding: var(--padding-icon);
+    border: 2px solid var(--color-border-default);
+    border-radius: 8px;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+
+    .faq__item[open] & {
+      transform: rotate(-90deg);
+    }
   }
 
   &__content {
