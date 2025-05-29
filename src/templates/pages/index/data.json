@@ -28,64 +28,22 @@
         "key": "about",
         "alt": "About Eventify platform",
         "class": "promo__img--about",
-        "width": 131,
-        "height": 197,
-        "sources": {
-          "desktop": {
-            "1x": "eventify-about-desktop-1x",
-            "2x": "eventify-about-desktop-2x"
-          },
-          "tab": {
-            "1x": "eventify-about-tab-1x",
-            "2x": "eventify-about-tab-2x"
-          },
-          "mobile": {
-            "1x": "eventify-about-mobile-1x",
-            "2x": "eventify-about-mobile-2x"
-          }
-        }
+        "folder": "promo",
+        "basename": "eventify-about"
       },
       {
         "key": "program",
         "alt": "Event program and pricing",
         "class": "promo__img--program",
-        "width": 171,
-        "height": 96,
-        "sources": {
-          "desktop": {
-            "1x": "eventify-program-desktop-1x",
-            "2x": "eventify-program-desktop-2x"
-          },
-          "tab": {
-            "1x": "eventify-program-tab-1x",
-            "2x": "eventify-program-tab-2x"
-          },
-          "mobile": {
-            "1x": "eventify-program-mobile-1x",
-            "2x": "eventify-program-mobile-2x"
-          }
-        }
+        "folder": "promo",
+        "basename": "eventify-program"
       },
       {
         "key": "screens",
         "alt": "Screens for event website",
         "class": "promo__img--screens",
-        "width": 242,
-        "height": 140,
-        "sources": {
-          "desktop": {
-            "1x": "eventify-screens-desktop-1x",
-            "2x": "eventify-screens-desktop-2x"
-          },
-          "tab": {
-            "1x": "eventify-screens-tab-1x",
-            "2x": "eventify-screens-tab-2x"
-          },
-          "mobile": {
-            "1x": "eventify-screens-mobile-1x",
-            "2x": "eventify-screens-mobile-2x"
-          }
-        }
+        "folder": "promo",
+        "basename": "eventify-screens"
       }
     ],
     "icons": [

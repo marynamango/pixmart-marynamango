@@ -18,33 +18,33 @@
     <div class="promo__visual">
       <div class="promo__images">
         {% for image in promo.images %}
+          {% set base = "/img/" + image.folder + "/" + image.basename %}
           <picture>
             <!-- Desktop -->
-            <source media="(min-width: 1024px)" type="image/avif"
-              srcset="/img/promo/{{ image.sources.desktop['1x'] }}.avif 1x, /img/promo/{{ image.sources.desktop['2x'] }}.avif 2x">
-            <source media="(min-width: 1024px)" type="image/webp"
-              srcset="/img/promo/{{ image.sources.desktop['1x'] }}.webp 1x, /img/promo/{{ image.sources.desktop['2x'] }}.webp 2x">
+            <source media="(min-width: 1025px)" type="image/avif"
+              srcset="{{ base }}-desktop-1x.avif 1x, {{ base }}-desktop-2x.avif 2x">
+            <source media="(min-width: 1025px)" type="image/webp"
+              srcset="{{ base }}-desktop-1x.webp 1x, {{ base }}-desktop-2x.webp 2x">
 
             <!-- Tablet -->
-            <source media="(min-width: 440px)" type="image/avif"
-              srcset="/img/promo/{{ image.sources.tab['1x'] }}.avif 1x, /img/promo/{{ image.sources.tab['2x'] }}.avif 2x">
-            <source media="(min-width: 440px)" type="image/webp"
-              srcset="/img/promo/{{ image.sources.tab['1x'] }}.webp 1x, /img/promo/{{ image.sources.tab['2x'] }}.webp 2x">
+            <source media="(min-width: 441px)" type="image/avif"
+              srcset="{{ base }}-tab-1x.avif 1x, {{ base }}-tab-2x.avif 2x">
+            <source media="(min-width: 441px)" type="image/webp"
+              srcset="{{ base }}-tab-1x.webp 1x, {{ base }}-tab-2x.webp 2x">
 
             <!-- Mobile -->
             <source type="image/avif"
-              srcset="/img/promo/{{ image.sources.mobile['1x'] }}.avif 1x, /img/promo/{{ image.sources.mobile['2x'] }}.avif 2x">
+              srcset="{{ base }}-mobile-1x.avif 1x, {{ base }}-mobile-2x.avif 2x">
             <source type="image/webp"
-              srcset="/img/promo/{{ image.sources.mobile['1x'] }}.webp 1x, /img/promo/{{ image.sources.mobile['2x'] }}.webp 2x">
+              srcset="{{ base }}-mobile-1x.webp 1x, {{ base }}-mobile-2x.webp 2x">
 
             <!-- Fallback -->
-            <img 
-              class="promo__img {{ image.class }}"
-              src="/img/promo/{{ image.sources.mobile['1x'] }}.webp"
+            <img
+              src="{{ base }}-mobile-1x.webp"
               alt="{{ image.alt }}"
-              width="{{ image.width }}"
-              height="{{ image.height }}"
-              loading="lazy">
+              class="promo__img {{ image.class }}"
+              loading="lazy"
+            >
           </picture>
         {% endfor %}
       </div>
