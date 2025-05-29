@@ -1,0 +1,45 @@
+@use "../base/base" as *;
+
+.layout-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main-container {
+  padding-bottom: 64px;
+
+  @include tab {
+    padding-bottom: 120px;
+  }
+}
+
+.section-wrapper {
+  padding-inline: 16px;
+
+  @include tab {
+    padding-inline: 40px;
+  }
+
+  @include desk {
+    padding-inline: 80px;
+  }
+}
+
+.assets.section-wrapper {
+  padding-right: 0;
+
+  @include tab {
+    padding-right: 40px;
+  }
+
+   @include desk {
+    padding-right: 80px;
+  }
+}
+
+.faq.section-wrapper,
+.footer__bottom.section-wrapper {
+  @include tab {
+    padding-inline: 80px;
+  }
+}

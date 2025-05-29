@@ -1,0 +1,69 @@
+@use "../base/base" as *;
+
+.nav {
+  @include text-base($fw: 600);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-color);
+  padding: 16px;
+  
+  // Custom hidden state using [hidden]
+  &[hidden] {
+    opacity: 0;
+    height: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  // Show when not hidden (JS-controlled)
+  &:not([hidden]) {
+    opacity: 1;
+    height: auto;
+    pointer-events: auto;
+  }
+
+  @include tab {
+    @include text-sm($fw: 600);
+    position: static;
+    opacity: 1;
+    height: auto;
+    pointer-events: auto;
+    padding: 0;
+
+    &[hidden] {
+      opacity: 1;
+      height: auto;
+      pointer-events: auto;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @include tab {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    padding: var(--padding-button);
+
+    @include tab {
+      padding: 0;
+    }
+  }
+
+  &__link {
+    color: var(--color-primary);
+    padding: var(--padding-filters);
+  }
+}

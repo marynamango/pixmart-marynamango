@@ -1,0 +1,70 @@
+@use "../base/base" as *;
+
+.header {
+  padding-block: 24px;
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px
+  }
+
+  &__nav-group {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__burger-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    border-radius: 8px;
+
+    @include tab {
+      @include visually-hidden;
+    }
+
+    &-icon,
+    &-icon::before,
+    &-icon::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 18px;
+      background-color: var(--color-icon-white);
+      transition: all 0.3s ease;
+      position: absolute;
+      border-radius: 2px;
+    }
+
+    &-icon::before {
+      top: -6px;
+    }
+
+    &-icon::after {
+      top: 6px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}

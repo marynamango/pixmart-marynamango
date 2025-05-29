@@ -1,4 +1,4 @@
-<article class="articles__item">
+<article class="article-card">
   <a href="{{ article.url }}" class="article-card__media">
     {% if article.badge %}
       {% set badge = article.badge %}
@@ -14,11 +14,11 @@
     />
   </a>
 
-  <h3 class="articles__subtitle">
-    <a href="{{ article.url }}">{{ article.title }}</a>
+  <h3 class="article-card__subtitle">
+    <a class="article-card__link" href="{{ article.url }}">{{ article.title }}</a>
   </h3>
 
-  <time class="articles__date" datetime="{{ article.datetime }}">
+  <time class="article-card__date" datetime="{{ article.datetime }}">
     {{ article.date }}
   </time>
 </article>

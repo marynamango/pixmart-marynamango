@@ -1,0 +1,32 @@
+@use "../base/base" as *;
+
+.pricing {
+  padding-block: 0 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+
+  @include tab {
+    padding-block: 0 120px;
+  }
+
+  .section-header__text {
+    text-align: center;
+  }
+
+  &__plans {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include tab {
+      flex-direction: row;
+      padding-top: 56px;
+    }
+
+    @include desk {
+      padding-top: 32px;
+    }
+  }
+}

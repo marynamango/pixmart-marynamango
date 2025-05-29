@@ -1,0 +1,50 @@
+@use "../base/base" as *;
+
+.pricing-card {
+  padding: 32px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  box-shadow: 0px 4px 40px var(--color-shadow);
+
+  &--highlighted {
+    box-shadow: none;
+    border-color: var(--color-accent);
+    position: relative;
+    margin-bottom: 32px;
+
+    @include tab {
+      transform: translateY(-56px);
+      margin-bottom: 0;
+    }
+
+    @include desk {
+      transform: translateY(-32px);
+    }
+  }
+
+  &__title {
+    @include text-lg($fw: 700, $lh: var(--line-height-lg-short));
+    margin-block: 0 16px;
+  }
+
+  &__price {
+    @include heading-title;
+    margin-block: 0 32px;
+  }
+
+  &__period {
+    @include text-md;
+    opacity: 0.5;
+  }
+
+  &__features {
+    @include text-md;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    padding: 40px 0 40px 32px;
+    border-top: 1px solid rgb(31 50 71 / 0.27);
+  }
+}

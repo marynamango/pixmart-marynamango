@@ -1,5 +1,7 @@
 <section class="products">
-      <div class="products__header">
+
+      <!-- Header has .section-wrapper for consistent padding -->
+      <div class="products__header section-wrapper">
         {% set header = products.header %}
         {% include "partials/components/section-header.njk" %}
         
@@ -10,6 +12,7 @@
         </div>
       </div>
 
+      <!-- Slider needs no right padding, so no wrapper here, modifier instead -->
       <div class="products__slider products__slider--padding">
         {% for product in products.items %}
           {% set item = product %}

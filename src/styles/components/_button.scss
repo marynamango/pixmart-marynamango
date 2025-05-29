@@ -1,0 +1,47 @@
+@use "../base/base" as *;
+
+.button {
+  @include text-base($fw: 600);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: var(--padding-button);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &--primary {
+    color: var(--color-button-white);
+    background-color: var(--color-accent);
+  }
+
+  &--secondary {
+    color: var(--color-primary);
+    border-color: var(--color-border-default);
+    background-color: transparent;
+  }
+
+  &--tertiary {
+    color: var(--color-primary);
+    background-color: var(--background-color);
+  }
+
+  &--only-icon {
+    padding: var(--padding-icon);
+  }
+
+  &--icon-left {
+    gap: 8px;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--tab-hidden {
+    @include tab {
+      display: none;
+    }
+  }
+}

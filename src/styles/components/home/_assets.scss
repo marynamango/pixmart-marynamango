@@ -1,0 +1,30 @@
+@use "../base/base" as *;
+
+.assets {
+  padding-block: 64px;
+
+  @include tab {
+    padding-block: 68px 120px;
+  }
+
+  @include desk {
+    padding-block: 120px;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+    overflow-x: auto;
+
+    @include tab {
+      overflow-x: visible;
+    }
+
+    @include desk {
+      gap: 32px;
+    }
+  }
+}

@@ -1,8 +1,6 @@
 {
   "title": "About",
-  "logo": {
-    "url": null
-  },
+  "disableLogoLink": true,
   "promo": {
     "title": "Craft Your Success with Our <span class=\"promo__highlight\">Digital</span> Assets",
     "description": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
@@ -73,35 +71,39 @@
         "modFirst": "primary"
       }
     },
-    "items": [
-      {
-        "title": "Templates",
-        "icon": "icon-templates",
-        "modifier": "templates",
-        "tags": ["For all needs", "Modern"],
-        "href": "#"
-      },
-      {
-        "title": "App Icons",
-        "icon": "icon-app-icons",
-        "modifier": "app-icons",
-        "tags": ["High-quality", "Elegant"],
-        "href": "#"
-      },
-      {
-        "title": "Slides",
-        "icon": "icon-slides",
-        "modifier": "slides",
-        "tags": ["Pitch-ready", "Creative"],
-        "href": "#"
-      },
-      {
-        "title": "Design Tools",
-        "icon": "icon-design-tools",
-        "modifier": "design-tools",
-        "tags": ["Easy to use", "Unique"],
-        "href": "#"
-      }
+    "columns": [
+      [
+        {
+          "title": "Templates",
+          "icon": "icon-templates",
+          "modifier": "templates",
+          "tags": ["For all needs", "Modern"],
+          "href": "#"
+        },
+        {
+          "title": "Slides",
+          "icon": "icon-slides",
+          "modifier": "slides",
+          "tags": ["Pitch-ready", "Creative"],
+          "href": "#"
+        }
+      ],
+      [
+        {
+          "title": "App Icons",
+          "icon": "icon-app-icons",
+          "modifier": "app-icons",
+          "tags": ["High-quality", "Elegant"],
+          "href": "#"
+        },
+        {
+          "title": "Design Tools",
+          "icon": "icon-design-tools",
+          "modifier": "design-tools",
+          "tags": ["Easy to use", "Unique"],
+          "href": "#"
+        }
+      ]
     ]
   },
   "products": {
@@ -144,7 +146,8 @@
           "text": "Go to product",
           "url": "#",
           "modFirst": "primary",
-          "modSecond": "overlay"
+          "modSecond": "overlay",
+          "modThird": "full"
         }
       },
       {
@@ -165,7 +168,8 @@
           "text": "Go to product",
           "url": "#",
           "modFirst": "primary",
-          "modSecond": "overlay"
+          "modSecond": "overlay",
+          "modThird": "full"
         }
       },
       {
@@ -181,7 +185,8 @@
           "text": "Go to product",
           "url": "#",
           "modFirst": "primary",
-          "modSecond": "overlay"
+          "modSecond": "overlay",
+          "modThird": "full"
         }
       },
       {
@@ -197,7 +202,8 @@
           "text": "Go to product",
           "url": "#",
           "modFirst": "primary",
-          "modSecond": "overlay"
+          "modSecond": "overlay",
+          "modThird": "full"
         }
       }
     ]
@@ -221,6 +227,7 @@
         "button": {
           "text": "Subscribe",
           "modFirst": "secondary",
+          "modSecond": "full",
           "url": "#"
         }
       },
@@ -243,6 +250,7 @@
         "button": {
           "text": "Subscribe",
           "modFirst": "primary",
+          "modSecond": "full",
           "url": "#"
         }
       },
@@ -259,6 +267,7 @@
         "button": {
           "text": "Subscribe",
           "modFirst": "secondary",
+          "modSecond": "full",
           "url": "#"
         }
       }
