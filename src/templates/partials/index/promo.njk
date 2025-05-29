@@ -18,7 +18,7 @@
     <div class="promo__visual">
       <div class="promo__images">
         {% for image in promo.images %}
-          <picture class="promo__image {{ image.class }}">
+          <picture>
             <!-- Desktop -->
             <source media="(min-width: 1024px)" type="image/avif"
               srcset="/img/promo/{{ image.sources.desktop['1x'] }}.avif 1x, /img/promo/{{ image.sources.desktop['2x'] }}.avif 2x">
@@ -38,7 +38,13 @@
               srcset="/img/promo/{{ image.sources.mobile['1x'] }}.webp 1x, /img/promo/{{ image.sources.mobile['2x'] }}.webp 2x">
 
             <!-- Fallback -->
-            <img src="/img/promo/{{ image.sources.mobile['1x'] }}.webp" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}" loading="lazy">
+            <img 
+              class="promo__img {{ image.class }}"
+              src="/img/promo/{{ image.sources.mobile['1x'] }}.webp"
+              alt="{{ image.alt }}"
+              width="{{ image.width }}"
+              height="{{ image.height }}"
+              loading="lazy">
           </picture>
         {% endfor %}
       </div>

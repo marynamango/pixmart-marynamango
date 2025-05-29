@@ -27,7 +27,7 @@
       {
         "key": "about",
         "alt": "About Eventify platform",
-        "class": "promo__image--about",
+        "class": "promo__img--about",
         "width": 131,
         "height": 197,
         "sources": {
@@ -48,7 +48,7 @@
       {
         "key": "program",
         "alt": "Event program and pricing",
-        "class": "promo__image--program",
+        "class": "promo__img--program",
         "width": 171,
         "height": 96,
         "sources": {
@@ -69,7 +69,7 @@
       {
         "key": "screens",
         "alt": "Screens for event website",
-        "class": "promo__image--screens",
+        "class": "promo__img--screens",
         "width": 242,
         "height": 140,
         "sources": {
