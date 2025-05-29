@@ -76,14 +76,14 @@
       [
         {
           "title": "Templates",
-          "icon": "icon-templates",
+          "icon": "ui-kits",
           "modifier": "templates",
           "tags": ["For all needs", "Modern"],
           "href": "#"
         },
         {
           "title": "Slides",
-          "icon": "icon-slides",
+          "icon": "presentation",
           "modifier": "slides",
           "tags": ["Pitch-ready", "Creative"],
           "href": "#"
@@ -92,14 +92,14 @@
       [
         {
           "title": "App Icons",
-          "icon": "icon-app-icons",
+          "icon": "social-media",
           "modifier": "app-icons",
           "tags": ["High-quality", "Elegant"],
           "href": "#"
         },
         {
           "title": "Design Tools",
-          "icon": "icon-design-tools",
+          "icon": "illustrations",
           "modifier": "design-tools",
           "tags": ["Easy to use", "Unique"],
           "href": "#"
