@@ -12,7 +12,12 @@
 
   <ul class="pricing-card__features">
     {% for benefit in item.benefits %}
-      <li class="pricing-card__benefit">{{ benefit }}</li>
+      <li class="pricing-card__benefit">
+        <svg class="pricing-card__icon icon--accent" aria-hidden="true" focusable="false">
+          <use href="/img/sprite.svg#check"></use>
+        </svg>
+        {{ benefit }}
+      </li>
     {% endfor %}
   </ul>
 
