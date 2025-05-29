@@ -22,6 +22,7 @@
       "buttonClass": "button button--secondary button--only-icon button--tab-hidden",
       "buttonType": "submit",
       "icon": "search",
+      "iconClass": "icon--black",
       "ariaLabel": "Search"
     },
     "button": {
