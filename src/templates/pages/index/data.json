@@ -25,19 +25,25 @@
     ],
     "images": [
       {
-        "src": "#",
+        "key": "about",
         "alt": "About Eventify platform",
-        "class": "promo__image--about"
+        "class": "promo__img--about",
+        "folder": "promo",
+        "basename": "eventify-about"
       },
       {
-        "src": "#",
+        "key": "program",
         "alt": "Event program and pricing",
-        "class": "promo__image--program"
+        "class": "promo__img--program",
+        "folder": "promo",
+        "basename": "eventify-program"
       },
       {
-        "src": "#",
+        "key": "screens",
         "alt": "Screens for event website",
-        "class": "promo__image--screens"
+        "class": "promo__img--screens",
+        "folder": "promo",
+        "basename": "eventify-screens"
       }
     ],
     "icons": [
@@ -132,15 +138,16 @@
       {
         "url": "#",
         "badge": {
-          "icon": {
-            "name": "trophy"
-          },
+          "icon": { "name": "trophy" },
           "modFirst": "icon",
           "modSecond": "ribbon"
         },
         "image": {
-          "src": "img/travel-hero.webp",
-          "alt": "Travel page template"
+          "folder": "products",
+          "basename": "travel-hero",
+          "alt": "Travel page template",
+          "width": 305,
+          "height": 272
         },
         "title": "Travel Hero",
         "price": "€29.99",
@@ -156,15 +163,16 @@
       {
         "url": "#",
         "badge": {
-          "icon": {
-            "name": "trophy"
-          },
+          "icon": { "name": "trophy" },
           "modFirst": "icon",
           "modSecond": "ribbon"
         },
         "image": {
-          "src": "img/healthcare-pro.webp",
-          "alt": "Healthcare page template"
+          "folder": "products",
+          "basename": "healthcare-pro",
+          "alt": "Healthcare page template",
+          "width": 305,
+          "height": 272
         },
         "title": "Healthcare Pro",
         "price": "€15.99",
@@ -180,8 +188,11 @@
       {
         "url": "#",
         "image": {
-          "src": "img/foodish-delight.webp",
-          "alt": "Foodish page template"
+          "folder": "products",
+          "basename": "foodish-delight",
+          "alt": "Foodish page template",
+          "width": 305,
+          "height": 272
         },
         "title": "Foodish Delight",
         "price": "€31.99",
@@ -197,8 +208,11 @@
       {
         "url": "#",
         "image": {
-          "src": "img/real-estate.webp",
-          "alt": "Real Estate page template"
+          "folder": "products",
+          "basename": "real-estate",
+          "alt": "Real Estate page template",
+          "width": 305,
+          "height": 272
         },
         "title": "Real Estate",
         "price": "€40.99",
@@ -336,10 +350,8 @@
           "modFirst": "round"
         },
         "image": {
-          "src": "img/creative-blog-1x.webp",
-          "alt": "Creative blog article",
-          "width": 624,
-          "height": 702
+          "basename": "creative-blog",
+          "alt": "Creative blog article"
         }
       },
       {
@@ -351,10 +363,8 @@
           "modFirst": "round"
         },
         "image": {
-          "src": "img/best-dishes-1x.webp",
-          "alt": "Best dishes article",
-          "width": 624,
-          "height": 702
+          "basename": "best-dishes",
+          "alt": "Best dishes article"
         }
       }
     ]

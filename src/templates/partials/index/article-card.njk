@@ -5,13 +5,34 @@
       {% include "partials/components/badge.njk" %}
     {% endif %}
 
-    <img
-      src="{{ article.image.src }}"
-      alt="{{ article.image.alt }}"
-      width="{{ article.image.width }}"
-      height="{{ article.image.height }}"
-      loading="lazy"
-    />
+    {% set base = "/img/articles/" + article.image.basename %}
+    <picture>
+      <!-- Desktop -->
+      <source media="(min-width: 1025px)" type="image/avif"
+        srcset="{{ base }}-desktop-1x.avif 1x, {{ base }}-desktop-2x.avif 2x">
+      <source media="(min-width: 1025px)" type="image/webp"
+        srcset="{{ base }}-desktop-1x.webp 1x, {{ base }}-desktop-2x.webp 2x">
+
+      <!-- Tablet -->
+      <source media="(min-width: 441px)" type="image/avif"
+        srcset="{{ base }}-tab-1x.avif 1x, {{ base }}-tab-2x.avif 2x">
+      <source media="(min-width: 441px)" type="image/webp"
+        srcset="{{ base }}-tab-1x.webp 1x, {{ base }}-tab-2x.webp 2x">
+
+      <!-- Mobile -->
+      <source type="image/avif"
+        srcset="{{ base }}-mobile-1x.avif 1x, {{ base }}-mobile-2x.avif 2x">
+      <source type="image/webp"
+        srcset="{{ base }}-mobile-1x.webp 1x, {{ base }}-mobile-2x.webp 2x">
+
+      <!-- Fallback -->
+      <img
+        src="{{ base }}-mobile-1x.webp"
+        alt="{{ article.image.alt }}"
+        loading="lazy"
+        class="article-card__img"
+      >
+    </picture>
   </a>
 
   <h3 class="article-card__subtitle">

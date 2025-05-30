@@ -18,7 +18,34 @@
     <div class="promo__visual">
       <div class="promo__images">
         {% for image in promo.images %}
-          <img src="{{ image.src }}" alt="{{ image.alt }}" class="promo__image {{ image.class }}">
+          {% set base = "/img/" + image.folder + "/" + image.basename %}
+          <picture>
+            <!-- Desktop -->
+            <source media="(min-width: 1025px)" type="image/avif"
+              srcset="{{ base }}-desktop-1x.avif 1x, {{ base }}-desktop-2x.avif 2x">
+            <source media="(min-width: 1025px)" type="image/webp"
+              srcset="{{ base }}-desktop-1x.webp 1x, {{ base }}-desktop-2x.webp 2x">
+
+            <!-- Tablet -->
+            <source media="(min-width: 441px)" type="image/avif"
+              srcset="{{ base }}-tab-1x.avif 1x, {{ base }}-tab-2x.avif 2x">
+            <source media="(min-width: 441px)" type="image/webp"
+              srcset="{{ base }}-tab-1x.webp 1x, {{ base }}-tab-2x.webp 2x">
+
+            <!-- Mobile -->
+            <source type="image/avif"
+              srcset="{{ base }}-mobile-1x.avif 1x, {{ base }}-mobile-2x.avif 2x">
+            <source type="image/webp"
+              srcset="{{ base }}-mobile-1x.webp 1x, {{ base }}-mobile-2x.webp 2x">
+
+            <!-- Fallback -->
+            <img
+              src="{{ base }}-mobile-1x.webp"
+              alt="{{ image.alt }}"
+              class="promo__img {{ image.class }}"
+              loading="lazy"
+            >
+          </picture>
         {% endfor %}
       </div>
 
