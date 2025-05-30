@@ -1,0 +1,47 @@
+@use "../base/base" as *;
+
+.badge {
+  display: inline-flex;
+  position: absolute;
+  @include text-md($fw: 500);
+  background-color: var(--color-accent);
+  color: var(--color-button-white);
+
+  &--ribbon {
+    border-radius: 0 20px 0 20px;
+    top: 0;
+    right: 0;
+  }
+
+  &--icon {
+    padding: 16px;
+  }
+
+  &--bestseller {
+    @include text-lg($fw: 700, $lh: 26px);
+    padding: 7px 24px;
+    color: var(--background-color);
+    text-transform: uppercase;
+    top: -2px;
+    right: -2px;
+  }
+
+  &--round {
+    padding: 8px 16px;
+    border-radius: 100px;
+  }
+
+  &--catalog {
+    top: 16px;
+    left: 16px;
+  }
+
+  &--new {
+    background-color: var(--background-label-new);
+  }
+
+  &--soldout {
+    color: var(--color-muted-light);
+    background-color: var(--background-color);
+  }
+}
