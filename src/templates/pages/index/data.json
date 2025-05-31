@@ -294,6 +294,7 @@
   },
   "faq": {
     "header": {
+      "class": "faq__header",
       "label": "F.A.Q",
       "title": "Answers to Your Questions",
       "button": {

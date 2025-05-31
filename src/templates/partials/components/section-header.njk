@@ -1,4 +1,4 @@
-<div class="section-header">
+<div class="section-header{% if headerClass %} {{ headerClass }}{% endif %}">
   <div class="section-header__text">
     {% if header.label %}
       <span class="section-header__label">{{ header.label }}</span>
