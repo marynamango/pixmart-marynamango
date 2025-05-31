@@ -11,15 +11,27 @@
     flex-direction: row-reverse;
   }
 
+  &__header {
+    @include tab {
+      width: calc(50% - 32px);
+    }
+  }
+
   &__container {
     display: flex;
     gap: 20px;
+
+    @include tab {
+      width: calc(50% - 32px);
+    }
   }
 
   &__column {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
+    overflow: hidden;
   }
 
   &__column:last-child::before {

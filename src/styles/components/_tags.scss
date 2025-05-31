@@ -3,28 +3,30 @@
 .tags {
   @include text-md;
   color: var(--color-muted-light);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  white-space: nowrap;
+  display: block;
+  max-width: 100%;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 
   @include tab {
-    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: unset;
   }
 
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: var(--color-muted-light);
-  }
+  &__text {
+    display: inline;
 
-  &__text:first-child {
-    order: -1;
+    &:not(:first-child)::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      margin-inline: 8px;
+      background-color: var(--color-muted-light);
+      vertical-align: middle;
+    }
   }
 }

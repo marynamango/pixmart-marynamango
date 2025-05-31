@@ -69,6 +69,7 @@
   },
   "categories": {
     "header": {
+      "class": "categories__header",
       "label": "Categories",
       "title": "Discover Assets for Every Projects",
       "description": "From fonts and icons to mockups and templates, our comprehensive categories ensure that you find exactly what you need to your projects.",
