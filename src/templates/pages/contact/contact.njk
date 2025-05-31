@@ -2,5 +2,140 @@
 
 {% block content %}
   <main class="main-container">
+    <section class="contact section-wrapper">
+      <h2 class="sr-only">Send us a message</h2>
+      <div class="contact__layout">
+        <div class="contact-info">
+          <div class="contact-info__header">
+            <span class="contact-info__label">Contact</span>
+            <h1 class="contact-info__title">Get in Touch with Us</h1>
+            <p class="contact-info__desc">We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback.</p>
+          </div>
+          <a href="products.html" class="button button--primary">Shop Now</a>
+          <ul class="contact-info__list">
+            <li class="contact-info__item">
+              <svg class="icon icon--accent" aria-hidden="true" focusable="false">
+                <use href="/img/sprite.svg#phone.svg"></use>
+              </svg>
+              <a class="contact-info__info" href="tel:+15551234567">+1 (555) 123-4567</a>
+            </li>
+            <li class="contact-info__item">
+              <svg class="icon icon--accent" aria-hidden="true" focusable="false">
+                <use href="/img/sprite.svg#mail.svg"></use>
+              </svg>
+              <a class="contact-info__info" href="mailto:support@pixmart.com">support@pixmart.com</a>
+            </li>
+            <li class="contact-info__item">
+              <svg class="icon icon--accent" aria-hidden="true" focusable="false">
+                <use href="/img/sprite.svg#time.svg"></use>
+              </svg>
+              <span class="contact-info__info">Monday to Friday: 9 AM - 5 PM EST</span>
+            </li>
+          </ul>
+          <div class="contact-map">
+            <picture class="contact-map__image-wrapper">
+              <source srcset="/img/map.webp" type="image/webp" />
+              <img
+                class="contact-map__image"
+                src="/img/map.png"
+                alt="Map showing location of PixMart HQ at 123 Creative Ave, Design City" 
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="contact-map__marker">
+              <svg class="icon icon--accent" aria-hidden="true" focusable="false">
+                <use href="/img/sprite.svg#marker-pin.svg"></use>
+              </svg>
+              <div class="contact-map__text">
+                <h2 class="contact-map__title">PixMart HQ</h2>
+                <p class="contact-map__address">123 Creative Ave, Design City, 45678</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="url" method="post">
+          <div class="contact-form__item">
+            <label class="contact-form__label" for="name">Full Name</label>
+            <input
+              class="contact-form__input"
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Amelia Robert Johnson"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="contact-form__item">
+            <label class="contact-form__label" for="email">Email Address</label>
+            <input
+              class="contact-form__input"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="amelia.robertjohnson@pixmart.com"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            />
+          </div>
+
+          <div class="contact-form__item">
+            <label for="subject" class="contact-form__label">Subject</label>
+            <select id="subject" name="subject" class="contact-form__select">
+              <option value="" disabled selected hidden>Select a subject</option>
+              <option value="general">General Inquiry</option>
+              <option value="billing">Billing</option>
+              <option value="support">Support</option>
+              <option value="quality">Services quality</option>
+              <option value="refund">Refund</option>
+            </select>
+            <svg class="icon contact-form__icon" aria-hidden="true" focusable="false">
+              <use href="/img/sprite.svg#chevron-left"></use>
+            </svg>
+          </div>
+
+          <div class="contact-form__item">
+            <label class="contact-form__label" for="message">Message</label>
+            <textarea
+              class="contact-form__input"
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Enter your message..."
+              required>
+            </textarea>
+          </div>
+
+          <div class="contact-form__footer">
+            <div class="contact-form__checkbox-wrapper">
+              <input
+                class="visually-hidden checkbox-input"
+                type="checkbox"
+                name="subscribe"
+                value="agree"
+                id="subscribe"
+              />
+              <label class="checkbox-label" for="subscribe">
+                Subscribe me to Newsletter
+              </label>
+              <input
+                class="visually-hidden checkbox-input"
+                type="checkbox"
+                name="terms"
+                value="agree"
+                id="terms"
+                required
+              />
+              <label class="checkbox-label" for="terms">
+                I have read the User & Privacy Policy
+              </label>
+            </div>
+            <button type="submit" class="button button--primary contact-form__button">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 {% endblock %}
