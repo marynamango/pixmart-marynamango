@@ -1,80 +1,51 @@
-<form class="contact-form" action="url" method="post">
+<form class="contact-form" action="{{ contact.form.action }}" method="post">
+  {% for field in contact.form.fields %}
+    {% set input = field %}
+    {% if input.type == "textarea" %}
+      <div class="contact-form__item">
+        <label class="form-label" for="{{ input.id }}">{{ input.label }}</label>
+        <textarea
+          class="contact-form__input"
+          id="{{ input.id }}"
+          name="{{ input.id }}"
+          rows="{{ input.rows | default(5) }}"
+          {% if input.required %}required{% endif %}>
+        </textarea>
+      </div>
+    {% else %}
+      <div class="contact-form__item">
+        <label class="form-label" for="{{ input.id }}">{{ input.label }}</label>
+        <input
+          class="contact-form__input"
+          id="{{ input.id }}"
+          type="{{ input.type }}"
+          name="{{ input.id }}"
+          placeholder="{{ input.placeholder }}"
+          {% if input.required %}required{% endif %}
+          {% if input.minlength %}minlength="{{ input.minlength }}"{% endif %}
+          {% if input.min %}min="{{ input.min }}"{% endif %}
+          {% if input.max %}max="{{ input.max }}"{% endif %}
+          {% if input.pattern %}pattern="{{ input.pattern | safe }}"{% endif %}
+        />
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  {% set terms = contact.form.terms %}
   <div class="contact-form__item">
-    <label class="contact-form__label" for="name">Full Name</label>
     <input
-      class="contact-form__input"
-      id="name"
-      type="text"
-      name="name"
-      placeholder="Amelia Robert Johnson"
-      required
-      minlength="2"
-    />
-  </div>
-  <div class="contact-form__item">
-    <label class="contact-form__label" for="email">Email Address</label>
-    <input
-      class="contact-form__input"
-      id="email"
-      type="email"
-      name="email"
-      placeholder="amelia.robertjohnson@pixmart.com"
-      required
-      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-    />
+      class="visually-hidden checkbox-input"
+      type="checkbox"
+      name="{{ terms.id }}"
+      value="agree"
+      id="{{ terms.id }}"
+      required/>
+    <label class="form-label checkbox-label" for="{{ terms.id }}">
+      {{ terms.label }}
+      <a class="link-highlight" href="{{ terms.linkUrl }}">{{ terms.linkText }}</a>
+    </label>
   </div>
 
-  <div class="contact-form__item">
-    <label for="subject" class="contact-form__label">Subject</label>
-    <select id="subject" name="subject" class="contact-form__select">
-      <option value="" disabled selected hidden>Select a subject</option>
-      <option value="general">General Inquiry</option>
-      <option value="billing">Billing</option>
-      <option value="support">Support</option>
-      <option value="quality">Services quality</option>
-      <option value="refund">Refund</option>
-    </select>
-    <svg class="icon contact-form__icon" aria-hidden="true" focusable="false">
-      <use href="/img/sprite.svg#chevron-left"></use>
-    </svg>
-  </div>
-
-  <div class="contact-form__item">
-    <label class="contact-form__label" for="message">Message</label>
-    <textarea
-      class="contact-form__input"
-      id="message"
-      name="message"
-      rows="5"
-      placeholder="Enter your message..."
-      required>
-    </textarea>
-  </div>
-
-  <div class="contact-form__footer">
-    <div class="contact-form__checkbox-wrapper">
-      <input
-        class="visually-hidden checkbox-input"
-        type="checkbox"
-        name="subscribe"
-        value="agree"
-        id="subscribe"
-      />
-      <label class="checkbox-label" for="subscribe">
-        Subscribe me to Newsletter
-      </label>
-      <input
-        class="visually-hidden checkbox-input"
-        type="checkbox"
-        name="terms"
-        value="agree"
-        id="terms"
-        required
-      />
-      <label class="checkbox-label" for="terms">
-        I have read the User & Privacy Policy
-      </label>
-    </div>
-    <button type="submit" class="button button--primary contact-form__button">Send Message</button>
-  </div>
+  {% set button = contact.form.button %}
+  {% include "partials/components/button.njk" %}
 </form>
