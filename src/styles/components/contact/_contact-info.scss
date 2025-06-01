@@ -61,6 +61,7 @@
     display: flex;
     gap: 16px;
     align-items: center;
+    box-shadow: 0px 4px 40px var(--color-shadow);
   }
 
   &__map-title {
@@ -76,6 +77,7 @@
 }
 
 .contact-info .button {
-  width: auto;
-  align-self: start;
+  align-self: flex-start;
+  padding: 18px;
+  @include text-md($fw: 600);
 }

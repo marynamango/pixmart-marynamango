@@ -15,15 +15,20 @@
     {% elseif input.type == "select" %}
       <div class="contact-form__item">
         <label for="{{ input.id }}" class="contact-form__label">{{ input.label }}</label>
-        <select id="{{ input.id }}" name="{{ input.id }}" class="contact-form__select" {% if input.required %}required{% endif %}>
-          <option value="" disabled selected hidden>{{ input.placeholder }}</option>
-          {% for option in input.options %}
-            <option value="{{ option | lower | replace(' ', '-') }}">{{ option }}</option>
-          {% endfor %}
-        </select>
-        <svg class="icon contact-form__icon" aria-hidden="true" focusable="false">
-          <use href="/img/sprite.svg#chevron-left"></use>
-        </svg>
+        <div class="contact-form__select-wrapper">
+          <select id="{{ input.id }}" name="{{ input.id }}" class="contact-form__select" {% if input.required %}required{% endif %}>
+            {% for option in input.options %}
+              <option 
+                value="{{ option | lower | replace(' ', '-') }}"
+                {% if loop.first %}selected{% endif %}>
+                {{ option }}
+              </option>
+            {% endfor %}
+          </select>
+          <svg class="icon contact-form__arrow" aria-hidden="true" focusable="false">
+            <use href="/img/sprite.svg#chevron-left"></use>
+          </svg>
+        </div>
       </div>
     {% else %}
       <div class="contact-form__item">
