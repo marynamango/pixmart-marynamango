@@ -63,24 +63,37 @@
         {
           "id": "subject",
           "label": "Subject",
-          "type": "text",
-          "placeholder": "e.g. General Inquiry",
-          "required": true
+          "type": "select",
+          "placeholder": "Select a subject",
+          "required": true,
+          "options": [
+            "General Inquiry",
+            "Billing",
+            "Support",
+            "Services quality",
+            "Refund"
+          ]
         },
         {
           "id": "message",
           "label": "Message",
           "type": "textarea",
-          "rows": 5,
+          "required": true,
+          "rows": 5
+        }
+      ],
+      "checkboxes": [
+        {
+          "id": "subscribe",
+          "label": "Subscribe me to Newsletter",
+          "required": false
+        },
+        {
+          "id": "terms",
+          "label": "I have read the User & Privacy Policy",
           "required": true
         }
       ],
-      "terms": {
-        "id": "terms",
-        "label": "I have read the User & Privacy Policy",
-        "linkText": "Read here",
-        "linkUrl": "/privacy-policy.html"
-      },
       "button": {
         "text": "Send Message",
         "typeAttr": "submit",
