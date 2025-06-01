@@ -1,0 +1,16 @@
+@use "../base/base" as *;
+
+.contact {
+  padding-block: 64px 0;
+
+  &__layout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include tab {
+      flex-direction: row;
+      gap: 40px;
+    }
+  }
+}
