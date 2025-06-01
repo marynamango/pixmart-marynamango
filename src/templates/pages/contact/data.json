@@ -1,0 +1,104 @@
+{
+  "title": "Contact",
+  "contact": {
+    "intro": {
+      "label": "Contact",
+      "title": "Get in Touch with Us",
+      "description": "We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback.",
+      "button": {
+        "text": "Shop Now",
+        "url": "products.html",
+        "modFirst": "primary"
+      }
+    },
+    "info": {
+      "items": [
+        {
+          "icon": "phone",
+          "value": "+1 (555) 123-4567",
+          "href": "tel:+15551234567"
+        },
+        {
+          "icon": "mail",
+          "value": "support@pixmart.com",
+          "href": "mailto:support@pixmart.com"
+        },
+        {
+          "icon": "clock",
+          "value": "Monday to Friday: 9 AM - 5 PM EST"
+        }
+      ]
+    },
+    "map": {
+      "picture": {
+        "basename": "map",
+        "alt": "Map showing location of PixMart HQ at 123 Creative Ave, Design City",
+        "class": "contact-map__image",
+        "width": "",
+        "height": ""
+      },
+      "icon": "location-pin",
+      "textPrimary": "PixMart HQ",
+      "textSecondary": "123 Creative Ave, Design City, 45678"
+    },
+    "form": {
+      "action": "#",
+      "fields": [
+        {
+          "id": "name",
+          "label": "Full Name",
+          "type": "text",
+          "placeholder": "Amelia Robert Johnson",
+          "required": true,
+          "minlength": 2
+        },
+        {
+          "id": "email",
+          "label": "Email Address",
+          "type": "email",
+          "placeholder": "amelia.robertjohnson@pixmart.com",
+          "required": true,
+          "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+        },
+        {
+          "id": "subject",
+          "label": "Subject",
+          "type": "select",
+          "placeholder": "Select a subject",
+          "required": true,
+          "options": [
+            "General Inquiry",
+            "Billing",
+            "Support",
+            "Services quality",
+            "Refund"
+          ]
+        },
+        {
+          "id": "message",
+          "label": "Message",
+          "type": "textarea",
+          "required": true,
+          "rows": 5
+        }
+      ],
+      "checkboxes": [
+        {
+          "id": "subscribe",
+          "label": "Subscribe me to Newsletter",
+          "required": false
+        },
+        {
+          "id": "terms",
+          "label": "I have read the User & Privacy Policy",
+          "required": true
+        }
+      ],
+      "button": {
+        "text": "Send Message",
+        "typeAttr": "submit",
+        "modFirst": "primary"
+      }
+    }
+  }
+}

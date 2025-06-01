@@ -7,10 +7,10 @@
     },
     "nav": [
       { "href": "/", "text": "About" },
-      { "href": "/products", "text": "Products" },
-      { "href": "/creators", "text": "Creators" },
-      { "href": "/blog", "text": "Blog" },
-      { "href": "/contact", "text": "Contact" }
+      { "href": "products.html", "text": "Products" },
+      { "href": "creators.html", "text": "Creators" },
+      { "href": "blog.html", "text": "Blog" },
+      { "href": "contact.html", "text": "Contact" }
     ],
     "search": {
       "class": "search search--header",
@@ -53,7 +53,7 @@
           { "text": "Homepage v3", "href": "/" },
           { "text": "About Us", "href": "/" },
           { "text": "About Us", "href": "/" },
-          { "text": "Blog Articles", "href": "/blog" }
+          { "text": "Blog Articles", "href": "blog.html" }
         ]
       },
       {
@@ -63,7 +63,7 @@
           { "text": "Mobile App", "href": "/" },
           { "text": "Social Media Feeds", "href": "/" },
           { "text": "Presentation", "href": "/" },
-          { "text": "Product Mockups", "href": "/products" },
+          { "text": "Product Mockups", "href": "products.html" },
           { "text": "Illustrations", "href": "/" }
         ]
       },
@@ -74,7 +74,7 @@
           { "text": "Check Out", "href": "#" },
           { "text": "Refund Policy", "href": "#" },
           { "text": "Company Policy", "href": "#" },
-          { "text": "Send A Message", "href": "/contact" },
+          { "text": "Send A Message", "href": "contact.html" },
           { "text": "Customer Support", "href": "#" }
         ]
       }
