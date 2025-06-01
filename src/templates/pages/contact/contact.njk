@@ -3,7 +3,7 @@
 {% block content %}
   <main class="main-container">
     <section class="contact section-wrapper">
-      <h2 class="sr-only">Send us a message</h2>
+      <h2 class="sr-only">{{ contact.heading }}</h2>
       <div class="contact__layout">
         {% include "partials/contact/contact-info.njk" %}
         {% include "partials/contact/contact-form.njk" %}
