@@ -22,6 +22,12 @@
     color: var(--color-muted);
   }
 
+  &__button {
+    align-self: flex-start;
+    padding: var(--padding-icon-big);
+    @include text-md($fw: 600);
+  }
+
   &__list {
     margin-block: 0 16px;
     padding: 0;
@@ -74,10 +80,4 @@
     color: var(--color-muted);
     margin-block: 0;
   }
-}
-
-.contact-info .button {
-  align-self: flex-start;
-  padding: 18px;
-  @include text-md($fw: 600);
 }

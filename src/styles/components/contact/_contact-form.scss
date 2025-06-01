@@ -70,15 +70,15 @@
     flex-direction: column;
     gap: 6px;
   }
+
+  &__button {
+    align-self: flex-start;
+    padding: var(--padding-button-lg);
+    @include text-md($fw: 600);
+  }
 }
 
 textarea.contact-form__input {
   min-height: 180px;
   resize: none;
-}
-
-.contact-form .button {
-  align-self: flex-start;
-  padding: var(--padding-button-lg);
-  @include text-md($fw: 600);
 }

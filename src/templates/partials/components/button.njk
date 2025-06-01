@@ -2,6 +2,7 @@
 {% if button.modFirst %}{% set classes = classes + " button--" + button.modFirst %}{% endif %}
 {% if button.modSecond %}{% set classes = classes + " button--" + button.modSecond %}{% endif %}
 {% if button.modThird %}{% set classes = classes + " button--" + button.modThird %}{% endif %}
+{% if button.extraClass %}{% set classes = classes + " " + button.extraClass %}{% endif %}
 
 {% if button.url %}
     <a
