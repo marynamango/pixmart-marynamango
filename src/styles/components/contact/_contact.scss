@@ -14,6 +14,21 @@
       flex-direction: row;
       gap: 40px;
       align-items: flex-end;
+
+      & > .contact-info,
+      & > .contact-form {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @include desk {
+      & > .contact-form {
+        flex: 0 0 622px;
+      }
+
+      & > .contact-info {
+        flex: 1 1 auto;
+      }
     }
   }
 }
