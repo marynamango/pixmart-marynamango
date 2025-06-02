@@ -1,0 +1,89 @@
+@use "../base/base" as *;
+
+.contact-form {
+  background-color: var(--background-color);
+  color: var(--color-primary);
+  padding: 32px;
+  box-shadow: 0px 4px 40px var(--color-shadow);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__item:last-of-type {
+    margin-bottom: 4px;
+  }
+
+  &__label {
+    @include text-sm;
+    padding-block: 2px;
+  }
+
+  &__input {
+    @include text-md;
+    border: 1px solid var(--color-border-default);
+    padding: 20px;
+    border-radius: 8px;
+
+    &::placeholder {
+      color: var(--color-muted-light);
+    }
+  }
+
+  &__select {
+    @include text-md;
+    color: var(--color-primary);
+    border: 1px solid var(--color-border-default);
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    appearance: none;
+    width: 100%;
+  }
+
+  &__select-wrapper {
+    position: relative;
+    display: block;
+
+    &:focus-within .contact-form__arrow {
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%)  rotate(270deg);
+    transition: transform 0.3s ease;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__checkbox-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__button {
+    align-self: flex-start;
+    padding: var(--padding-button-lg);
+    @include text-md($fw: 600);
+  }
+}
+
+textarea.contact-form__input {
+  min-height: 180px;
+  resize: none;
+}

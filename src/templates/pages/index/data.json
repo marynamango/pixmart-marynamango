@@ -146,6 +146,8 @@
         "image": {
           "folder": "products",
           "basename": "travel-hero",
+          "pictureClass": "product-card__picture",
+          "class": "product-card__img",
           "alt": "Travel page template",
           "width": 305,
           "height": 272
@@ -171,6 +173,8 @@
         "image": {
           "folder": "products",
           "basename": "healthcare-pro",
+          "pictureClass": "product-card__picture",
+          "class": "product-card__img",
           "alt": "Healthcare page template",
           "width": 305,
           "height": 272
@@ -191,6 +195,8 @@
         "image": {
           "folder": "products",
           "basename": "foodish-delight",
+          "pictureClass": "product-card__picture",
+          "class": "product-card__img",
           "alt": "Foodish page template",
           "width": 305,
           "height": 272
@@ -211,6 +217,8 @@
         "image": {
           "folder": "products",
           "basename": "real-estate",
+          "pictureClass": "product-card__picture",
+          "class": "product-card__img",
           "alt": "Real Estate page template",
           "width": 305,
           "height": 272

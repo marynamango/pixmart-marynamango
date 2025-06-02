@@ -25,5 +25,6 @@
 
   &__button {
     padding: var(--padding-button-lg);
+    @include text-md($fw: 600);
   }
 }

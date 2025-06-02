@@ -23,7 +23,7 @@
     {% endfor %}
   </ul>
 
-  <div class="contact-map">
+  <div class="contact-info__map">
     {% set picture = contact.map.picture %}
     {% set folder = picture.folder %}
     {% set basename = picture.basename %}
@@ -33,13 +33,13 @@
     {% set height = picture.height %}
     {% include "partials/components/picture.njk" %}
 
-    <div class="contact-map__marker">
+    <div class="contact-info__map-info">
       <svg class="icon icon--accent" aria-hidden="true" focusable="false">
         <use href="/img/sprite.svg#{{ contact.map.icon }}"></use>
       </svg>
-      <div class="contact-map__text">
-        <h2 class="contact-map__title">{{ contact.map.textPrimary }}</h2>
-        <p class="contact-map__address">{{ contact.map.textSecondary }}</p>
+      <div class="contact-info__map-text">
+        <h2 class="contact-info__map-title">{{ contact.map.textPrimary }}</h2>
+        <p class="contact-info__map-address">{{ contact.map.textSecondary }}</p>
       </div>
     </div>
   </div>

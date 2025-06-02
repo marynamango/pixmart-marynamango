@@ -14,6 +14,7 @@
 @use "../components/footer-legal";
 @use "../components/social";
 @use "../components/newsletter";
+@use "../components/checkbox";
 @use "../components/home/promo";
 @use "../components/home/assets";
 @use "../components/home/assets-card";
@@ -26,3 +27,6 @@
 @use "../components/home/faq";
 @use "../components/home/articles";
 @use "../components/home/article-card";
+@use "../components/contact/contact";
+@use "../components/contact/contact-info";
+@use "../components/contact/contact-form";

@@ -9,7 +9,8 @@
       "button": {
         "text": "Shop Now",
         "url": "products.html",
-        "modFirst": "primary"
+        "modFirst": "primary",
+        "extraClass": "contact-info__button"
       }
     },
     "info": {
@@ -34,7 +35,8 @@
       "picture": {
         "basename": "map",
         "alt": "Map showing location of PixMart HQ at 123 Creative Ave, Design City",
-        "class": "contact-map__image",
+        "pictureClass": "contact-info__map-picture",
+        "class": "contact-info__map-image",
         "width": "",
         "height": ""
       },
@@ -98,7 +100,8 @@
       "button": {
         "text": "Send Message",
         "typeAttr": "submit",
-        "modFirst": "primary"
+        "modFirst": "primary",
+        "extraClass": "contact-form__button"
       }
     }
   }

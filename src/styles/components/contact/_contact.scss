@@ -1,0 +1,34 @@
+@use "../base/base" as *;
+
+.contact {
+  padding-block: 64px 0;
+  background: linear-gradient(180.23deg, var(--background-color-secondary) 0.2%, rgb(255 255 255 / 0) 99.8%);
+
+  &__layout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+
+    @include tab {
+      flex-direction: row;
+      gap: 40px;
+      align-items: flex-end;
+
+      & > .contact-info,
+      & > .contact-form {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @include desk {
+      & > .contact-form {
+        flex: 0 0 622px;
+      }
+
+      & > .contact-info {
+        flex: 1 1 auto;
+      }
+    }
+  }
+}

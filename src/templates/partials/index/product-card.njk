@@ -5,12 +5,14 @@
       {% include "partials/components/badge.njk" %}
     {% endif %}
 
-    {% set folder = item.image.folder %}
-    {% set basename = item.image.basename %}
-    {% set alt = item.image.alt %}
-    {% set width = item.image.width %}
-    {% set height = item.image.height %}
-    {% set class = "product-card__img" %}
+    {% set picture = item.image %}
+    {% set folder = picture.folder %}
+    {% set basename = picture.basename %}
+    {% set alt = picture.alt %}
+    {% set width = picture.width %}
+    {% set height = picture.height %}
+    {% set pictureClass = picture.pictureClass %}
+    {% set imgClass = picture.class %}
     {% include "partials/components/picture.njk" %}
   </a>
 
