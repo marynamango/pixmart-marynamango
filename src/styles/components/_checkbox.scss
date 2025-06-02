@@ -35,7 +35,7 @@
   &:focus + .checkbox-label .checkbox-label__icon {
     background-color: var(--color-focus-background);
     border-color: var(--color-focus-background);
-    outline: 2px solid var(--color-focus);
+    box-shadow: 0 0 0 2px var(--color-focus);
   }
 
   &:disabled + .checkbox-label .checkbox-label__icon {
@@ -50,7 +50,7 @@
   }
 
   &:checked:focus + .checkbox-label .checkbox-label__icon {
-    outline: 2px solid var(--color-focus);
+    box-shadow: 0 0 0 2px var(--color-focus);
   }
 
   &:checked:active + .checkbox-label .checkbox-label__icon {
@@ -71,6 +71,6 @@
   }
 
   &:user-invalid:hover + .checkbox-label .checkbox-label__icon {
-    background-color: rgb(41 77 117 / 0.09);
+    background-color: var(--color-disabled);
   }
 }

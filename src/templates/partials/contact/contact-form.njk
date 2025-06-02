@@ -11,6 +11,9 @@
           rows="{{ input.rows | default(5) }}"
           {% if input.required %}required{% endif %}>
         </textarea>
+        {% if input.error %}
+          <span class="contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
+        {% endif %}
       </div>
     {% elseif input.type == "select" %}
       <div class="contact-form__item">
@@ -29,6 +32,9 @@
             <use href="/img/sprite.svg#chevron-left"></use>
           </svg>
         </div>
+        {% if input.error %}
+          <span class="contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
+        {% endif %}
       </div>
     {% else %}
       <div class="contact-form__item">
@@ -45,6 +51,9 @@
           {% if input.max %}max="{{ input.max }}"{% endif %}
           {% if input.pattern %}pattern="{{ input.pattern | safe }}"{% endif %}
         />
+        {% if input.error %}
+          <span class="contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
+        {% endif %}
       </div>
     {% endif %}
   {% endfor %}
