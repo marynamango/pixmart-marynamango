@@ -4,26 +4,39 @@
     {% if input.type == "textarea" %}
       <div class="contact-form__item">
         <label class="contact-form__label" for="{{ input.id }}">{{ input.label }}</label>
-        <textarea
-          class="contact-form__input"
-          id="{{ input.id }}"
-          name="{{ input.id }}"
-          rows="{{ input.rows | default(5) }}"
-          {% if input.required %}required{% endif %}>
-        </textarea>
-        {% if input.error %}
-          <span class="contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
-        {% endif %}
+        <div class="contact-form__field-wrapper">
+          <textarea
+            class="contact-form__input contact-form__textarea"
+            id="{{ input.id }}"
+            name="{{ input.id }}"
+            rows="{{ input.rows | default(5) }}"
+            aria-describedby="{{ input.id }}_help {{ input.id }}_error {{ input.id }}_valid"
+            {% if input.required %}required{% endif %}></textarea>
+          {% if input.help %}
+            <span class="contact-form__help" id="{{ input.id }}_help">{{ input.help }}</span>
+          {% endif %}
+          {% if input.error %}
+            <span class="contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
+          {% endif %}
+          {% if input.validated %}
+            <span class="contact-form__valid" id="{{ input.id }}_valid">{{ input.validated }}</span>
+          {% endif %}
+        </div>
       </div>
     {% elseif input.type == "select" %}
       <div class="contact-form__item">
         <label for="{{ input.id }}" class="contact-form__label">{{ input.label }}</label>
         <div class="contact-form__select-wrapper">
-          <select id="{{ input.id }}" name="{{ input.id }}" class="contact-form__select" {% if input.required %}required{% endif %}>
+          <select
+            id="{{ input.id }}"
+            name="{{ input.id }}"
+            class="contact-form__select"
+            aria-describedby="{{ input.id }}_help {{ input.id }}_error {{ input.id }}_valid"
+            {% if input.required %}required{% endif %}>
             {% for option in input.options %}
               <option 
                 value="{{ option | lower | replace(' ', '-') }}"
-                {% if loop.first %}selected{% endif %}>
+              {% if loop.first %}selected{% endif %}>
                 {{ option }}
               </option>
             {% endfor %}
@@ -32,28 +45,34 @@
             <use href="/img/sprite.svg#chevron-left"></use>
           </svg>
         </div>
-        {% if input.error %}
-          <span class="contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
-        {% endif %}
       </div>
     {% else %}
       <div class="contact-form__item">
         <label class="contact-form__label" for="{{ input.id }}">{{ input.label }}</label>
-        <input
-          class="contact-form__input"
-          id="{{ input.id }}"
-          type="{{ input.type }}"
-          name="{{ input.id }}"
-          placeholder="{{ input.placeholder }}"
-          {% if input.required %}required{% endif %}
-          {% if input.minlength %}minlength="{{ input.minlength }}"{% endif %}
-          {% if input.min %}min="{{ input.min }}"{% endif %}
-          {% if input.max %}max="{{ input.max }}"{% endif %}
-          {% if input.pattern %}pattern="{{ input.pattern | safe }}"{% endif %}
-        />
-        {% if input.error %}
-          <span class="contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
-        {% endif %}
+        <div class="contact-form__field-wrapper">
+          <input
+            class="contact-form__input"
+            id="{{ input.id }}"
+            type="{{ input.type }}"
+            name="{{ input.id }}"
+            placeholder="{{ input.placeholder }}"
+            aria-describedby="{{ input.id }}_help {{ input.id }}_error {{ input.id }}_valid"
+            {% if input.required %}required{% endif %}
+            {% if input.minlength %}minlength="{{ input.minlength }}"{% endif %}
+            {% if input.min %}min="{{ input.min }}"{% endif %}
+            {% if input.max %}max="{{ input.max }}"{% endif %}
+            {% if input.pattern %}pattern="{{ input.pattern | safe }}"{% endif %}
+          />
+          {% if input.help %}
+            <span class="contact-form__help" id="{{ input.id }}_help">{{ input.help }}</span>
+          {% endif %}
+          {% if input.error %}
+            <span class="contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
+          {% endif %}
+          {% if input.validated %}
+            <span class="contact-form__valid" id="{{ input.id }}_valid">{{ input.validated }}</span>
+          {% endif %}
+        </div>
       </div>
     {% endif %}
   {% endfor %}

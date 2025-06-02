@@ -54,7 +54,9 @@
           "placeholder": "Amelia Robert Johnson",
           "required": true,
           "minlength": 2,
-          "error": "Please enter your full name"
+          "help": "Please enter your full name.",
+          "error": "Please enter your full name.",
+          "validated": "Field validation is successful."
         },
         {
           "id": "email",
@@ -63,13 +65,14 @@
           "placeholder": "amelia.robertjohnson@pixmart.com",
           "required": true,
           "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$",
-          "error": "Please enter a valid email"
+          "help": "Please enter a valid email.",
+          "error": "Please enter a valid email.",
+          "validated": "Field validation is successful."
         },
         {
           "id": "subject",
           "label": "Subject",
           "type": "select",
-          "placeholder": "Select a subject",
           "required": true,
           "options": [
             "General Inquiry",
@@ -77,8 +80,7 @@
             "Support",
             "Services quality",
             "Refund"
-          ],
-          "error": "Please select a subject"
+          ]
         },
         {
           "id": "message",
@@ -86,7 +88,9 @@
           "type": "textarea",
           "required": true,
           "rows": 5,
-          "error": "Please enter a message"
+          "help": "Please enter a message.",
+          "error": "Please enter a message.",
+          "validated": "Field validation is successful."
         }
       ],
       "checkboxes": [
