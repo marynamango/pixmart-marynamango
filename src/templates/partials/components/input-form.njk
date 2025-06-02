@@ -5,11 +5,19 @@
     name="{{ form.name }}"
     placeholder="{{ form.placeholder }}"
     minlength="{{ form.minlength | default(3) }}"
-    aria-describedby="{{ form.name }}_error"
+    aria-describedby="{{ form.name }}_help {{ form.name }}_error {{ form.name }}_valid"
     required />
 
+  {% if form.help %}
+    <span class="search__help" id="{{ form.name }}_help">{{ form.help }}</span>
+  {% endif %}
+
   {% if form.error %}
-    <span class="visually-hidden" id="{{ form.name }}_error">{{ form.error }}</span>
+    <span class="search__error" id="{{ form.name }}_error">{{ form.error }}</span>
+  {% endif %}
+
+  {% if form.validated %}
+    <span class="search__valid" id="{{ form.name }}_valid">{{ form.validated }}</span>
   {% endif %}
 
   <button
