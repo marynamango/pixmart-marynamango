@@ -11,6 +11,26 @@
 
       @include tab {
         display: block;
+        
+        &:hover {
+          border-color: var(--color-focus);
+          box-shadow: 0 0 0 1px var(--color-focus);
+        }
+    
+        &:focus {
+          border-color: var(--color-focus);
+          box-shadow: 0 0 0 2px var(--color-focus);
+          outline: none;
+        }
+
+        &:disabled {
+          background-color: var(--color-disabled);
+        }
+
+        &:user-invalid {
+          border-color: var(--color-invalid);
+          outline: none;
+        }
       }
     }
   }
