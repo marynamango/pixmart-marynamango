@@ -17,9 +17,21 @@
     text-transform: uppercase;
   }
 
+  &__title {
+    max-width: 12ch;
+  }
+
   &__desc {
     margin-block: 0;
     color: var(--color-muted);
+    
+    @include tab {
+      max-width: 44ch;
+    }
+
+    @include desk {
+      max-width: 100%;
+    }
   }
 
   &__button {

@@ -21,6 +21,7 @@
   }
 
   &__label {
+    @include text-sm;
     padding-block: 2px;
   }
 
