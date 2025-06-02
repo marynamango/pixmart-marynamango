@@ -54,12 +54,19 @@ $screen-desk: 1440px;
 --color-button-white: rgb(245 248 251 / 1);
 --color-border-default: rgb(29 54 83 / 0.17);
 --color-border-dark: rgb(39 53 68 / 0.55);
+--color-border-checkbox: rgb(31 50 71 / 0.27);
 --color-shadow: rgb(29 57 95 / 0.08);
 
 --background-color: rgb(255 255 255 / 1);
 --background-color-secondary: rgb(240 246 253 / 1);
---bacground-color-cards: rgba(244 247 250 / 1);
+--bacground-color-cards: rgb(244 247 250 / 1);
 --background-label-new: rgb(0 119 114 / 1);
+
+/* States */
+--color-active-background: rgb(181 222 255 / 1);
+--color-focus: rgb(56 146 243 / 1);
+--color-focus-background: rgb(248 250 252 / 1);
+--color-invalid: rgb(234 56 41 / 1);
 
 /* Paddings */
 --padding-button: 16px 30px;

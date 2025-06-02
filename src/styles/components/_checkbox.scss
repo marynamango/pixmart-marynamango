@@ -1,0 +1,76 @@
+@use "../base/base" as *;
+
+.checkbox-label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+
+  &__icon {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    padding: 2px 1px;
+    border-radius: 4px;
+    border: 1px solid var(--color-border-checkbox);
+    background-color: var(--background-color);
+    color: transparent;
+    pointer-events: none;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  }
+}
+
+.checkbox-input {
+  &:hover + .checkbox-label .checkbox-label__icon {
+    background-color: var(--background-color-cards);
+  }
+
+  &:active + .checkbox-label .checkbox-label__icon {
+    background-color: var(--color-active-background);
+    border-color: var(--color-active-background);
+  }
+
+  &:focus + .checkbox-label .checkbox-label__icon {
+    background-color: var(--color-focus-background);
+    border-color: var(--color-focus-background);
+    outline: 2px solid var(--color-focus);
+  }
+
+  &:disabled + .checkbox-label .checkbox-label__icon {
+    background-color: var(--color-border-default);
+    border-color: transparent;
+  }
+
+  &:checked + .checkbox-label .checkbox-label__icon {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-button-white);
+  }
+
+  &:checked:focus + .checkbox-label .checkbox-label__icon {
+    outline: 2px solid var(--color-focus);
+  }
+
+  &:checked:active + .checkbox-label .checkbox-label__icon {
+    background-color: var(--color-active-background);
+    border-color: var(--color-active-background);
+    color: var(--color-accent);
+  }
+
+  &:checked:disabled + .checkbox-label .checkbox-label__icon {
+    color: rgb(34 52 73 / 0.4);
+    background-color: var(--color-border-default);
+    border-color: transparent;
+  }
+
+  &:user-invalid + .checkbox-label .checkbox-label__icon {
+    border-color: var(--color-invalid);
+    background-color: var(--background-color);
+  }
+
+  &:user-invalid:hover + .checkbox-label .checkbox-label__icon {
+    background-color: rgb(41 77 117 / 0.09);
+  }
+}

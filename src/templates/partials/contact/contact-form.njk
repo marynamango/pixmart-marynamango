@@ -59,7 +59,10 @@
           value="agree"
           id="{{ checkbox.id }}"
           {% if checkbox.required %}required{% endif %} />
-        <label class="checkbox-label" for="{{ checkbox.id }}">{{ checkbox.label }}</label>
+        <label class="checkbox-label contact-form__label" for="{{ checkbox.id }}">
+          <svg class="checkbox-label__icon" aria-hidden="true" focusable="false">
+            <use href="/img/sprite.svg#checkmark"></use>
+          </svg>{{ checkbox.label }}</label>
       {% endfor %}
     </div>
 
