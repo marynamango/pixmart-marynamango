@@ -25,12 +25,6 @@
 
   <div class="contact-info__map">
     {% set picture = contact.map.picture %}
-    {% set folder = picture.folder %}
-    {% set basename = picture.basename %}
-    {% set alt = picture.alt %}
-    {% set class = picture.class %}
-    {% set width = picture.width %}
-    {% set height = picture.height %}
     {% include "partials/components/picture.njk" %}
 
     <div class="contact-info__map-info">
