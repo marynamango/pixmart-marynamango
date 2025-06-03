@@ -1,3 +1,281 @@
 {
-  "title": "Products"
+  "title": "Products",
+  "catalogItems": [
+    {
+      "title": "Lens Chronicles",
+      "category": "Photography",
+      "topic": "Creative",
+      "price": 0.0,
+      "soldOut": true,
+      "url": "#",
+      "badge": {
+        "text": "SOLD OUT",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "soldout"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "lens-chronicles",
+        "alt": "Lens Chronicles UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "",
+        "height": ""
+      }
+    },
+    {
+      "title": "Career Success",
+      "category": "Guidance",
+      "topic": "Jobs",
+      "price": 20.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "NEW",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "new"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "career-success",
+        "alt": "Career Success UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "",
+        "height": ""
+      }
+    },
+    {
+      "title": "Dream Homes",
+      "category": "Real Estate",
+      "topic": "Modern",
+      "price": 45.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "POPULAR",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "popular"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "dream-homes",
+        "alt": "Dream Homes UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "",
+        "height": ""
+      }
+    },
+    {
+      "title": "Foodish Catering",
+      "category": "Food",
+      "topic": "Events",
+      "price": 15.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "POPULAR",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "popular"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "foodish-catering",
+        "alt": "Foodish Catering UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "",
+        "height": ""
+      }
+    },
+    {
+      "title": "Caring Hearts",
+      "category": "Healthcare",
+      "topic": "Support",
+      "price": 19.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "NEW",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "new"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "caring-hearts",
+        "alt": "Caring Hearts UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "",
+        "height": ""
+      }
+    },
+    {
+      "title": "Gaming Rise",
+      "category": "eSports",
+      "topic": "Trends",
+      "price": 0.0,
+      "soldOut": true,
+      "url": "#",
+      "badge": {
+        "text": "SOLD OUT",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "soldout"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "gaming-rise",
+        "alt": "Gaming Rise UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "",
+        "height": ""
+      }
+    },
+    {
+      "title": "Edit Pro",
+      "category": "Design",
+      "topic": "Tools",
+      "price": 0.0,
+      "soldOut": true,
+      "url": "#",
+      "badge": {
+        "text": "SOLD OUT",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "soldout"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "edit-pro",
+        "alt": "Edit Pro UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "",
+        "height": ""
+      }
+    },
+    {
+      "title": "Banking Redefined",
+      "category": "Finance",
+      "topic": "Secure",
+      "price": 25.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "NEW",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "new"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "banking-redefined",
+        "alt": "Banking Redefined UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "",
+        "height": ""
+      }
+    },
+    {
+      "title": "Exploring Fun",
+      "category": "Travel",
+      "topic": "Adventure",
+      "price": 41.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "POPULAR",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "popular"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "exploring-fun",
+        "alt": "Exploring Fun UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "",
+        "height": ""
+      }
+    },
+    {
+      "title": "Admin Dashboard",
+      "category": "Data",
+      "topic": "Tools",
+      "price": 15.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "POPULAR",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "popular"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "admin-dashboard",
+        "alt": "Admin Dashboard UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "",
+        "height": ""
+      }
+    },
+    {
+      "title": "Analytical Dashboard",
+      "category": "Data",
+      "topic": "Tools",
+      "price": 10.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "NEW",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "new"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "analytical-dashboard",
+        "alt": "Analytical Dashboard UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "",
+        "height": ""
+      }
+    },
+    {
+      "title": "Kindergarten",
+      "category": "Education",
+      "topic": "Kids",
+      "price": 0.0,
+      "soldOut": true,
+      "url": "#",
+      "badge": {
+        "text": "SOLD OUT",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "soldout"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "kindergarten",
+        "alt": "Kindergarten UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "",
+        "height": ""
+      }
+    }
+  ]
 }

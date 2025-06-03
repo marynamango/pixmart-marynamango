@@ -1,0 +1,32 @@
+<article class="catalog-card{% if item.soldOut %} catalog-card--sold-out{% endif %}" {% if item.soldOut %}aria-disabled="true"{% endif %}>
+  <a class="catalog-card__link" href="{{ item.url }}">
+    {% set badge = item.badge %}
+    {% include "partials/components/badge.njk" %}
+
+    {% set picture = item.image %}
+    {% include "partials/components/picture.njk" %}
+  </a>
+
+  <div class="catalog-card__info">
+    <h3 class="catalog-card__title">{{ item.title }}</h3>
+    <p class="catalog-card__tags">{{ item.category }} · {{ item.topic }}</p>
+    <div class="catalog-card__bottom">
+      <div class="catalog-card__price">€{{ item.price | default('00.00') }}</div>
+      
+      {% if not item.soldOut %}
+      <div class="catalog-card__actions">
+        <button class="button button--only-icon catalog-card__btn-favourite" aria-label="Add to wishlist">
+          <svg class="icon icon--black-neutral">
+            <use href="/img/sprite.svg#heart"></use>
+          </svg>
+        </button>
+        <button class="button button--only-icon button--primary" aria-label="Add to cart">
+          <svg class="icon icon--white">
+            <use href="/img/sprite.svg#cart"></use>
+          </svg>
+        </button>
+      </div>
+      {% endif %}
+    </div> 
+  </div>
+</article>
