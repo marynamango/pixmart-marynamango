@@ -1,23 +1,36 @@
 <form class="{{ form.class }}" action="{{ form.action }}" method="{{ form.method | default('get') }}">
-            <input
-              class="{{ form.inputClass }}"
-              type="{{ form.type | default('text') }}"
-              name="{{ form.name }}"
-              placeholder="{{ form.placeholder }}"
-              minlength="{{ form.minlength | default(3) }}"
-              required />
+  <input
+    class="{{ form.inputClass }}"
+    type="{{ form.type | default('text') }}"
+    name="{{ form.name }}"
+    placeholder="{{ form.placeholder }}"
+    minlength="{{ form.minlength | default(3) }}"
+    aria-describedby="{{ form.name }}_help {{ form.name }}_error {{ form.name }}_valid"
+    required />
 
-            <button
-              class="{{ form.buttonClass }}"
-              type="{{ form.buttonType }}"
-              {% if form.ariaLabel %}aria-label="{{ form.ariaLabel }}"{% endif %}>
+  {% if form.help %}
+    <span class="search__help" id="{{ form.name }}_help">{{ form.help }}</span>
+  {% endif %}
+
+  {% if form.error %}
+    <span class="search__error" id="{{ form.name }}_error">{{ form.error }}</span>
+  {% endif %}
+
+  {% if form.validated %}
+    <span class="search__valid" id="{{ form.name }}_valid">{{ form.validated }}</span>
+  {% endif %}
+
+  <button
+    class="{{ form.buttonClass }}"
+    type="{{ form.buttonType }}"
+    {% if form.ariaLabel %}aria-label="{{ form.ariaLabel }}"{% endif %}>
               
-              {% if form.icon %}
-                <svg class="icon{% if form.iconClass %} {{ form.iconClass }}{% else %} form__icon{% endif %}" aria-hidden="true" focusable="false">
-                  <use href="/img/sprite.svg#{{ form.icon }}"></use>
-                </svg>
-              {% elseif form.buttonText %}
-                {{ form.buttonText }}
-              {% endif %}
-            </button>
-          </form>
+    {% if form.icon %}
+      <svg class="icon{% if form.iconClass %} {{ form.iconClass }}{% else %} form__icon{% endif %}" aria-hidden="true" focusable="false">
+        <use href="/img/sprite.svg#{{ form.icon }}"></use>
+      </svg>
+    {% elseif form.buttonText %}
+      {{ form.buttonText }}
+    {% endif %}
+  </button>
+</form>

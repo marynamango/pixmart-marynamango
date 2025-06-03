@@ -25,15 +25,99 @@
     padding-block: 2px;
   }
 
+  &__field-wrapper {
+    position: relative;
+  }
+
   &__input {
     @include text-md;
     border: 1px solid var(--color-border-default);
     padding: 20px;
     border-radius: 8px;
+    width: 100%;
 
     &::placeholder {
       color: var(--color-muted-light);
     }
+
+    &:hover {
+      border-color: var(--color-focus);
+      box-shadow: 0 0 0 1px var(--color-focus);
+    }
+    
+    &:focus {
+      border-color: var(--color-focus);
+      box-shadow: 0 0 0 2px var(--color-focus);
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: var(--color-disabled);
+    }
+
+    // Clear focus shadow when valid, invalid, or showing messages
+    &:valid,
+    &:user-invalid {
+      box-shadow: none;
+    }
+
+    &:valid:focus,
+    &:user-invalid:focus {
+      box-shadow: none;
+    }
+
+    &:valid,
+    &:valid:focus {
+      border-color: var(--color-border-default);
+    }
+
+    &:user-invalid,
+    &:user-invalid:focus {
+      border-color: var(--color-invalid);
+    }
+
+    // Show messages
+    &:focus + .contact-form__help {
+      display: block;
+    }
+
+    &:user-invalid ~ .contact-form__error {
+      display: block;
+    }
+
+    &:valid:focus ~ .contact-form__valid {
+      display: block;
+    }
+
+    // Hide others when certain states are active
+    &:user-invalid ~ .contact-form__help,
+    &:user-invalid ~ .contact-form__valid,
+    &:valid ~ .contact-form__help,
+    &:valid ~ .contact-form__error {
+      display: none;
+    }
+  }
+
+  &__help,
+  &__error,
+  &__valid {
+    display: none;
+    @include text-xs;
+    position: absolute;
+    top: calc(100% + 4px); // 4px below the input
+    left: 0;
+  }
+  
+  &__help {
+    color: var(--color-muted);
+  }
+
+  &__error {
+    color: var(--color-invalid);
+  }
+
+  &__valid {
+    color: var(--color-valid);
   }
 
   &__select {
@@ -45,6 +129,59 @@
     cursor: pointer;
     appearance: none;
     width: 100%;
+
+    &:hover {
+      border-color: var(--color-focus);
+      box-shadow: 0 0 0 1px var(--color-focus);
+    }
+    
+    &:focus {
+      border-color: var(--color-focus);
+      box-shadow: 0 0 0 2px var(--color-focus);
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: var(--color-disabled);
+    }
+
+    &:user-invalid {
+      border-color: var(--color-invalid);
+      outline: none;
+    }
+
+    //Show and hide text on help, valid, invalid
+    &:user-invalid + .contact-form__error {
+      display: block;
+    }
+
+    &:focus + .contact-form__help {
+      display: block;
+    }
+
+    &:user-invalid ~ .contact-form__help {
+      display: none;
+    }
+
+    &:user-invalid ~ .contact-form__error {
+      display: block;
+    }
+
+    &:valid:focus ~ .contact-form__valid {
+      display: block;
+    }
+
+    &:valid ~ .contact-form__help {
+      display: none;
+    }
+
+    &:valid ~ .contact-form__error {
+      display: none;
+    }
+
+    &:user-invalid ~ .contact-form__valid {
+      display: none;
+    }
   }
 
   &__select-wrapper {
@@ -64,6 +201,18 @@
     transition: transform 0.3s ease;
   }
 
+  &__textarea {
+    min-height: 180px;
+    resize: none;
+    margin-bottom: 4px;
+    line-height: normal;
+    vertical-align: top;
+
+    &:focus {
+      box-shadow: 0 0 0 3px var(--color-focus);
+    }
+  }
+
   &__footer {
     display: flex;
     flex-direction: column;
@@ -81,9 +230,4 @@
     padding: var(--padding-button-lg);
     @include text-md($fw: 600);
   }
-}
-
-textarea.contact-form__input {
-  min-height: 180px;
-  resize: none;
 }
