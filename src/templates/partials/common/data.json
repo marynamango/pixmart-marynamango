@@ -7,7 +7,7 @@
     },
     "nav": [
       { "href": "/", "text": "About" },
-      { "href": "products.html", "text": "Products" },
+      { "href": "catalog.html", "text": "Products" },
       { "href": "creators.html", "text": "Creators" },
       { "href": "blog.html", "text": "Blog" },
       { "href": "contact.html", "text": "Contact" }
@@ -66,7 +66,7 @@
           { "text": "Mobile App", "href": "/" },
           { "text": "Social Media Feeds", "href": "/" },
           { "text": "Presentation", "href": "/" },
-          { "text": "Product Mockups", "href": "products.html" },
+          { "text": "Product Mockups", "href": "catalog.html" },
           { "text": "Illustrations", "href": "/" }
         ]
       },

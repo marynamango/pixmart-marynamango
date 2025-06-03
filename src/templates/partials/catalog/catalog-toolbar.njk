@@ -1,0 +1,38 @@
+<div class="catalog-toolbar">
+
+  <div class="catalog-toolbar__wrapper">
+    <div class="catalog-toolbar__filters">
+
+      <!-- Filters Button (Visible on Mobile only) -->
+      {% set button = catalogToolbar.filterToggleButton %}
+      {% include "partials/components/button.njk" %}
+
+      <div class="catalog-toolbar__select-wrapper">
+        <select class="catalog-toolbar__select" id="{{ catalogToolbar.select.id }}" name="{{ catalogToolbar.select.id }}">
+          {% for option in catalogToolbar.select.options %}
+            <option value="{{ option.value }}">{{ option.label }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+
+    <div class="catalog-toolbar__results-ui">
+      <span class="catalog-toolbar__result-count">{{ catalogToolbar.resultCount }}</span>
+      <div class="catalog-toolbar__layout-buttons">
+        {% set button = catalogToolbar.layoutButtons.grid %}
+        {% include "partials/components/button.njk" %}
+
+        {% set button = catalogToolbar.layoutButtons.list %}
+        {% include "partials/components/button.njk" %}
+      </div>
+    </div>
+  </div>
+  <ul class="catalog-toolbar__tags">
+    {% for tag in catalogToolbar.tags %}
+      <li class="catalog-toolbar__tag">
+        {% set button = tag.button %}
+        {% include "partials/components/button.njk" %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

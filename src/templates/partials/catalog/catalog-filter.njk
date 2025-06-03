@@ -1,0 +1,60 @@
+<aside class="catalog-filter" id="catalog_filter" hidden>
+  <div class="catalog-filter__wrapper">
+
+    <!-- Header -->
+    <div class="catalog-filter__header">
+      <h2 class="catalog-filter__title">{{ filterForm.title }}</h2>
+      {% set button = filterCloseButton %}
+      {% include "partials/components/button.njk" %}
+    </div>
+
+    <!-- Clear All Button -->
+    {% set button = filterClearButton %}
+    {% include "partials/components/button.njk" %}
+
+    <form class="filter-form" action="/catalog" method="get">
+      {% for filter in filters %}
+        <div class="filter-form__group">
+          <h2 class="filter-form__title">{{ filter.title }}</h2>
+
+          {% for option in filter.options %}
+            <!-- Gulp gives errors, when ID is written with hyphens, replaced them with underscore -->
+            {% set id = (filter.name + "_" + (option
+              | lower
+              | replace(' ', '_')
+              | replace('-', '_')
+              | replace('&', 'and')
+            )) | safe %}
+
+            <input
+              class="visually-hidden {{ filter.type }}-input"
+              type="{{ filter.type }}"
+              name="{{ filter.name }}{% if filter.type == 'checkbox' %}[]{% endif %}"
+              value="{{ option | lower }}"
+              id="{{ id }}"/>
+
+            <label
+              class="{{ filter.type }}-label form-label"
+              for="{{ id }}">{{ option }}</label>
+          {% endfor %}
+        </div>
+      {% endfor %}
+
+      <!-- Price slider (visual only) -->
+      <div class="filter-form__group">
+        <h3 class="filter-form__title">{{ price.title }}</h3>
+        <div class="range-slider">
+          <input type="range" class="range-slider__input" disabled>
+          <input type="range" class="range-slider__input" disabled>
+          <div class="range-slider__labels">
+            <span class="range-slider__label">{{ price.min }}</span>
+            <span class="range-slider__label">{{ price.max }}</span>
+          </div>
+        </div>
+      </div>
+
+      {% set button = filterForm.button %}
+      {% include "partials/components/button.njk" %}
+    </form>
+  </div>
+</aside>

@@ -1,0 +1,552 @@
+{
+  "title": "Products",
+  "catalogHero": {
+    "title": "Explore Top",
+    "highlight": "UI Kits",
+    "suffix": "Design Assets"
+  },
+  "filterCloseButton": {
+    "modFirst": "only-icon",
+    "modSecond": "secondary",
+    "extraClass": "catalog-filter__close",
+    "ariaLabel": "Close filters",
+    "typeAttr": "button",
+    "icon": {
+      "name": "x-close",
+      "class": "icon--black"
+    }
+  },
+  "filterClearButton": {
+    "text": "Clear all filters",
+    "modFirst": "secondary",
+    "modSecond": "full",
+    "icon": {
+      "name": "x-close",
+      "class": "icon--black"
+    },
+    "extraClass": "catalog-filter__clear",
+    "ariaLabel": "Clear all filters",
+    "typeAttr": "button"
+  },
+  "filters": [
+    {
+      "title": "Categories",
+      "name": "category",
+      "type": "checkbox",
+      "options": ["All Categories", "Technology", "Travel & Tourism", "Health & Fitness", "E-Commerce", "Education", "Entertainment", "Others", "Other"]
+    },
+    {
+      "title": "Format Type",
+      "name": "format",
+      "type": "radio",
+      "options": ["Figma", "Sketch", "Adobe XD", "Adobe Photoshop", "Adobe Illustration"]
+    },
+    {
+      "title": "Style",
+      "name": "style",
+      "type": "checkbox",
+      "options": ["Minimalist", "Modern", "Playful", "Dark Mode", "Photocentric"]
+    }
+  ],
+  "filterForm": {
+    "title": "Filters",
+    "button": {
+      "text": "Save",
+      "modFirst": "primary",
+      "modSecond": "full",
+      "ariaLabel": "Save filter settings"
+    }
+  },
+  "price": {
+    "title": "Price",
+    "min": "€5",
+    "max": "€50"
+  },
+  "catalogToolbar": {
+    "select": {
+      "id": "sort",
+      "options": [
+        { "value": "bestseller", "label": "Best Seller" },
+        { "value": "new", "label": "New" },
+        { "value": "soldout", "label": "Sold Out" },
+        { "value": "popular", "label": "Popular" }
+      ]
+    },
+    "resultCount": "Showing 12 out of 120 results",
+    "filterToggleButton": {
+      "modFirst": "only-icon",
+      "modSecond": "primary",
+      "extraClass": "catalog-toolbar__filter-toggle mobile-only",
+      "ariaLabel": "Open filters",
+      "icon": {
+        "name": "filter"
+      }
+    },
+    "layoutButtons": {
+      "grid": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Grid view",
+        "icon": {
+          "name": "grid",
+          "class": "catalog-toolbar__grid-icon"
+        }
+      },
+      "list": {
+        "modFirst": "only-icon",
+        "modSecond": "secondary",
+        "ariaLabel": "List view",
+        "icon": {
+          "name": "list",
+          "class": "catalog-toolbar__list-icon"
+        }
+      }
+    },
+    "tags": [
+      {
+        "text": "UI Kit",
+        "button": {
+          "extraClass": "catalog-toolbar__tag-button",
+          "typeAttr": "button",
+          "ariaLabel": "Remove UI Kit",
+          "text": "UI Kit",
+          "icon": {
+            "name": "x-close",
+            "class": "catalog-toolbar__tag-icon"
+          }
+        }
+      },
+      {
+        "text": "UI Kit",
+        "button": {
+          "extraClass": "catalog-toolbar__tag-button",
+          "typeAttr": "button",
+          "ariaLabel": "Remove UI Kit",
+          "text": "UI Kit",
+          "icon": {
+            "name": "x-close",
+            "class": "catalog-toolbar__tag-icon"
+          }
+        }
+      }
+    ]
+  },
+  "catalogItems": [
+    {
+      "title": "Lens Chronicles",
+      "category": "Photography",
+      "topic": "Creative",
+      "soldOut": true,
+      "url": "#",
+      "badge": {
+        "text": "SOLD OUT",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "soldout"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "lens-chronicles",
+        "alt": "Lens Chronicles UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "325",
+        "height": "260"
+      }
+    },
+    {
+      "title": "Career Success",
+      "category": "Guidance",
+      "topic": "Jobs",
+      "price": 20.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "NEW",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "new"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "career-success",
+        "alt": "Career Success UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "325",
+        "height": "260"
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
+      }
+    },
+    {
+      "title": "Dream Homes",
+      "category": "Real Estate",
+      "topic": "Modern",
+      "price": 45.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "POPULAR",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "popular"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "dream-homes",
+        "alt": "Dream Homes UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "325",
+        "height": "260"
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
+      }
+    },
+    {
+      "title": "Foodish Catering",
+      "category": "Food",
+      "topic": "Events",
+      "price": 15.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "POPULAR",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "popular"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "foodish-catering",
+        "alt": "Foodish Catering UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "325",
+        "height": "260"
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
+      }
+    },
+    {
+      "title": "Caring Hearts",
+      "category": "Healthcare",
+      "topic": "Support",
+      "price": 19.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "NEW",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "new"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "caring-hearts",
+        "alt": "Caring Hearts UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "325",
+        "height": "260"
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
+      }
+    },
+    {
+      "title": "Gaming Rise",
+      "category": "eSports",
+      "topic": "Trends",
+      "soldOut": true,
+      "url": "#",
+      "badge": {
+        "text": "SOLD OUT",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "soldout"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "gaming-rise",
+        "alt": "Gaming Rise UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "325",
+        "height": "260"
+      }
+    },
+    {
+      "title": "Edit Pro",
+      "category": "Design",
+      "topic": "Tools",
+      "soldOut": true,
+      "url": "#",
+      "badge": {
+        "text": "SOLD OUT",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "soldout"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "edit-pro",
+        "alt": "Edit Pro UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "325",
+        "height": "260"
+      }
+    },
+    {
+      "title": "Banking Redefined",
+      "category": "Finance",
+      "topic": "Secure",
+      "price": 25.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "NEW",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "new"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "banking-redefined",
+        "alt": "Banking Redefined UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "325",
+        "height": "260"
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
+      }
+    },
+    {
+      "title": "Exploring Fun",
+      "category": "Travel",
+      "topic": "Adventure",
+      "price": 41.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "POPULAR",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "popular"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "exploring-fun",
+        "alt": "Exploring Fun UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "325",
+        "height": "260"
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
+      }
+    },
+    {
+      "title": "Admin Dashboard",
+      "category": "Data",
+      "topic": "Tools",
+      "price": 15.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "POPULAR",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "popular"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "admin-dashboard",
+        "alt": "Admin Dashboard UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "325",
+        "height": "260"
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
+      }
+    },
+    {
+      "title": "Analytical Dashboard",
+      "category": "Data",
+      "topic": "Tools",
+      "price": 10.99,
+      "soldOut": false,
+      "url": "#",
+      "badge": {
+        "text": "NEW",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "new"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "analytical-dashboard",
+        "alt": "Analytical Dashboard UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "325",
+        "height": "260"
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
+      }
+    },
+    {
+      "title": "Kindergarten",
+      "category": "Education",
+      "topic": "Kids",
+      "soldOut": true,
+      "url": "#",
+      "badge": {
+        "text": "SOLD OUT",
+        "modFirst": "round",
+        "modSecond": "catalog",
+        "modThird": "soldout"
+      },
+      "image": {
+        "folder": "catalog",
+        "basename": "kindergarten",
+        "alt": "Kindergarten UI Kit",
+        "pictureClass": "catalog-card__picture",
+        "class": "catalog-card__image",
+        "width": "325",
+        "height": "260"
+      }
+    }
+  ]
+}
