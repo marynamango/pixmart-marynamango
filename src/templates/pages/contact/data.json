@@ -74,13 +74,17 @@
           "label": "Subject",
           "type": "select",
           "required": true,
+          "option": "General Inquiry",
           "options": [
             "General Inquiry",
             "Billing",
             "Support",
             "Services quality",
             "Refund"
-          ]
+          ],
+          "help": "Please select a subject.",
+          "error": "Please select a subject.",
+          "validated": "Field validation is successful."
         },
         {
           "id": "message",

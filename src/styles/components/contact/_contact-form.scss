@@ -149,6 +149,39 @@
       border-color: var(--color-invalid);
       outline: none;
     }
+
+    //Show and hide text on help, valid, invalid
+    &:user-invalid + .contact-form__error {
+      display: block;
+    }
+
+    &:focus + .contact-form__help {
+      display: block;
+    }
+
+    &:user-invalid ~ .contact-form__help {
+      display: none;
+    }
+
+    &:user-invalid ~ .contact-form__error {
+      display: block;
+    }
+
+    &:valid:focus ~ .contact-form__valid {
+      display: block;
+    }
+
+    &:valid ~ .contact-form__help {
+      display: none;
+    }
+
+    &:valid ~ .contact-form__error {
+      display: none;
+    }
+
+    &:user-invalid ~ .contact-form__valid {
+      display: none;
+    }
   }
 
   &__select-wrapper {
