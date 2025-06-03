@@ -5,6 +5,63 @@
     "highlight": "UI Kits",
     "suffix": "Design Assets"
   },
+  "filterCloseButton": {
+    "modFirst": "only-icon",
+    "modSecond": "secondary",
+    "extraClass": "catalog-filter__close",
+    "ariaLabel": "Close filters",
+    "typeAttr": "button",
+    "icon": {
+      "name": "x-close",
+      "class": "icon--black"
+    }
+  },
+  "filterClearButton": {
+    "text": "Clear all filters",
+    "modFirst": "secondary",
+    "modSecond": "full",
+    "icon": {
+      "name": "x-close",
+      "class": "icon--black"
+    },
+    "extraClass": "catalog-filter__clear",
+    "ariaLabel": "Clear all filters",
+    "typeAttr": "button"
+  },
+  "filters": [
+    {
+      "title": "Categories",
+      "name": "category",
+      "type": "checkbox",
+      "options": ["All Categories", "Technology", "Travel & Tourism", "Health & Fitness", "E-Commerce", "Education", "Entertainment", "Others", "Other"]
+    },
+    {
+      "title": "Format Type",
+      "name": "format",
+      "type": "radio",
+      "options": ["Figma", "Sketch", "Adobe XD", "Adobe Photoshop", "Adobe Illustration"]
+    },
+    {
+      "title": "Style",
+      "name": "style",
+      "type": "checkbox",
+      "options": ["Minimalist", "Modern", "Playful", "Dark Mode", "Photocentric"]
+    }
+  ],
+  "filterForm": {
+    "title": "Filters",
+    "button": {
+      "text": "Save",
+      "modFirst": "primary",
+      "modSecond": "full",
+      "ariaLabel": "Save filter settings"
+    }
+  },
+  "price": {
+    "title": "Price",
+    "min": "€5",
+    "max": "€50"
+  },
   "catalogToolbar": {
     "select": {
       "id": "sort",
@@ -93,8 +150,8 @@
         "alt": "Lens Chronicles UI Kit",
         "pictureClass": "catalog-card__picture",
         "class": "catalog-card__image",
-        "width": "",
-        "height": ""
+        "width": "325",
+        "height": "260"
       }
     },
     {
@@ -116,8 +173,8 @@
         "alt": "Career Success UI Kit",
         "pictureClass": "catalog-card__picture",
         "class": "catalog-card__image",
-        "width": "",
-        "height": ""
+        "width": "325",
+        "height": "260"
       },
       "wishlistButton": {
         "modFirst": "only-icon",
@@ -157,8 +214,8 @@
         "alt": "Dream Homes UI Kit",
         "pictureClass": "catalog-card__picture",
         "class": "catalog-card__image",
-        "width": "",
-        "height": ""
+        "width": "325",
+        "height": "260"
       },
       "wishlistButton": {
         "modFirst": "only-icon",
@@ -198,8 +255,8 @@
         "alt": "Foodish Catering UI Kit",
         "pictureClass": "catalog-card__picture",
         "class": "catalog-card__image",
-        "width": "",
-        "height": ""
+        "width": "325",
+        "height": "260"
       },
       "wishlistButton": {
         "modFirst": "only-icon",
@@ -239,8 +296,8 @@
         "alt": "Caring Hearts UI Kit",
         "pictureClass": "catalog-card__picture",
         "class": "catalog-card__image",
-        "width": "",
-        "height": ""
+        "width": "325",
+        "height": "260"
       },
       "wishlistButton": {
         "modFirst": "only-icon",
@@ -279,8 +336,8 @@
         "alt": "Gaming Rise UI Kit",
         "pictureClass": "catalog-card__picture",
         "class": "catalog-card__image",
-        "width": "",
-        "height": ""
+        "width": "325",
+        "height": "260"
       }
     },
     {
@@ -301,8 +358,8 @@
         "alt": "Edit Pro UI Kit",
         "pictureClass": "catalog-card__picture",
         "class": "catalog-card__image",
-        "width": "",
-        "height": ""
+        "width": "325",
+        "height": "260"
       }
     },
     {
@@ -324,8 +381,8 @@
         "alt": "Banking Redefined UI Kit",
         "pictureClass": "catalog-card__picture",
         "class": "catalog-card__image",
-        "width": "",
-        "height": ""
+        "width": "325",
+        "height": "260"
       },
       "wishlistButton": {
         "modFirst": "only-icon",
@@ -365,8 +422,8 @@
         "alt": "Exploring Fun UI Kit",
         "pictureClass": "catalog-card__picture",
         "class": "catalog-card__image",
-        "width": "",
-        "height": ""
+        "width": "325",
+        "height": "260"
       },
       "wishlistButton": {
         "modFirst": "only-icon",
@@ -406,8 +463,8 @@
         "alt": "Admin Dashboard UI Kit",
         "pictureClass": "catalog-card__picture",
         "class": "catalog-card__image",
-        "width": "",
-        "height": ""
+        "width": "325",
+        "height": "260"
       },
       "wishlistButton": {
         "modFirst": "only-icon",
@@ -447,8 +504,8 @@
         "alt": "Analytical Dashboard UI Kit",
         "pictureClass": "catalog-card__picture",
         "class": "catalog-card__image",
-        "width": "",
-        "height": ""
+        "width": "325",
+        "height": "260"
       },
       "wishlistButton": {
         "modFirst": "only-icon",
@@ -487,8 +544,8 @@
         "alt": "Kindergarten UI Kit",
         "pictureClass": "catalog-card__picture",
         "class": "catalog-card__image",
-        "width": "",
-        "height": ""
+        "width": "325",
+        "height": "260"
       }
     }
   ]
