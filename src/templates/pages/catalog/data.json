@@ -5,7 +5,6 @@
       "title": "Lens Chronicles",
       "category": "Photography",
       "topic": "Creative",
-      "price": 0.0,
       "soldOut": true,
       "url": "#",
       "badge": {
@@ -45,6 +44,24 @@
         "class": "catalog-card__image",
         "width": "",
         "height": ""
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
       }
     },
     {
@@ -68,6 +85,24 @@
         "class": "catalog-card__image",
         "width": "",
         "height": ""
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
       }
     },
     {
@@ -91,6 +126,24 @@
         "class": "catalog-card__image",
         "width": "",
         "height": ""
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
       }
     },
     {
@@ -114,13 +167,30 @@
         "class": "catalog-card__image",
         "width": "",
         "height": ""
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
       }
     },
     {
       "title": "Gaming Rise",
       "category": "eSports",
       "topic": "Trends",
-      "price": 0.0,
       "soldOut": true,
       "url": "#",
       "badge": {
@@ -143,7 +213,6 @@
       "title": "Edit Pro",
       "category": "Design",
       "topic": "Tools",
-      "price": 0.0,
       "soldOut": true,
       "url": "#",
       "badge": {
@@ -183,6 +252,24 @@
         "class": "catalog-card__image",
         "width": "",
         "height": ""
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
       }
     },
     {
@@ -206,6 +293,24 @@
         "class": "catalog-card__image",
         "width": "",
         "height": ""
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
       }
     },
     {
@@ -229,6 +334,24 @@
         "class": "catalog-card__image",
         "width": "",
         "height": ""
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
       }
     },
     {
@@ -252,13 +375,30 @@
         "class": "catalog-card__image",
         "width": "",
         "height": ""
+      },
+      "wishlistButton": {
+        "modFirst": "only-icon",
+        "extraClass": "catalog-card__btn-favourite",
+        "ariaLabel": "Add to wishlist",
+        "icon": {
+          "name": "heart",
+          "class": "icon--black-neutral"
+        }
+      },
+      "cartButton": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Add to cart",
+        "icon": {
+          "name": "cart",
+          "class": "icon--white"
+        }
       }
     },
     {
       "title": "Kindergarten",
       "category": "Education",
       "topic": "Kids",
-      "price": 0.0,
       "soldOut": true,
       "url": "#",
       "badge": {

@@ -15,16 +15,11 @@
       
       {% if not item.soldOut %}
       <div class="catalog-card__actions">
-        <button class="button button--only-icon catalog-card__btn-favourite" aria-label="Add to wishlist">
-          <svg class="icon icon--black-neutral">
-            <use href="/img/sprite.svg#heart"></use>
-          </svg>
-        </button>
-        <button class="button button--only-icon button--primary" aria-label="Add to cart">
-          <svg class="icon icon--white">
-            <use href="/img/sprite.svg#cart"></use>
-          </svg>
-        </button>
+        {% set button = item.wishlistButton %}
+        {% include "partials/components/button.njk" %}
+
+        {% set button = item.cartButton %}
+        {% include "partials/components/button.njk" %}
       </div>
       {% endif %}
     </div> 
