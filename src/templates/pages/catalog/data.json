@@ -1,5 +1,79 @@
 {
   "title": "Products",
+  "catalogHero": {
+    "title": "Explore Top",
+    "highlight": "UI Kits",
+    "suffix": "Design Assets"
+  },
+  "catalogToolbar": {
+    "select": {
+      "id": "sort",
+      "options": [
+        { "value": "bestseller", "label": "Best Seller" },
+        { "value": "new", "label": "New" },
+        { "value": "soldout", "label": "Sold Out" },
+        { "value": "popular", "label": "Popular" }
+      ]
+    },
+    "resultCount": "Showing 12 out of 120 results",
+    "filterToggleButton": {
+      "modFirst": "only-icon",
+      "modSecond": "primary",
+      "extraClass": "catalog-toolbar__filter-toggle mobile-only",
+      "ariaLabel": "Open filters",
+      "icon": {
+        "name": "filter"
+      }
+    },
+    "layoutButtons": {
+      "grid": {
+        "modFirst": "only-icon",
+        "modSecond": "primary",
+        "ariaLabel": "Grid view",
+        "icon": {
+          "name": "grid",
+          "class": "catalog-toolbar__grid-icon"
+        }
+      },
+      "list": {
+        "modFirst": "only-icon",
+        "modSecond": "secondary",
+        "ariaLabel": "List view",
+        "icon": {
+          "name": "list",
+          "class": "catalog-toolbar__list-icon"
+        }
+      }
+    },
+    "tags": [
+      {
+        "text": "UI Kit",
+        "button": {
+          "extraClass": "catalog-toolbar__tag-button",
+          "typeAttr": "button",
+          "ariaLabel": "Remove UI Kit",
+          "text": "UI Kit",
+          "icon": {
+            "name": "x-close",
+            "class": "catalog-toolbar__tag-icon"
+          }
+        }
+      },
+      {
+        "text": "UI Kit",
+        "button": {
+          "extraClass": "catalog-toolbar__tag-button",
+          "typeAttr": "button",
+          "ariaLabel": "Remove UI Kit",
+          "text": "UI Kit",
+          "icon": {
+            "name": "x-close",
+            "class": "catalog-toolbar__tag-icon"
+          }
+        }
+      }
+    ]
+  },
   "catalogItems": [
     {
       "title": "Lens Chronicles",

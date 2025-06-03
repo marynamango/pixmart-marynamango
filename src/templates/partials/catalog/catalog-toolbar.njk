@@ -2,56 +2,37 @@
 
   <div class="catalog-toolbar__wrapper">
     <div class="catalog-toolbar__filters">
+
       <!-- Filters Button (Visible on Mobile only) -->
-      <button type="button" class="catalog-toolbar__filter-toggle mobile-only button button--only-icon button--primary" aria-label="Open filters">
-        <svg class="catalog-toolbar__filter-icon icon" aria-hidden="true" focusable="false">
-          <use href="/img/sprite.svg#filter"></use>
-        </svg>
-      </button>
+      {% set button = catalogToolbar.filterToggleButton %}
+      {% include "partials/components/button.njk" %}
+
       <div class="catalog-toolbar__select-wrapper">
-        <select class="catalog-toolbar__select" id="{{ select.id }}" name="{{ select.id }}">
-          <option value="bestseller">Best Seller</option>
-          <option value="new">New</option>
-          <option value="soldout">Sold Out</option>
-          <option value="popular">Popular</option>
+        <select class="catalog-toolbar__select" id="{{ catalogToolbar.select.id }}" name="{{ catalogToolbar.select.id }}">
+          {% for option in catalogToolbar.select.options %}
+            <option value="{{ option.value }}">{{ option.label }}</option>
+          {% endfor %}
         </select>
       </div>
     </div>
 
     <div class="catalog-toolbar__results-ui">
-      <span class="catalog-toolbar__result-count">Showing 12 out of 120 results</span>
+      <span class="catalog-toolbar__result-count">{{ catalogToolbar.resultCount }}</span>
       <div class="catalog-toolbar__layout-buttons">
-        <button type="button" class="button button--primary button--only-icon" aria-label="Grid view">
-          <svg class="catalog-toolbar__grid-icon icon" aria-hidden="true" focusable="false">
-            <use href="/img/sprite.svg#grid"></use>
-          </svg>
-        </button>
-        <button type="button" class="button button--secondary button--only-icon" aria-label="List view">
-          <svg class="catalog-toolbar__list-icon icon" aria-hidden="true" focusable="false">
-            <use href="/img/sprite.svg#list"></use>
-          </svg>
-        </button>
+        {% set button = catalogToolbar.layoutButtons.grid %}
+        {% include "partials/components/button.njk" %}
+
+        {% set button = catalogToolbar.layoutButtons.list %}
+        {% include "partials/components/button.njk" %}
       </div>
     </div>
   </div>
   <ul class="catalog-toolbar__tags">
-    <li class="catalog-toolbar__tag">
-      <button class="catalog-toolbar__tag-button" type="button">
-        UI Kit
-        <span class="visually-hidden">Remove UI Kit</span>
-        <svg class="catalog-toolbar__tag-icon" aria-hidden="true" focusable="false">
-          <use href="/img/sprite.svg#x-close"></use>
-        </svg>
-      </button>
-    </li>
-    <li class="catalog-toolbar__tag">
-      <button class="catalog-toolbar__tag-button" type="button">
-        UI Kit
-        <span class="visually-hidden">Remove UI Kit</span>
-        <svg class="catalog-toolbar__tag-icon" aria-hidden="true" focusable="false">
-          <use href="/img/sprite.svg#x-close"></use>
-        </svg>
-      </button>
-    </li>  
+    {% for tag in catalogToolbar.tags %}
+      <li class="catalog-toolbar__tag">
+        {% set button = tag.button %}
+        {% include "partials/components/button.njk" %}
+      </li>
+    {% endfor %}
   </ul>
 </div>
