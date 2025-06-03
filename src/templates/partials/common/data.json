@@ -16,6 +16,7 @@
       "class": "search search--header",
       "action": "/search",
       "name": "q",
+      "idPrefix": "search",
       "type": "search",
       "placeholder": "Search for Digital Assets",
       "inputClass": "search__input search__input--mobile-hidden",
@@ -94,12 +95,22 @@
         "action": "/subscribe",
         "method": "post",
         "name": "email",
+        "idPrefix": "newsletter",
         "type": "email",
         "placeholder": "Enter your email address ...",
         "inputClass": "newsletter__input",
+        "minlength": 3,
+        "required": true,
+        "help": "Enter at least 3 characters to subscribe.",
+        "error": "Please provide a valid email address.",
+        "validated": "Your email address looks good!",
+        "helpClass": "visually-hidden",
+        "errorClass": "visually-hidden",
+        "validClass": "visually-hidden",
         "buttonClass": "button button--primary newsletter__button",
         "buttonType": "submit",
-        "buttonText": "Subscribe"
+        "buttonText": "Subscribe",
+        "ariaLabel": "Subscribe to newsletter"
       }
     },
     "legal": [
