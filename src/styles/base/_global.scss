@@ -47,6 +47,16 @@ h1 {
   border: 0;
 }
 
+.sr-only-reset {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  clip: auto;
+  white-space: normal;
+  overflow: visible;
+}
+
 .visually-hidden {
   position: absolute;
   opacity: 0;

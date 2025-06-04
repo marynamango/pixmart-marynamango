@@ -6,25 +6,31 @@
     placeholder="{{ form.placeholder }}"
     minlength="{{ form.minlength | default(3) }}"
     aria-describedby="{{ form.idPrefix }}_help {{ form.idPrefix }}_error {{ form.idPrefix }}_valid"
-    required />
+    required/>
 
   {% if form.help %}
-    <span class="{{ form.helpClass | default('visually-hidden') }}" id="{{ form.idPrefix }}_help">{{ form.help }}</span>
+    <span class="{{ form.helpClass | default('sr-only') }} {{ form.helpExtraClass | default('') }}" id="{{ form.idPrefix }}_help">
+      {{ form.help }}
+    </span>
   {% endif %}
 
   {% if form.error %}
-    <span class="{{ form.errorClass | default('visually-hidden') }}" id="{{ form.idPrefix }}_error">{{ form.error }}</span>
+    <span class="{{ form.errorClass | default('sr-only') }} {{ form.errorExtraClass | default('') }}" id="{{ form.idPrefix }}_error">
+      {{ form.error }}
+    </span>
   {% endif %}
 
   {% if form.validated %}
-    <span class="{{ form.validClass | default('visually-hidden') }}" id="{{ form.idPrefix }}_valid">{{ form.validated }}</span>
+    <span class="{{ form.validClass | default('sr-only') }} {{ form.validExtraClass | default('') }}" id="{{ form.idPrefix }}_valid">
+      {{ form.validated }}
+    </span>
   {% endif %}
 
   <button
     class="{{ form.buttonClass }}"
     type="{{ form.buttonType }}"
     {% if form.ariaLabel %}aria-label="{{ form.ariaLabel }}"{% endif %}>
-              
+
     {% if form.icon %}
       <svg class="icon{% if form.iconClass %} {{ form.iconClass }}{% else %} form__icon{% endif %}" aria-hidden="true" focusable="false">
         <use href="/img/sprite.svg#{{ form.icon }}"></use>
