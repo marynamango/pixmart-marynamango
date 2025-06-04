@@ -1,6 +1,6 @@
 {% set badge = badge or {} %}
 
-<span class="badge{% if badge.modFirst %} badge--{{ badge.modFirst }}{% endif %}{% if badge.modSecond %} badge--{{ badge.modSecond }}{% endif %}">
+<span class="badge{% if badge.modFirst %} badge--{{ badge.modFirst }}{% endif %}{% if badge.modSecond %} badge--{{ badge.modSecond }}{% endif %}{% if badge.modThird %} badge--{{ badge.modThird }}{% endif %}">
   {% if badge.icon %}
     <svg class="icon icon--white" aria-hidden="true" focusable="false">
       <use href="/img/sprite.svg#{{ badge.icon.name }}"></use>

@@ -1,0 +1,10 @@
+@use "../base/base" as *;
+
+.catalog-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 32px
+}

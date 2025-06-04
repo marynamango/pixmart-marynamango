@@ -8,8 +8,10 @@
   </a>
 
   <div class="catalog-card__info">
-    <h3 class="catalog-card__title">{{ item.title }}</h3>
-    <p class="catalog-card__tags">{{ item.category }} · {{ item.topic }}</p>
+    <div class="catalog-card__top">
+      <h3 class="catalog-card__title">{{ item.title }}</h3>
+      <p class="catalog-card__tags">{{ item.category }} · {{ item.topic }}</p>
+    </div>
     <div class="catalog-card__bottom">
       <div class="catalog-card__price">€{{ item.price | default('00.00') }}</div>
       
