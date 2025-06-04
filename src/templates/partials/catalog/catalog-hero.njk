@@ -1,5 +1,14 @@
 <section class="catalog-hero section-wrapper">
-  <h1 class="catalog-hero__title">
-    {{ catalogHero.title }} <span class="catalog-hero__highlight">{{ catalogHero.highlight }}</span> {{ catalogHero.suffix }}
-  </h1>
+  <div class="catalog-hero__content">
+    <h1 class="catalog-hero__title">
+      {{ catalogHero.title }}
+      <span class="catalog-hero__line">
+        <span class="catalog-hero__highlight">{{ catalogHero.highlight }}</span>
+        {{ catalogHero.suffix }}
+      </span>
+    </h1>
+  </div>
+  <svg class="catalog-hero__bg" aria-hidden="true" focusable="false">
+    <use href="/img/sprite.svg#hero-wave"/>
+  </svg>
 </section>

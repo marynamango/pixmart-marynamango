@@ -38,7 +38,8 @@
 }
 
 .faq.section-wrapper,
-.footer__bottom.section-wrapper {
+.footer__bottom.section-wrapper,
+.catalog-hero.section-wrapper {
   @include tab {
     padding-inline: 80px;
   }
