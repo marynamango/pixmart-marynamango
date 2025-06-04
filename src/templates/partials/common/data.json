@@ -16,6 +16,7 @@
       "class": "search search--header",
       "action": "/search",
       "name": "q",
+      "idPrefix": "search",
       "type": "search",
       "placeholder": "Search for Digital Assets",
       "inputClass": "search__input search__input--mobile-hidden",
@@ -25,8 +26,11 @@
       "iconClass": "icon--black",
       "ariaLabel": "Search",
       "help": "Enter at least 3 characters to search.",
+      "helpExtraClass": "search__help",
       "error": "Please enter at least 3 characters.",
-      "validated": "Field validation is successful."
+      "errorExtraClass": "search__error",
+      "validated": "Field validation is successful.",
+      "validExtraClass": "search__valid"
     },
     "button": {
       "url": "#",
@@ -88,18 +92,29 @@
       { "name": "telegram", "url": "#" }
     ],
     "newsletter": {
-      "title": "Subscribe to<br> Design Newsletter",
+      "title": "Subscribe to Design Newsletter",
       "form": {
         "class": "newsletter__form",
+        "groupWrapperClass": "newsletter__field-wrapper",
         "action": "/subscribe",
         "method": "post",
         "name": "email",
+        "idPrefix": "newsletter",
         "type": "email",
         "placeholder": "Enter your email address ...",
         "inputClass": "newsletter__input",
+        "minlength": 3,
+        "required": true,
+        "help": "Enter at least 3 characters to subscribe.",
+        "error": "Please provide a valid email address.",
+        "validated": "Field validation is successful.",
+        "helpExtraClass": "newsletter__help",
+        "errorExtraClass": "newsletter__error",
+        "validExtraClass": "newsletter__valid",
         "buttonClass": "button button--primary newsletter__button",
         "buttonType": "submit",
-        "buttonText": "Subscribe"
+        "buttonText": "Subscribe",
+        "ariaLabel": "Subscribe to newsletter"
       }
     },
     "legal": [

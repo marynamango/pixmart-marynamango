@@ -13,13 +13,13 @@
             aria-describedby="{{ input.id }}_help {{ input.id }}_error {{ input.id }}_valid"
             {% if input.required %}required{% endif %}></textarea>
           {% if input.help %}
-            <span class="contact-form__help" id="{{ input.id }}_help">{{ input.help }}</span>
+            <span class="sr-only contact-form__help" id="{{ input.id }}_help">{{ input.help }}</span>
           {% endif %}
           {% if input.error %}
-            <span class="contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
+            <span class="sr-only contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
           {% endif %}
           {% if input.validated %}
-            <span class="contact-form__valid" id="{{ input.id }}_valid">{{ input.validated }}</span>
+            <span class="sr-only contact-form__valid" id="{{ input.id }}_valid">{{ input.validated }}</span>
           {% endif %}
         </div>
       </div>
@@ -44,13 +44,13 @@
               {% endfor %}
             </select>
             {% if input.help %}
-              <span class="contact-form__help" id="{{ input.id }}_help">{{ input.help }}</span>
+              <span class="sr-only contact-form__help" id="{{ input.id }}_help">{{ input.help }}</span>
             {% endif %}
             {% if input.error %}
-              <span class="contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
+              <span class="sr-only contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
             {% endif %}
             {% if input.validated %}
-              <span class="contact-form__valid" id="{{ input.id }}_valid">{{ input.validated }}</span>
+              <span class="sr-only contact-form__valid" id="{{ input.id }}_valid">{{ input.validated }}</span>
             {% endif %}
             <svg class="icon contact-form__arrow" aria-hidden="true" focusable="false">
               <use href="/img/sprite.svg#chevron-left"></use>
@@ -76,13 +76,13 @@
             {% if input.pattern %}pattern="{{ input.pattern | safe }}"{% endif %}
           />
           {% if input.help %}
-            <span class="contact-form__help" id="{{ input.id }}_help">{{ input.help }}</span>
+            <span class="sr-only contact-form__help" id="{{ input.id }}_help">{{ input.help }}</span>
           {% endif %}
           {% if input.error %}
-            <span class="contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
+            <span class="sr-only contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
           {% endif %}
           {% if input.validated %}
-            <span class="contact-form__valid" id="{{ input.id }}_valid">{{ input.validated }}</span>
+            <span class="sr-only contact-form__valid" id="{{ input.id }}_valid">{{ input.validated }}</span>
           {% endif %}
         </div>
       </div>

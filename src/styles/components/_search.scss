@@ -35,31 +35,31 @@
         }
         //Show and hide text on help, valid, invalid
         &:focus + .search__help {
-          display: block;
+          @include sr-only-reset;
         }
 
         &:user-invalid ~ .search__help {
-          display: none;
+          @include sr-only;
         }
 
         &:user-invalid ~ .search__error {
-          display: block;
+          @include sr-only-reset;
         }
 
         &:valid ~ .search__valid {
-          display: block;
+          @include sr-only-reset;
         }
 
         &:valid ~ .search__help {
-          display: none;
+          @include sr-only;
         }
 
         &:valid ~ .search__error {
-          display: none;
+          @include sr-only;
         }
 
         &:user-invalid ~ .search__valid {
-          display: none;
+          @include sr-only;
         }
       }
     }
@@ -68,10 +68,9 @@
   &__help,
   &__error,
   &__valid {
-    display: none;
     @include text-xs;
     position: absolute;
-    top: 43px;
+    top: calc(100% + 4px);
     left: 0;
   }
 

@@ -37,8 +37,8 @@
         "alt": "Map showing location of PixMart HQ at 123 Creative Ave, Design City",
         "pictureClass": "contact-info__map-picture",
         "class": "contact-info__map-image",
-        "width": "",
-        "height": ""
+        "width": "618",
+        "height": "314"
       },
       "icon": "location-pin",
       "textPrimary": "PixMart HQ",
@@ -74,7 +74,7 @@
           "label": "Subject",
           "type": "select",
           "required": true,
-          "option": "General Inquiry",
+          "option": "Select a subject",
           "options": [
             "General Inquiry",
             "Billing",
