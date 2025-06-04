@@ -150,36 +150,32 @@
     }
 
     //Show and hide text on help, valid, invalid
-    &:user-invalid + .contact-form__error {
-      display: block;
-    }
-
     &:focus + .contact-form__help {
-      display: block;
+      @include sr-only-reset;
     }
 
     &:user-invalid ~ .contact-form__help {
-      display: none;
+      @include sr-only;
     }
 
     &:user-invalid ~ .contact-form__error {
-      display: block;
+      @include sr-only-reset;
     }
 
     &:valid:focus ~ .contact-form__valid {
-      display: block;
+      @include sr-only-reset;
     }
 
     &:valid ~ .contact-form__help {
-      display: none;
+      @include sr-only;
     }
 
     &:valid ~ .contact-form__error {
-      display: none;
+      @include sr-only;
     }
 
     &:user-invalid ~ .contact-form__valid {
-      display: none;
+      @include sr-only;
     }
   }
 
