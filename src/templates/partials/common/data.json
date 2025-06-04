@@ -92,7 +92,7 @@
       { "name": "telegram", "url": "#" }
     ],
     "newsletter": {
-      "title": "Subscribe to<br> Design Newsletter",
+      "title": "Subscribe to Design Newsletter",
       "form": {
         "class": "newsletter__form",
         "groupWrapperClass": "newsletter__field-wrapper",
@@ -107,7 +107,7 @@
         "required": true,
         "help": "Enter at least 3 characters to subscribe.",
         "error": "Please provide a valid email address.",
-        "validated": "Your email address looks good!",
+        "validated": "Field validation is successful.",
         "helpExtraClass": "newsletter__help",
         "errorExtraClass": "newsletter__error",
         "validExtraClass": "newsletter__valid",
