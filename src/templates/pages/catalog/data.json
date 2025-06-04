@@ -177,7 +177,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",
@@ -218,7 +218,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",
@@ -259,7 +259,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",
@@ -300,7 +300,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",
@@ -385,7 +385,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",
@@ -426,7 +426,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",
@@ -467,7 +467,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",
@@ -508,7 +508,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",
