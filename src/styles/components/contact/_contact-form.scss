@@ -78,15 +78,15 @@
 
     // Show messages
     &:focus + .contact-form__help {
-      display: block;
+      @include sr-only-reset;
     }
 
     &:user-invalid ~ .contact-form__error {
-      display: block;
+      @include sr-only-reset;
     }
 
     &:valid:focus ~ .contact-form__valid {
-      display: block;
+      @include sr-only-reset;
     }
 
     // Hide others when certain states are active
@@ -94,14 +94,13 @@
     &:user-invalid ~ .contact-form__valid,
     &:valid ~ .contact-form__help,
     &:valid ~ .contact-form__error {
-      display: none;
+      @include sr-only;
     }
   }
 
   &__help,
   &__error,
   &__valid {
-    display: none;
     @include text-xs;
     position: absolute;
     top: calc(100% + 4px); // 4px below the input
