@@ -95,6 +95,7 @@
       "title": "Subscribe to<br> Design Newsletter",
       "form": {
         "class": "newsletter__form",
+        "groupWrapperClass": "newsletter__field-wrapper",
         "action": "/subscribe",
         "method": "post",
         "name": "email",

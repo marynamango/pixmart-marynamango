@@ -1,4 +1,8 @@
 <form class="{{ form.class }}" action="{{ form.action }}" method="{{ form.method | default('get') }}">
+  {% if form.groupWrapperClass %}
+  <div class="{{ form.groupWrapperClass }}">
+  {% endif %}
+  
   <input
     class="{{ form.inputClass }}"
     type="{{ form.type | default('text') }}"
@@ -24,6 +28,10 @@
     <span class="{{ form.validClass | default('sr-only') }} {{ form.validExtraClass | default('') }}" id="{{ form.idPrefix }}_valid">
       {{ form.validated }}
     </span>
+  {% endif %}
+
+  {% if form.groupWrapperClass %}
+  </div>
   {% endif %}
 
   <button

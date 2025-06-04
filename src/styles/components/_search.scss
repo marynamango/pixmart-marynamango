@@ -70,7 +70,7 @@
   &__valid {
     @include text-xs;
     position: absolute;
-    top: 43px;
+    top: calc(100% + 4px);
     left: 0;
   }
 
