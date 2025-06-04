@@ -1,0 +1,7 @@
+@use "../base/base" as *;
+
+.catalog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}

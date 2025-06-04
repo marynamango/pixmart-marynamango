@@ -208,7 +208,7 @@
         "modThird": "popular"
       },
       "image": {
-        "folder": "catalog",
+        "folder": "common",
         "basename": "dream-homes",
         "alt": "Dream Homes UI Kit",
         "pictureClass": "catalog-card__picture",
@@ -249,7 +249,7 @@
         "modThird": "popular"
       },
       "image": {
-        "folder": "catalog",
+        "folder": "common",
         "basename": "foodish-catering",
         "alt": "Foodish Catering UI Kit",
         "pictureClass": "catalog-card__picture",
@@ -290,7 +290,7 @@
         "modThird": "new"
       },
       "image": {
-        "folder": "catalog",
+        "folder": "common",
         "basename": "caring-hearts",
         "alt": "Caring Hearts UI Kit",
         "pictureClass": "catalog-card__picture",
@@ -416,7 +416,7 @@
         "modThird": "popular"
       },
       "image": {
-        "folder": "catalog",
+        "folder": "common",
         "basename": "exploring-fun",
         "alt": "Exploring Fun UI Kit",
         "pictureClass": "catalog-card__picture",
