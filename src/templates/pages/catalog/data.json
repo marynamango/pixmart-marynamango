@@ -89,7 +89,7 @@
         "ariaLabel": "Grid view",
         "icon": {
           "name": "grid",
-          "class": "catalog-toolbar__grid-icon"
+          "class": "icon--white"
         }
       },
       "list": {
@@ -97,8 +97,7 @@
         "modSecond": "secondary",
         "ariaLabel": "List view",
         "icon": {
-          "name": "list",
-          "class": "catalog-toolbar__list-icon"
+          "name": "list"
         }
       }
     },
@@ -112,7 +111,7 @@
           "text": "UI Kit",
           "icon": {
             "name": "x-close",
-            "class": "catalog-toolbar__tag-icon"
+            "class": "icon--small"
           }
         }
       },
@@ -125,7 +124,7 @@
           "text": "UI Kit",
           "icon": {
             "name": "x-close",
-            "class": "catalog-toolbar__tag-icon"
+            "class": "icon--small"
           }
         }
       }
