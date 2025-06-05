@@ -24,14 +24,24 @@
                 | replace('&', 'and')
               )) | safe %}
 
+              {% if filter.type == 'toggle' %}
+                {% set inputType = 'checkbox' %}
+                {% set inputClass = 'toggle-input' %}
+                {% set labelClass = 'toggle-label' %}
+              {% else %}
+                {% set inputType = filter.type %}
+                {% set inputClass = filter.type + '-input' %}
+                {% set labelClass = filter.type + '-label' %}
+              {% endif %}
+
               <input
-                class="visually-hidden {{ filter.type }}-input"
-                type="{{ filter.type }}"
-                name="{{ filter.name }}{% if filter.type == 'checkbox' %}[]{% endif %}"
+                class="visually-hidden {{ inputClass }}"
+                type="{{ inputType }}"
+                name="{{ filter.name }}{% if inputType == 'checkbox' %}[]{% endif %}"
                 value="{{ option | lower }}"
                 id="{{ id }}"/>
 
-              <label class="{{ filter.type }}-label form-label" for="{{ id }}">
+              <label class="{{ labelClass }} form-label" for="{{ id }}">
                 {% if filter.type == 'checkbox' %}
                   <svg class="checkbox-label__icon" aria-hidden="true" focusable="false">
                     <use href="/img/sprite.svg#checkmark"></use>

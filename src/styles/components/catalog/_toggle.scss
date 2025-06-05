@@ -1,0 +1,72 @@
+@use "../base/base" as *;
+
+    .toggle-label {
+      display: block;
+      position: relative;
+      padding-left: 48px;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 40px;
+        height: 20px;
+        border-radius: 19px;
+        background-color: var(--color-border-default); //Should be --color-text-disabled here, but it's too light, and not rendered by the browsers.
+        border: 2px solid transparent;
+        transition: background-color 0.3s ease;
+      }
+      
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: var(--background-color);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      &:hover::before {
+        background-color: var(--color-border-checkbox);
+      }
+    }
+
+  .toggle-input {
+    &:disabled + .toggle-label::before {
+      background-color: var(--color-border-default);
+    }
+
+    &:active + .toggle-label::before {
+      background-color: var(--color-muted);
+    }
+
+    &:focus + .toggle-label::before {
+      background-color: var(--color-border-default); //Should be --color-text-disabled here, but it's too light, and not rendered by the browsers.
+      outline: 2px solid var(--color-focus);
+      outline-offset: 2px;
+    }
+
+    &:checked + .toggle-label::before {
+      background-color: var(--color-accent);
+    }
+
+    &:checked + .toggle-label::after {
+      transform: translateY(-50%) translateX(20px);
+    }
+
+    &:disabled:checked + .toggle-label::before {
+      background-color: var(--color-border-default);
+    }
+
+    &:checked:hover + .toggle-label::before,
+    &:checked:active + .toggle-label::before {
+      background-color: var(--color-focus);
+    }
+  }
