@@ -25,9 +25,10 @@
   }
 
   &__input {
+    @include text-md;
     border: 1px solid var(--color-border-default);
     border-radius: 8px;
-    padding: 20px;
+    padding: 19px;
 
     &:hover {
       border-color: var(--color-focus);

@@ -1,0 +1,101 @@
+@use "../base/base" as *;
+
+.catalog-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include tab {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__filters {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+
+    @include tab {
+      max-width: 204px;
+    }
+
+    @include desk {
+      max-width: 156px;
+    }
+  }
+
+  &__filter-toggle {
+    @include desk {
+      display: none;
+    }
+  }
+
+  &__select-wrapper {
+    display: flex;
+    width: 100%;
+    order: -1;
+    position: relative;
+
+    &:focus-within .catalog-toolbar__arrow {
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%)  rotate(270deg);
+    transition: transform 0.3s ease;
+  }
+
+  &__select {
+    @include text-md($fw: 600);
+    color: var(--color-primary);
+    border: 1px solid var(--color-border-default);
+    padding: var(--padding-clear);
+    border-radius: 8px;
+    cursor: pointer;
+    appearance: none;
+    width: 100%;
+  }
+
+  &__results-ui {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__result-count {
+    @include text-md;
+  }
+
+  &__tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+  }
+
+  &__tag-button {
+    @include text-sm($fw:600);
+    color: var(--color-primary);
+    padding: var(--padding-filters);
+    gap: 8px;
+    background-color: transparent;
+    border: 1px solid var(--color-border-default);
+  }
+
+  &__layout-buttons {
+    display: flex;
+    gap: 8px;
+  }
+}

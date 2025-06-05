@@ -1,0 +1,51 @@
+@use "../base/base" as *;
+
+.range-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 6px;
+  
+  &__input {
+    appearance: none;
+    width: 50%;
+    height: 4px;
+    background-color: var(--color-border-default);
+    border-radius: 2px;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: var(--color-accent);
+      cursor: pointer;
+    }
+
+     &::-moz-range-thumb {
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: var(--color-primary);
+      cursor: pointer;
+    }
+
+    &--bottom {
+      transform: rotate(180deg);
+      order: -1;
+    }
+  }
+
+  &__inputs {
+    display: flex;
+  }
+
+  &__labels {
+    @include text-md;
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+}

@@ -8,11 +8,15 @@
       {% include "partials/components/button.njk" %}
 
       <div class="catalog-toolbar__select-wrapper">
+        <label for="sort" class="sr-only">Sort options</label>
         <select class="catalog-toolbar__select" id="{{ catalogToolbar.select.id }}" name="{{ catalogToolbar.select.id }}">
           {% for option in catalogToolbar.select.options %}
             <option value="{{ option.value }}">{{ option.label }}</option>
           {% endfor %}
         </select>
+        <svg class="icon icon--black catalog-toolbar__arrow" aria-hidden="true" focusable="false">
+          <use href="/img/sprite.svg#chevron-left"></use>
+        </svg>
       </div>
     </div>
 

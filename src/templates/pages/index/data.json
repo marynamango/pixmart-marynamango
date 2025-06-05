@@ -144,8 +144,8 @@
           "modSecond": "ribbon"
         },
         "image": {
-          "folder": "products",
-          "basename": "travel-hero",
+          "folder": "common",
+          "basename": "exploring-fun",
           "pictureClass": "product-card__picture",
           "class": "product-card__img",
           "alt": "Travel page template",
@@ -171,8 +171,8 @@
           "modSecond": "ribbon"
         },
         "image": {
-          "folder": "products",
-          "basename": "healthcare-pro",
+          "folder": "common",
+          "basename": "caring-hearts",
           "pictureClass": "product-card__picture",
           "class": "product-card__img",
           "alt": "Healthcare page template",
@@ -193,8 +193,8 @@
       {
         "url": "#",
         "image": {
-          "folder": "products",
-          "basename": "foodish-delight",
+          "folder": "common",
+          "basename": "foodish-catering",
           "pictureClass": "product-card__picture",
           "class": "product-card__img",
           "alt": "Foodish page template",
@@ -215,8 +215,8 @@
       {
         "url": "#",
         "image": {
-          "folder": "products",
-          "basename": "real-estate",
+          "folder": "common",
+          "basename": "dream-homes",
           "pictureClass": "product-card__picture",
           "class": "product-card__img",
           "alt": "Real Estate page template",

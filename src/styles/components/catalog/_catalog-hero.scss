@@ -1,0 +1,51 @@
+@use "../base/base" as *;
+
+.catalog-hero {
+  position: relative;
+  overflow: hidden;
+  height: 256px;
+  width: 100%;
+
+  @include tab {
+    height: 289px;
+  }
+
+  &__content {
+    padding-block: 64px;
+  }
+
+  &__title {
+    @include heading-title;
+    position: relative;
+    z-index: 1;
+
+    @include tab {
+      @include heading-main;
+    }
+  }
+
+  &__line {
+    display: block;
+  }
+
+  &__highlight {
+    color: var(--color-accent);
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: -139px;
+    min-width: 1363px;
+    height: 256px;
+    z-index: 0;
+    pointer-events: none;
+    fill: #f1f5f9; /* or adjust based on symbol color */
+
+    @include tab {
+      left: -3px;
+      min-width: 1443px;
+      height: 289px;
+    }
+  }
+}

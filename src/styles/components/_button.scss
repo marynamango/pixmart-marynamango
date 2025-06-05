@@ -27,6 +27,11 @@
     background-color: var(--background-color);
   }
 
+  &--favourite {
+    border-color: var(--color-border-dark);
+    background-color: transparent;
+  }
+
   &--only-icon {
     padding: var(--padding-icon);
   }

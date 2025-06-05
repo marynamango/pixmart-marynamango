@@ -44,7 +44,7 @@
     {
       "title": "Style",
       "name": "style",
-      "type": "checkbox",
+      "type": "toggle",
       "options": ["Minimalist", "Modern", "Playful", "Dark Mode", "Photocentric"]
     }
   ],
@@ -54,6 +54,7 @@
       "text": "Save",
       "modFirst": "primary",
       "modSecond": "full",
+      "extraClass": "catalog-filter__save",
       "ariaLabel": "Save filter settings"
     }
   },
@@ -89,7 +90,7 @@
         "ariaLabel": "Grid view",
         "icon": {
           "name": "grid",
-          "class": "catalog-toolbar__grid-icon"
+          "class": "icon--white"
         }
       },
       "list": {
@@ -97,8 +98,7 @@
         "modSecond": "secondary",
         "ariaLabel": "List view",
         "icon": {
-          "name": "list",
-          "class": "catalog-toolbar__list-icon"
+          "name": "list"
         }
       }
     },
@@ -112,7 +112,7 @@
           "text": "UI Kit",
           "icon": {
             "name": "x-close",
-            "class": "catalog-toolbar__tag-icon"
+            "class": "icon--small"
           }
         }
       },
@@ -125,7 +125,7 @@
           "text": "UI Kit",
           "icon": {
             "name": "x-close",
-            "class": "catalog-toolbar__tag-icon"
+            "class": "icon--small"
           }
         }
       }
@@ -178,7 +178,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",
@@ -209,7 +209,7 @@
         "modThird": "popular"
       },
       "image": {
-        "folder": "catalog",
+        "folder": "common",
         "basename": "dream-homes",
         "alt": "Dream Homes UI Kit",
         "pictureClass": "catalog-card__picture",
@@ -219,7 +219,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",
@@ -250,7 +250,7 @@
         "modThird": "popular"
       },
       "image": {
-        "folder": "catalog",
+        "folder": "common",
         "basename": "foodish-catering",
         "alt": "Foodish Catering UI Kit",
         "pictureClass": "catalog-card__picture",
@@ -260,7 +260,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",
@@ -291,7 +291,7 @@
         "modThird": "new"
       },
       "image": {
-        "folder": "catalog",
+        "folder": "common",
         "basename": "caring-hearts",
         "alt": "Caring Hearts UI Kit",
         "pictureClass": "catalog-card__picture",
@@ -301,7 +301,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",
@@ -386,7 +386,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",
@@ -417,7 +417,7 @@
         "modThird": "popular"
       },
       "image": {
-        "folder": "catalog",
+        "folder": "common",
         "basename": "exploring-fun",
         "alt": "Exploring Fun UI Kit",
         "pictureClass": "catalog-card__picture",
@@ -427,7 +427,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",
@@ -468,7 +468,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",
@@ -509,7 +509,7 @@
       },
       "wishlistButton": {
         "modFirst": "only-icon",
-        "extraClass": "catalog-card__btn-favourite",
+        "modSecond": "favourite",
         "ariaLabel": "Add to wishlist",
         "icon": {
           "name": "heart",

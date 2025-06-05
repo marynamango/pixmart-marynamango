@@ -24,6 +24,8 @@
     opacity: 1;
     height: auto;
     pointer-events: auto;
+    z-index: 3;
+    background-color: var(--background-color-secondary);
   }
 
   @include tab {
