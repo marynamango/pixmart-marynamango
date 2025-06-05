@@ -44,7 +44,7 @@
     {
       "title": "Style",
       "name": "style",
-      "type": "checkbox",
+      "type": "toggle",
       "options": ["Minimalist", "Modern", "Playful", "Dark Mode", "Photocentric"]
     }
   ],

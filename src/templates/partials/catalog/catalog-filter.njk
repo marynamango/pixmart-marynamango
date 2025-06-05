@@ -31,9 +31,14 @@
                 value="{{ option | lower }}"
                 id="{{ id }}"/>
 
-              <label
-                class="{{ filter.type }}-label form-label"
-                for="{{ id }}">{{ option }}</label>
+              <label class="{{ filter.type }}-label form-label" for="{{ id }}">
+                {% if filter.type == 'checkbox' %}
+                  <svg class="checkbox-label__icon" aria-hidden="true" focusable="false">
+                    <use href="/img/sprite.svg#checkmark"></use>
+                  </svg>
+                {% endif %}
+                {{ option }}
+              </label>
             {% endfor %}
           </div>
         </div>
