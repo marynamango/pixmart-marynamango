@@ -78,72 +78,90 @@
     }
   }
 
-  &__img--about {
+  &__picture {
     position: absolute;
-    top: 29px;
-    left: 0;
-    width: 131px;
-    height: 197px;
-    z-index: 1;
-    border-radius: 6px;
+    display: block;
+    overflow: hidden;
 
-    @include tab {
-      top: 0; //adjusted positioning due to crop
-      width: 150px; //deducted 50px from width, due to a cropped image
-      height: 300px;
+    &--about {
+      top: 29px;
+      left: 0;
+      width: 131px;
+      height: 197px;
+      z-index: 1;
+      border-radius: 6px;
+
+      @include tab {
+        top: 0;
+        width: 150px;
+        height: 300px;
+        border-radius: 0 10px 10px 0;
+      }
+
+      @include desk {
+        width: 281px;
+        height: 422px;
+        border-radius: 10px;
+      }
     }
 
-    @include desk {
-      width: 281px;
-      height: 422px;
+    &--program {
+      top: 13px;
+      left: 177px;
+      width: 171px;
+      height: 96px;
+      border-radius: 6px;
+      border: 3px solid var(--background-color);
+
+      @include tab {
+        top: 35px;
+        left: 221px;
+        width: 207px;
+        height: 117px;
+        border-radius: 10px;
+        box-shadow: 0 0 0 2px var(--background-color);
+      }
+
+      @include desk {
+        top: 49px;
+        left: 317px;
+        width: 291px;
+        height: 164px;
+      }
+    }
+
+    &--screens {
+      top: 122px;
+      left: 106px;
+      width: 242px;
+      height: 140px;
+
+      @include tab {
+        top: 174px;
+        left: 94px;
+        width: 349px;
+        height: 212px;
+      }
+
+      @include desk {
+        top: 245px;
+        left: 110px;
+        width: 514px;
+        height: 299px;
+      }
     }
   }
 
-  &__img--program {
-    position: absolute;
-    top: 13px;
-    left: 177px;
-    width: 171px;
-    height: 96px;
-
-    @include tab {
-      top: 35px;
-      left: 221px;
-      width: 207px;
-      height: 117px;
-    }
-
-    @include desk {
-      top: 49px;
-      left: 317px;
-      width: 291px;
-      height: 164px;
-    }
-  }
-
-  &__img--screens {
-    position: absolute;
-    top: 122px;
-    left: 106px;
-    width: 242px;
-    height: 140px;
-
-    @include tab {
-      top: 174px;
-      left: 94px;
-      width: 349px; //deducted 16px from width, due to a cropped image
-      height: 212px;
-    }
-
-    @include desk {
-      top: 245px;
-      left: 110px;
-      width: 514px;
-      height: 299px;
-    }
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   &__icon {
+    position: absolute;
+    z-index: 2;
     color: var(--color-icon-accent);
     background-color: var(--background-color);
     box-shadow: 0px 2.5px 25px var(--color-shadow);
@@ -159,7 +177,6 @@
     }
 
     &--theme {
-      position: absolute;
       top: 235px;
       left: 19px;
       border-radius: 6px;
@@ -176,7 +193,6 @@
     }
 
     &--bezier {
-      position: absolute;
       top: 5px;
       left: 305px;
       border-radius: 3px;

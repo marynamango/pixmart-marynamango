@@ -27,21 +27,27 @@
       {
         "key": "about",
         "alt": "About Eventify platform",
-        "class": "promo__img--about",
+        "width": "281",
+        "height": "422",
+        "class": "promo__picture--about",
         "folder": "promo",
         "basename": "eventify-about"
       },
       {
         "key": "program",
         "alt": "Event program and pricing",
-        "class": "promo__img--program",
+        "width": "291",
+        "height": "164",
+        "class": "promo__picture--program",
         "folder": "promo",
         "basename": "eventify-program"
       },
       {
         "key": "screens",
         "alt": "Screens for event website",
-        "class": "promo__img--screens",
+        "width": "514",
+        "height": "299",
+        "class": "promo__picture--screens",
         "folder": "promo",
         "basename": "eventify-screens"
       }
@@ -361,7 +367,9 @@
         },
         "image": {
           "basename": "creative-blog",
-          "alt": "Creative blog article"
+          "alt": "Creative blog article",
+          "width": "624",
+          "height": "702"
         }
       },
       {
@@ -374,7 +382,9 @@
         },
         "image": {
           "basename": "best-dishes",
-          "alt": "Best dishes article"
+          "alt": "Best dishes article",
+          "width": "624",
+          "height": "702"
         }
       }
     ]

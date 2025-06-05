@@ -5,6 +5,20 @@
   flex-direction: column;
   margin-bottom: 16px;
   position: relative;
+  width: 305px;
+  flex: 0 0 auto;
+
+  &__picture {
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  &__img {
+    display: block;
+    object-fit: cover;
+
+  }
 
   &__info {
     display: flex;

@@ -6,7 +6,7 @@
     {% endif %}
 
     {% set base = "/img/articles/" + article.image.basename %}
-    <picture>
+    <picture class="article-card__picture">
       <!-- Desktop -->
       <source media="(min-width: 1025px)" type="image/avif"
         srcset="{{ base }}-desktop-1x.avif 1x, {{ base }}-desktop-2x.avif 2x">
@@ -29,6 +29,8 @@
       <img
         src="{{ base }}-mobile-1x.webp"
         alt="{{ article.image.alt }}"
+        width="{{ article.image.width }}"
+        height="{{ article.image.height }}"
         loading="lazy"
         class="article-card__img"
       >
