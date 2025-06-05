@@ -6,6 +6,7 @@
 }
 
 .main-container {
+  padding-top: var(--header-height);
   padding-bottom: 64px;
 
   @include tab {

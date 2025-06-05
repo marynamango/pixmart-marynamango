@@ -1,8 +1,13 @@
 @use "../base/base" as *;
 
 .header {
-  padding-block: 24px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--background-color);
+  padding-block: 26px;
 
   &__wrapper {
     display: flex;
