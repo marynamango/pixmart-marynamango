@@ -54,6 +54,7 @@
       "text": "Save",
       "modFirst": "primary",
       "modSecond": "full",
+      "extraClass": "catalog-filter__save",
       "ariaLabel": "Save filter settings"
     }
   },

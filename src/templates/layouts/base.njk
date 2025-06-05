@@ -78,5 +78,26 @@ function burgerMenu() {
   });
 }
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.querySelector(".catalog-toolbar__filter-toggle");
+    const closeBtn = document.querySelector(".catalog-filter__close");
+    const filterDrawer = document.querySelector("#catalog_filter");
+
+    if (!toggleBtn || !filterDrawer || !closeBtn) return;
+
+    toggleBtn.addEventListener("click", () => {
+      const isVisible = filterDrawer.classList.toggle("catalog-filter--visible");
+      toggleBtn.setAttribute("aria-expanded", isVisible);
+      document.body.style.overflow = isVisible ? "hidden" : "";
+    });
+
+    closeBtn.addEventListener("click", () => {
+      filterDrawer.classList.remove("catalog-filter--visible");
+      toggleBtn.setAttribute("aria-expanded", false);
+      document.body.style.overflow = "";
+    });
+  });
+</script>
 </body>
 </html>

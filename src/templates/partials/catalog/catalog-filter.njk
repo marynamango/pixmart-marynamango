@@ -1,13 +1,11 @@
-<aside class="catalog-filter" id="catalog_filter" hidden>
+<aside class="catalog-filter" id="catalog_filter">
+  <div class="catalog-filter__header">
+    <h2 class="catalog-filter__title">{{ filterForm.title }}</h2>
+    {% set button = filterCloseButton %}
+    {% include "partials/components/button.njk" %}
+  </div>
+
   <div class="catalog-filter__wrapper">
-
-    <!-- Header -->
-    <div class="catalog-filter__header">
-      <h2 class="catalog-filter__title">{{ filterForm.title }}</h2>
-      {% set button = filterCloseButton %}
-      {% include "partials/components/button.njk" %}
-    </div>
-
     <!-- Clear All Button -->
     {% set button = filterClearButton %}
     {% include "partials/components/button.njk" %}
@@ -17,26 +15,27 @@
         <div class="filter-form__group">
           <h2 class="filter-form__title">{{ filter.title }}</h2>
 
-          {% for option in filter.options %}
-            <!-- Gulp gives errors, when ID is written with hyphens, replaced them with underscore -->
-            {% set id = (filter.name + "_" + (option
-              | lower
-              | replace(' ', '_')
-              | replace('-', '_')
-              | replace('&', 'and')
-            )) | safe %}
+          <div class="filter-form__options">
+            {% for option in filter.options %}
+              {% set id = (filter.name + "_" + (option
+                | lower
+                | replace(' ', '_')
+                | replace('-', '_')
+                | replace('&', 'and')
+              )) | safe %}
 
-            <input
-              class="visually-hidden {{ filter.type }}-input"
-              type="{{ filter.type }}"
-              name="{{ filter.name }}{% if filter.type == 'checkbox' %}[]{% endif %}"
-              value="{{ option | lower }}"
-              id="{{ id }}"/>
+              <input
+                class="visually-hidden {{ filter.type }}-input"
+                type="{{ filter.type }}"
+                name="{{ filter.name }}{% if filter.type == 'checkbox' %}[]{% endif %}"
+                value="{{ option | lower }}"
+                id="{{ id }}"/>
 
-            <label
-              class="{{ filter.type }}-label form-label"
-              for="{{ id }}">{{ option }}</label>
-          {% endfor %}
+              <label
+                class="{{ filter.type }}-label form-label"
+                for="{{ id }}">{{ option }}</label>
+            {% endfor %}
+          </div>
         </div>
       {% endfor %}
 
