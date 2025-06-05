@@ -1,0 +1,60 @@
+@use "../base/base" as *;
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid var(--color-border-checkbox);
+    background-color: var(--background-color);
+  }
+}
+
+.radio-input {
+  &:hover + .radio-label::before {
+    background-color: var(--background-color-cards);
+  }
+
+  &:focus + .radio-label::before {
+    background-color: var(--color-focus-background);
+    border-color: var(--color-muted-light);
+    outline: 2px solid var(--color-focus);
+    outline-offset: 1px;
+  }
+
+  &:checked + .radio-label::before {
+    border: 5px solid var(--color-accent);
+  }
+
+  &:disabled + .radio-label {
+    color: var(--color-text-disabled);
+    cursor: not-allowed;
+  }
+
+  &:disabled + .radio-label::before {
+    background-color: var(--color-border-default);
+    border-color: transparent;
+  }
+
+  &:user-invalid + .radio-label::before {
+    border-color: var(--color-invalid);
+    background-color: var(--background-color);
+  }
+  
+  &:user-invalid:hover + .radio-label::before {
+    background-color: var(--background-color-cards);
+  }
+
+  &:checked:focus + .radio-label::before {
+    border-color: var(--color-focus);
+    outline: 2px solid var(--color-focus);
+    outline-offset: 1px;
+  }
+}
