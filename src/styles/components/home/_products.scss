@@ -19,7 +19,7 @@
 
   &__slider {
     display: flex;
-    overflow-x: auto; //Check later if i need to make it visible
+    overflow-x: auto;
     gap: 16px;
     align-items: center;
 
@@ -32,6 +32,7 @@
 
       @include desk {
         padding-inline: 80px;
+        overflow-x: visible;
       }
     }
   }
