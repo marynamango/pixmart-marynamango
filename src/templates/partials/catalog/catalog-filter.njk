@@ -43,8 +43,10 @@
       <div class="filter-form__group">
         <h3 class="filter-form__title">{{ price.title }}</h3>
         <div class="range-slider">
-          <input type="range" class="range-slider__input" disabled>
-          <input type="range" class="range-slider__input" disabled>
+          <div class="range-slider__inputs">
+            <input type="range" class="range-slider__input range-slider__input--top">
+            <input type="range" class="range-slider__input range-slider__input--bottom">
+          </div>
           <div class="range-slider__labels">
             <span class="range-slider__label">{{ price.min }}</span>
             <span class="range-slider__label">{{ price.max }}</span>
