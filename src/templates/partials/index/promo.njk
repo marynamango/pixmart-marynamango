@@ -19,7 +19,7 @@
       <div class="promo__images">
         {% for image in promo.images %}
           {% set base = "/img/" + image.folder + "/" + image.basename %}
-          <picture>
+          <picture class="promo__picture {{ image.class }}">
             <!-- Desktop -->
             <source media="(min-width: 1025px)" type="image/avif"
               srcset="{{ base }}-desktop-1x.avif 1x, {{ base }}-desktop-2x.avif 2x">
@@ -42,7 +42,7 @@
             <img
               src="{{ base }}-mobile-1x.webp"
               alt="{{ image.alt }}"
-              class="promo__img {{ image.class }}"
+              class="promo__img"
               loading="lazy"
             >
           </picture>
