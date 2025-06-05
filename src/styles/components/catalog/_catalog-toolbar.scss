@@ -24,6 +24,16 @@
     @include tab {
       max-width: 204px;
     }
+
+    @include desk {
+      max-width: 156px;
+    }
+  }
+
+  &__filter-toggle {
+    @include desk {
+      display: none;
+    }
   }
 
   &__select-wrapper {

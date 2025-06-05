@@ -42,6 +42,8 @@
   }
 
   &__labels {
+    @include text-md;
+    color: var(--color-secondary);
     display: flex;
     justify-content: space-between;
     gap: 16px;
