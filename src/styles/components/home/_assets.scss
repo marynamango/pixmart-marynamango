@@ -18,6 +18,8 @@
     margin: 0;
     gap: 16px;
     overflow-x: auto;
+    height: 272px;
+    width: 100%;
 
     @include tab {
       overflow-x: visible;

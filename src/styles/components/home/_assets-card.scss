@@ -5,17 +5,37 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  flex: 0 0 auto;
+  width: 224px;
+  height: 272px;
+
+  @include tab {
+    width: 176px;
+  }
+
+  @include desk {
+    width: 230px;
+  }
 
   &__icon-wrapper {
     background-color: var(--bacground-color-cards);
     padding: 37px;
     border-radius: 20px;
+
+    @include tab {
+      padding-inline: 13px;
+    }
+
+    @include desk {
+      padding-inline: 37px;
+    }
   }
 
   &__icon {
     width: 150px;
     height: 150px;
     color: var(--color-accent);
+    display: block;
   }
 
   &__name {
