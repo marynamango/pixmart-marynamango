@@ -75,6 +75,10 @@
   }
 
   &__category {
+    &--selected {
+      padding-left: 16px;
+    }
+    
     &::before {
       content: "";
       display: inline-block;
@@ -90,6 +94,11 @@
   &__link {
     @include text-md;
     color: var(--color-muted);
+
+    &--selected {
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-primary);
+    }
   }
 
   &__article {

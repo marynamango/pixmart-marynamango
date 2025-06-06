@@ -39,7 +39,7 @@
     "categoriesHeading": "Categories",
     "categories": [
       { "name": "Graphic Design Trends", "href": "#" },
-      { "name": "Typography & Fonts", "href": "#" },
+      { "name": "Typography & Fonts", "href": "#", "selected": true },
       { "name": "UI/UX Design", "href": "#" },
       { "name": "Branding & Identity", "href": "#" },
       { "name": "Illustration", "href": "#" },

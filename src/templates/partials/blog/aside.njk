@@ -14,8 +14,8 @@
             <h2 class="aside__title">{{ aside.categoriesHeading }}</h2>
             <ul class="aside__list aside__list--categories">
               {% for category in aside.categories %}
-              <li class="aside__category">
-                <a href="{{ category.href }}" class="aside__link">{{ category.name }}</a>
+              <li class="aside__category{% if category.selected %} aside__category--selected{% endif %}">
+                <a href="{{ category.href }}" class="aside__link{% if category.selected %} aside__link--selected{% endif %}">{{ category.name }}</a>
               </li>
               {% endfor %}
             </ul>
