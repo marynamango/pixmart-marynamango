@@ -3,8 +3,8 @@
 .promo {
   background: linear-gradient(
     90deg,
-    rgb(240 246 253 / 1) 0%,
-    rgb(255 255 255 / 1) 100%
+    var(--background-color-secondary) 0%,
+    var(--background-color) 100%
   );
   padding-block: 32px 64px;
   display: flex;
