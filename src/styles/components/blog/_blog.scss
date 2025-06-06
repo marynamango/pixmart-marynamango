@@ -1,0 +1,19 @@
+@use "../base/base" as *;
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  &__feature-picture {
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  &__feature-img {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+}
