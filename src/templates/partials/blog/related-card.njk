@@ -1,0 +1,7 @@
+<article class="related-card">
+  {% include "partials/components/picture.njk" %}
+
+  <span class="badge badge--round related-card__badge">{{ card.tag }}</span>
+  <h3 class="related-card__card-title">{{ card.title }}</h3>
+  <time class="related-card__date" datetime="{{ card.datetime }}">{{ card.date }}</time>
+</article>

@@ -8,122 +8,12 @@
       <h2 class="sr-only">{{ blog.title }}</h2>
       {% set picture = blog.featureImage %}
       {% include "partials/components/picture.njk" %}
-
       <div class="blog-layout">
         {% include "partials/blog/aside.njk" %}
-
-        <article class="article">
-          <p class="article__intro">
-            In the vast expanse of graphic design, typography stands as a pivotal element that can make or break the visual appeal of any project. Understanding the art of typography is essential for creating designs that not only attract attention but also communicate effectively. Here, we delve into practical tips that will help you master typography, transforming your creations into eye-catching masterpieces.
-          </p>
-          <div class="article__tip">
-            <h3 class="article__title">1. Understand Typeface Selection</h3>
-            <p class="article__text">The choice of typeface is foundational in setting the tone of your design. Serif fonts, with their classic appeal, lend a touch of elegance and formality, making them ideal for print media and official documents. Sans-serif fonts, on the other hand, project a modern and clean look, perfect for digital platforms. When selecting a typeface, consider the message you wish to convey and the medium through which it will be communicated.</p>
-          </div>
-          <div class="article__tip">
-            <h3 class="article__title">2. Create a Typographic Hierarchy</h3>
-            <p class="article__text">A well-defined typographic hierarchy organizes information, making it easier for readers to navigate through the content. Use different font sizes, weights, and styles to differentiate between headings, subheadings, and body text. This hierarchy not only improves readability but also adds visual interest to your next future design.</p>
-          </div>
-          <figure class="article__figure">
-            <picture class="article__picture">
-              <source srcset="/img/blog/font-examples-1x.avif 1x, /img/blog/typography-presentation-2x.avif 2x" type="image/avif">
-              <source srcset="/img/blog/font-examples-1x.webp 1x, /img/blog/typography-presentation-2x.webp 2x" type="image/webp">
-              <img
-                src="/img/blog/font-examples-1x.webp"
-                alt="Examples of font usage in typography."
-                class="article__img"
-                width="980"
-                height="462"
-                loading="lazy">
-            </picture>
-            <figcaption class="article__caption">
-              Example of font usage in typography.
-              <a href="#" class="article__link">Get this asset</a>
-            </figcaption>
-          </figure>
-          <div class="article__tip">
-            <h3 class="article__title">3. Experiment with Alignment</h3>
-            <p class="article__text">While center and right alignments have their place, left-aligned text is generally the most legible and comfortable for readers, especially for longer passages. However, don't shy away from experimenting with different alignments in headings or callouts to add dynamism to your layout.</p>
-          </div>
-          <div class="article__tip">
-            <h3 class="article__title">4. Embrace White Space</h3>
-            <p class="article__text">White space, or negative space, is a powerful tool in typography. It helps in decluttering designs and allows each typographic element to breathe. Proper use of white space can significantly improve the overall balance and composition of your design.</p>
-          </div>
-          <blockquote class="quote">
-            <svg class="icon icon--accent quote__icon" aria-hidden="true" focusable="false">
-              <use href="/img/sprite.svg#quote"></use>
-            </svg>
-            <p class="quote__text">Typography is not just the art of arranging type but the craft of breathing life into characters, turning words into stories that captivate the soul.</p>
-          </blockquote>
-          <p class="article__text article__text--final">Typography is an art that speaks volumes beyond the mere letters on a surface. By applying these tips, designers can elevate their work from mere messages to powerful visual statements. Remember, mastering typography is a journey of continuous learning and experimentation. Embrace the process, and let your designs speak louder than words. Happy designing!</p>
-        </article>
+        {% include "partials/blog/article.njk" %}
       </div>
     </section>
-
-    <section class="related-articles section-wrapper">
-      <div class="section-header">
-        <div class="section-header__text">
-          <h2 class="section-header__title">Related Articles</h2>
-        </div>
-        <div class="section-header__link-wrapper">
-          <a class="section-header__link" href="#">
-            Explore All Articles
-            <svg class="icon icon-small" aria-hidden="true" focusable="false">
-              <use href="/img/sprite.svg#chevron-right"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="related-articles__list">
-        <article class="related-articles__card">
-          <picture class="related-articles__picture">
-            <img
-              src="/img/blog/best-dishes.webp"
-              alt="Best Dishes preview"
-              class="related-articles__img"
-              width="370"
-              height="272"
-              loading="lazy"
-            />
-          </picture>
-          <span class="badge badge--round related-articles__badge">Tag</span>
-          <h3 class="related-articles__card-title">Best Dishes</h3>
-          <time class="related-articles__date" datetime="2024-04-15">15 April 2024</time>
-        </article>
-
-        <article class="related-articles__card">
-          <picture class="related-articles__picture">
-            <img
-              src="/img/blog/lotus-spa.webp"
-              alt="Lotus spa preview"
-              class="related-articles__img"
-              width="370"
-              height="272"
-              loading="lazy"
-            />
-          </picture>
-          <span class="badge badge--round related-articles__badge">Tag</span>
-          <h3 class="related-articles__card-title">Contact Us Lotus Spa</h3>
-          <time class="related-articles__date" datetime="2024-05-05">5 May 2024</time>
-        </article>
-
-        <article class="related-articles__card">
-          <picture class="related-articles__picture">
-            <img
-              src="/img/blog/creative-blog.webp"
-              alt="Creative Blog preview"
-              class="related-articles__img"
-              width="320"
-              height="180"
-              loading="lazy"
-            />
-          </picture>
-          <span class="badge badge--round related-articles__badge">Tag</span>
-          <h3 class="related-articles__card-title">Creative Blog</h3>
-          <time class="related-articles__date" datetime="2024-06-20">20 June 2024</time>
-        </article>
-      </div>
-    </section>
+    
+    {% include "partials/blog/related-articles.njk" %}
   </main>
 {% endblock %}

@@ -63,5 +63,100 @@
         }
       }
     ]
+  },
+  "article": {
+    "intro": "In the vast expanse of graphic design, typography stands as a pivotal element that can make or break the visual appeal of any project. Understanding the art of typography is essential for creating designs that not only attract attention but also communicate effectively. Here, we delve into practical tips that will help you master typography, transforming your creations into eye-catching masterpieces.",
+    "tips": [
+      {
+        "title": "1. Understand Typeface Selection",
+        "text": "The choice of typeface is foundational in setting the tone of your design. Serif fonts, with their classic appeal, lend a touch of elegance and formality, making them ideal for print media and official documents. Sans-serif fonts, on the other hand, project a modern and clean look, perfect for digital platforms. When selecting a typeface, consider the message you wish to convey and the medium through which it will be communicated."
+      },
+      {
+        "title": "2. Create a Typographic Hierarchy",
+        "text": "A well-defined typographic hierarchy organizes information, making it easier for readers to navigate through the content. Use different font sizes, weights, and styles to differentiate between headings, subheadings, and body text. This hierarchy not only improves readability but also adds visual interest to your next future design."
+      },
+      {
+        "title": "3. Experiment with Alignment",
+        "text": "While center and right alignments have their place, left-aligned text is generally the most legible and comfortable for readers, especially for longer passages. However, don't shy away from experimenting with different alignments in headings or callouts to add dynamism to your layout."
+      },
+      {
+        "title": "4. Embrace White Space",
+        "text": "White space, or negative space, is a powerful tool in typography. It helps in decluttering designs and allows each typographic element to breathe. Proper use of white space can significantly improve the overall balance and composition of your design."
+      }
+    ],
+    "quote": "Typography is not just the art of arranging type but the craft of breathing life into characters, turning words into stories that captivate the soul.",
+    "conclusion": "Typography is an art that speaks volumes beyond the mere letters on a surface. By applying these tips, designers can elevate their work from mere messages to powerful visual statements. Remember, mastering typography is a journey of continuous learning and experimentation. Embrace the process, and let your designs speak louder than words. Happy designing!",
+    "image": {
+      "folder": "blog",
+      "basename": "font-examples",
+      "alt": "Example of font usage in typography.",
+      "width": "980",
+      "height": "462",
+      "pictureClass": "article__picture",
+      "class": "article__img",
+      "loading": "lazy",
+      "caption": "Example of font usage in typography.",
+      "link": {
+        "href": "#",
+        "text": "Get this asset"
+      }
+    }
+  },
+  "relatedArticles": {
+    "header": {
+      "title": "Related Articles",
+      "link": {
+        "url": "#",
+        "text": "Explore All Articles",
+        "icon": "chevron-right"
+      }
+    },
+    "cards": [
+      {
+        "tag": "Tag",
+        "title": "Best Dishes",
+        "datetime": "2024-04-15",
+        "date": "15 April 2024",
+        "picture": {
+          "folder": "blog",
+          "basename": "best-dishes.webp",
+          "alt": "Best Dishes preview",
+          "width": "370",
+          "height": "272",
+          "pictureClass": "related-card__picture",
+          "imgClass": "related-card__img"
+        }
+      },
+      {
+        "tag": "Tag",
+        "title": "Contact Us Lotus Spa",
+        "datetime": "2024-05-05",
+        "date": "5 May 2024",
+        "picture": {
+          "folder": "blog",
+          "basename": "lotus-spa.webp",
+          "alt": "Lotus spa preview",
+          "width": "370",
+          "height": "272",
+          "pictureClass": "related-card__picture",
+          "imgClass": "related-card__img"
+        }
+      },
+      {
+        "tag": "Tag",
+        "title": "Creative Blog",
+        "datetime": "2024-06-20",
+        "date": "20 June 2024",
+        "picture": {
+          "folder": "blog",
+          "basename": "creative-blog.webp",
+          "alt": "Creative Blog preview",
+          "width": "370",
+          "height": "272",
+          "pictureClass": "related-card__picture",
+          "imgClass": "related-card__img"
+        }
+      }
+    ]
   }
 }
