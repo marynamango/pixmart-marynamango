@@ -2,90 +2,16 @@
 
 {% block content %}
   <main class="main-container">
-    <section class="blog-hero section-wrapper">
-      <div class="blog-hero__content">
-        <span class="blog-hero__label">Typography</span>
-        <h1 class="blog-hero__title">Mastering the Art of Typography: Tips for Eye-Catching Designs for 2024</h1>
-      </div>
-    </section>
+    {% include "partials/blog/blog-hero.njk" %}
 
     <section class="blog section-wrapper">
-      <h2 class="sr-only">Blog Article</h2>
-      <figure class="blog__feature-figure">
-        <picture class="blog__feature-picture">
-          <source srcset="/img/blog/typography-presentation-1x.avif 1x, /img/blog/typography-presentation-2x.avif 2x" type="image/avif">
-          <source srcset="/img/blog/typography-presentation-1x.webp 1x, /img/blog/typography-presentation-2x.webp 2x" type="image/webp">
-          <img
-            src="/img/blog/typography-presentation-1x.webp"
-            alt="Team presenting typography design concepts"
-            class="blog__feature-img"
-            width="1280"
-            height="398"
-            loading="eager">
-        </picture>
-      </figure>
+      <h2 class="sr-only">{{ blog.title }}</h2>
+      {% set picture = blog.featureImage %}
+      {% include "partials/components/picture.njk" %}
+
       <div class="blog-layout">
-        <aside class="aside">
-          <div class="aside__author">
-            <picture class="aside__author-picture">
-              <source srcset="/img/blog/emma-clarke-1x.avif 1x, /img/blog/typography-presentation-2x.avif 2x" type="image/avif">
-              <source srcset="/img/blog/emma-clarke-1x.webp 1x, /img/blog/typography-presentation-2x.webp 2x" type="image/webp">
-              <img
-                src="/img/blog/emma-clarke-1x.webp"
-                alt="Article author Emma Clarke photo"
-                class="aside__author-img"
-                width="60"
-                height="60"
-                loading="eager">
-            </picture>
-            <div class="aside__author-info">
-              <p class="aside__author-name">Emma Clarke</p>
-              <time class="aside__author-date" datetime="2024-04-10">
-                April 10, 2024
-              </time>
-            </div>
-          </div>
-          <div class="aside__categories">
-            <h2 class="aside__categories-title">Categories</h2>
-            <ul class="aside__categories-list">
-              <li class="aside__categories-item">
-                <a href="#" class="aside__categories-link">Graphic Design Trends</a>
-              </li>
-              <li class="aside__categories-item">
-                <a href="#" class="aside__categories-link">Typography & Fonts</a>
-              </li>
-              <li class="aside__categories-item">
-                <a href="#" class="aside__categories-link">UI/UX Design</a>
-              </li>
-              <li class="aside__categories-item">
-                <a href="#" class="aside__categories-link">Branding & Identity</a>
-              </li>
-              <li class="aside__categories-item">
-                <a href="#" class="aside__categories-link">Illustration</a>
-              </li>
-              <li class="aside__categories-item">
-                <a href="#" class="aside__categories-link">Digital Marketing</a>
-              </li>
-            </ul>
-          </div>
-          <div class="aside__articles">
-            <h2 class="aside__articles-title">Latest Articles</h2>
-            <ul class="aside__articles-list">
-              <li class="aside__articles-item">
-                <a class="aside__article-link" href="#">Text</a>
-                <time class="aside__article-date" datetime="2024-03-15">
-                  March 15, 2024
-                </time>
-              </li>
-              <li class="aside__articles-item">
-                <a class="aside__article-link" href="#">Text</a>
-                <time class="aside__article-date" datetime="2024-03-15">
-                  March 15, 2024
-                </time>
-              </li>
-            </ul>
-          </div>
-        </aside>
+        {% include "partials/blog/aside.njk" %}
+
         <article class="article">
           <p class="article__intro">
             In the vast expanse of graphic design, typography stands as a pivotal element that can make or break the visual appeal of any project. Understanding the art of typography is essential for creating designs that not only attract attention but also communicate effectively. Here, we delve into practical tips that will help you master typography, transforming your creations into eye-catching masterpieces.

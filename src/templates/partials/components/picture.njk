@@ -5,6 +5,7 @@
 {% set height = picture.height | default("") %}
 {% set pictureClass = picture.pictureClass | default("") %}
 {% set imgClass = picture.class | default("") %}
+{% set loading = picture.loading | default("lazy") %}
 
 {% if folder %}
   {% set base = "/img/" + folder + "/" + basename %}
@@ -20,5 +21,5 @@
     class="{{ imgClass }}"
     width="{{ width }}"
     height="{{ height }}"
-    loading="lazy">
+    loading="{{ loading }}">
 </picture>
