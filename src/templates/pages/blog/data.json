@@ -120,12 +120,12 @@
         "date": "15 April 2024",
         "picture": {
           "folder": "blog",
-          "basename": "best-dishes.webp",
+          "basename": "best-dishes-related",
           "alt": "Best Dishes preview",
           "width": "370",
           "height": "272",
           "pictureClass": "related-card__picture",
-          "imgClass": "related-card__img"
+          "class": "related-card__img"
         }
       },
       {
@@ -135,12 +135,12 @@
         "date": "5 May 2024",
         "picture": {
           "folder": "blog",
-          "basename": "lotus-spa.webp",
+          "basename": "lotus-spa",
           "alt": "Lotus spa preview",
           "width": "370",
           "height": "272",
           "pictureClass": "related-card__picture",
-          "imgClass": "related-card__img"
+          "class": "related-card__img"
         }
       },
       {
@@ -150,12 +150,12 @@
         "date": "20 June 2024",
         "picture": {
           "folder": "blog",
-          "basename": "creative-blog.webp",
+          "basename": "creative-blog-related",
           "alt": "Creative Blog preview",
           "width": "370",
           "height": "272",
           "pictureClass": "related-card__picture",
-          "imgClass": "related-card__img"
+          "class": "related-card__img"
         }
       }
     ]
