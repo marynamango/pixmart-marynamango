@@ -1,0 +1,10 @@
+<section class="related-articles section-wrapper">
+  {% set header = relatedArticles.header %}
+  {% include "partials/components/section-header.njk" %}
+
+  <div class="related-articles__list">
+    {% for card in relatedArticles.cards %}
+      {% include "partials/blog/related-card.njk" %}
+    {% endfor %}
+  </div>
+</section>

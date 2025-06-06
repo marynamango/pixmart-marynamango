@@ -1,0 +1,30 @@
+<article class="article">
+  <p class="article__intro">{{ article.intro }}</p>
+
+  {% for tip in article.tips %}
+    <div class="article__tip">
+      <h3 class="article__title">{{ tip.title }}</h3>
+      <p class="article__text">{{ tip.text }}</p>
+    </div>
+  {% endfor %}
+
+  {% set picture = article.image %}
+  <figure class="article__figure">
+    {% include "partials/components/picture.njk" %}
+    <figcaption class="article__caption">
+      {{ article.image.caption }}
+      {% if article.image.link %}
+        <a href="{{ article.image.link.href }}" class="article__link">{{ article.image.link.text }}</a>
+      {% endif %}
+    </figcaption>
+  </figure>
+
+  <blockquote class="quote">
+    <svg class="icon icon--accent quote__icon" aria-hidden="true" focusable="false">
+      <use href="/img/sprite.svg#quote"></use>
+    </svg>
+    <p class="quote__text">{{ article.quote }}</p>
+  </blockquote>
+
+  <p class="article__text article__text--final">{{ article.conclusion }}</p>
+</article>
