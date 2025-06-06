@@ -1,0 +1,18 @@
+@use "../base/base" as *;
+
+.quote {
+  display: flex;
+  gap: 16px;
+  margin: 0;
+
+  &__icon {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    @include text-xl;
+    margin-block: 0;
+  }
+}
