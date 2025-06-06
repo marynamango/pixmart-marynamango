@@ -5,6 +5,10 @@
   flex-direction: column;
   gap: 40px;
 
+  @include tab {
+    flex: 0 0 260px;
+  }
+
   &__author {
     color: var(--color-secondary);
     display: flex;

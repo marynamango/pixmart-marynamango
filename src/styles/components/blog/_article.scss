@@ -5,6 +5,16 @@
   flex-direction: column;
   gap: 32px;
 
+  &__intro {
+    @include tab {
+      max-width: clamp(63ch, 95%, 100%);
+
+      .article__text {
+        display: inline;
+      }
+    }
+  }
+
   &__text,
   &__conclusion {
     color: var(--color-muted);
@@ -12,8 +22,8 @@
   }
 
   &__text {
-    max-width: 39ch;
-
+    max-width: clamp(39ch, 95%, 100%);
+    
     &--final {
       display: -webkit-box;
       line-clamp: 2;

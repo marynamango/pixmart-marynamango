@@ -24,4 +24,8 @@
   flex-direction: column;
   gap: 40px;
   padding-bottom: 4px;
+
+  @include tab {
+    flex-direction: row;
+  }
 }
