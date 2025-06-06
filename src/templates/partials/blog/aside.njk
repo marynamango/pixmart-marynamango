@@ -10,28 +10,26 @@
             </div>
           </div>
 
-          <div class="aside__categories">
-            <h2 class="aside__categories-title">{{ aside.categoriesHeading }}</h2>
-            <ul class="aside__categories-list">
+          <div class="aside__block">
+            <h2 class="aside__title">{{ aside.categoriesHeading }}</h2>
+            <ul class="aside__list aside__list--categories">
               {% for category in aside.categories %}
-              <li class="aside__categories-item">
-                <a href="{{ category.href }}" class="aside__categories-link">{{ category.name }}</a>
+              <li class="aside__category">
+                <a href="{{ category.href }}" class="aside__link">{{ category.name }}</a>
               </li>
               {% endfor %}
             </ul>
           </div>
 
-          <div class="aside__articles">
-            <h2 class="aside__articles-title">{{ aside.latestArticlesHeading }}</h2>
-            <ul class="aside__articles-list">
-              {% for article in aside.latestArticles %}
-              <li class="aside__articles-item">
-                <a class="aside__article-link" href="{{ article.href }}">{{ article.title }}</a>
-                <time class="aside__article-date" datetime="{{ article.date.datetime }}">
-                  {{ article.date.display }}
-                </time>
-              </li>
-              {% endfor %}
-            </ul>
+          <div class="aside__block">
+            <h2 class="aside__title aside__title--articles">{{ aside.latestArticlesHeading }}</h2>
+            {% for article in aside.latestArticles %}
+            <div class="aside__article">
+              <a class="aside__article-link" href="{{ article.href }}">{{ article.title }}</a>
+              <time class="aside__date" datetime="{{ article.date.datetime }}">
+                {{ article.date.display }}
+              </time>
+            </div>
+            {% endfor %}
           </div>
         </aside>
