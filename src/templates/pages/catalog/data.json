@@ -548,5 +548,12 @@
         "height": "260"
       }
     }
-  ]
+  ],
+  "catalogLoadMore": {
+    "button": {
+      "text": "Load more",
+      "modFirst": "secondary",
+      "ariaLabel": "Load more products"
+    }
+  }
 }
