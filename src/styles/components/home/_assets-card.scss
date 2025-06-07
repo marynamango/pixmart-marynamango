@@ -9,6 +9,25 @@
   width: 224px;
   height: 272px;
 
+  &:hover,
+  &:active {
+    .assets-card__icon-wrapper {
+      background-color: var(--color-accent);
+    }
+
+    .assets-card__icon {
+      color: var(--color--hover-icon)
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    .assets-card__icon-wrapper {
+      box-shadow: 0 0 0 2px var(--color-accent);
+    }
+  }
+
   @include tab {
     width: 176px;
   }
