@@ -9,8 +9,7 @@
   width: 224px;
   height: 272px;
 
-  &:hover,
-  &:active {
+  &:hover {
     .assets-card__icon-wrapper {
       background-color: var(--color-accent);
     }
@@ -28,6 +27,13 @@
     }
   }
 
+  &:active {
+    .assets-card__icon-wrapper {
+      box-shadow: inset 0 0 0 2px var(--color-accent);
+      transform: scale(0.98);
+    }
+  }
+
   @include tab {
     width: 176px;
   }
@@ -40,7 +46,7 @@
     background-color: var(--bacground-color-cards);
     padding: 37px;
     border-radius: 20px;
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;
 
     @include tab {
       padding-inline: 13px;

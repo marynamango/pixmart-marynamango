@@ -9,10 +9,9 @@
   flex-direction: column;
   padding: 24px;
   width: 100%;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;
 
-  &:hover,
-  &:active {
+  &:hover {
     background-color: var(--color-accent);
 
     .category-card__icon {
@@ -35,6 +34,11 @@
   &:focus {
     outline: none;
     box-shadow: inset 0 0 0 2px var(--color-accent);
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 2px var(--color-accent);
+    transform: scale(0.98);
   }
 
   &__icon {

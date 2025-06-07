@@ -7,14 +7,14 @@
 
     {% set picture = item.image %}
     {% include "partials/components/picture.njk" %}
-  </a>
 
-  <div class="product-card__overlay">
+    <div class="product-card__overlay">
     {% if item.hoverButton %}
-    {% set button = item.hoverButton %}
+      {% set button = item.hoverButton %}
       {% include "partials/components/button.njk" %}
     {% endif %}
-  </div>
+    </div>
+  </a>
 
   <div class="product-card__info">
     <h3 class="product-card__title">{{ item.title }}</h3>

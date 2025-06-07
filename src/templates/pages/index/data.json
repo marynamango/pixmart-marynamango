@@ -162,11 +162,10 @@
         "price": "€29.99",
         "tags": ["Adventure", "Journey"],
         "hoverButton": {
+          "buttonType": "button",
           "text": "Go to product",
-          "url": "#",
           "modFirst": "primary",
-          "modSecond": "overlay",
-          "modThird": "full"
+          "modSecond": "full"
         }
       },
       {
@@ -189,11 +188,10 @@
         "price": "€15.99",
         "tags": ["Medical", "Wellness"],
         "hoverButton": {
+          "buttonType": "button",
           "text": "Go to product",
-          "url": "#",
           "modFirst": "primary",
-          "modSecond": "overlay",
-          "modThird": "full"
+          "modSecond": "full"
         }
       },
       {
@@ -211,11 +209,10 @@
         "price": "€31.99",
         "tags": ["Catering", "Food"],
         "hoverButton": {
+          "buttonType": "button",
           "text": "Go to product",
-          "url": "#",
           "modFirst": "primary",
-          "modSecond": "overlay",
-          "modThird": "full"
+          "modSecond": "full"
         }
       },
       {
@@ -233,11 +230,10 @@
         "price": "€40.99",
         "tags": ["Modern", "Homes"],
         "hoverButton": {
+          "buttonType": "button",
           "text": "Go to product",
-          "url": "#",
           "modFirst": "primary",
-          "modSecond": "overlay",
-          "modThird": "full"
+          "modSecond": "full"
         }
       }
     ]
