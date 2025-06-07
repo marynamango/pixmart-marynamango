@@ -1,0 +1,43 @@
+@use "../base/base" as *;
+
+.blog-hero {
+  padding-block: 64px;
+  background: linear-gradient(180.23deg, var(--background-color-secondary) 0.2%, rgba(255, 255, 255, 0) 99.8%);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__label {
+    @include text-md($fw: 500);
+    background-color: var(--color-accent);
+    color: var(--color-button-white);
+    padding: 8px 16px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    align-self: flex-start;
+  }
+
+  &__title {
+    @include heading-title;
+
+    @include tab {
+      @include heading-main;
+    }
+  }
+
+  &__subtitle {
+    display: block;
+
+    @include tab {
+      max-width: 27ch;
+    }
+
+    @include desk {
+      max-width: none;
+      overflow-wrap: break-word;
+    }
+  }
+}

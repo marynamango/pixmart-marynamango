@@ -6,6 +6,7 @@
   @include text-md($fw: 500);
   background-color: var(--color-accent);
   color: var(--color-button-white);
+  text-transform: uppercase;
 
   &--ribbon {
     border-radius: 0 20px 0 20px;
@@ -21,7 +22,6 @@
     @include text-lg($fw: 700, $lh: 26px);
     padding: 7px 24px;
     color: var(--background-color);
-    text-transform: uppercase;
     top: -2px;
     right: -2px;
   }
@@ -34,6 +34,11 @@
   &--catalog {
     top: 16px;
     left: 16px;
+  }
+
+  &--related {
+    top: 272px;
+    left: 36px;
   }
 
   &--new {

@@ -1,0 +1,23 @@
+@use "../base/base" as *;
+
+.related-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-block: 32px;
+  background-color: var(--background-color-secondary);
+
+  &__list {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 24px;
+
+    @include tab {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desk {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
