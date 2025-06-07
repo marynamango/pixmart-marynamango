@@ -22,8 +22,8 @@
     @include text-lg($fw: 700, $lh: 26px);
     padding: 7px 24px;
     color: var(--background-color);
-    top: -2px;
-    right: -2px;
+    top: 0px;
+    right: 0px;
   }
 
   &--round {
