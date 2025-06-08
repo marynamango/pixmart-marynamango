@@ -33,3 +33,12 @@
     }
   }
 }
+
+.pricing .section-header__title {
+  max-width: 80%;
+  align-self: center;
+
+  @include tab {
+    max-width: 100%;
+  }
+}

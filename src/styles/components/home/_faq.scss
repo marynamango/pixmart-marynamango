@@ -126,3 +126,14 @@
 .faq__item[open] .faq__question {
   padding-bottom: 16px;
 }
+
+.faq .section-header__button a {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  @include tab {
+    width: auto;
+    display: inline-flex;
+  }
+}
