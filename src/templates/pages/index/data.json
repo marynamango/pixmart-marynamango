@@ -359,7 +359,8 @@
         "date": "15 APRIL 2024",
         "badge": {
           "text": "TAG",
-          "modFirst": "round"
+          "modFirst": "round",
+          "modSecond": "article"
         },
         "image": {
           "basename": "creative-blog",
@@ -374,7 +375,8 @@
         "date": "5 MAY 2024",
         "badge": {
           "text": "TAG",
-          "modFirst": "round"
+          "modFirst": "round",
+          "modSecond": "article"
         },
         "image": {
           "basename": "best-dishes",
