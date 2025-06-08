@@ -2,7 +2,7 @@
   "title": "About",
   "disableLogoLink": true,
   "promo": {
-    "title": "Craft Your Success with Our <span class=\"promo__highlight\">Digital</span> Assets",
+    "title": "<span class=\"promo__line promo__line--constrained\">Craft Your Success with</span><span class=\"promo__line\">Our <span class=\"promo__highlight\">Digital</span> Assets</span>",
     "description": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
     "buttons": [
       {
