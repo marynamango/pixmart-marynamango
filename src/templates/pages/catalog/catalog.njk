@@ -10,6 +10,10 @@
         <div class="catalog-content">
           {% include "partials/catalog/catalog-toolbar.njk" %}
           {% include "partials/catalog/catalog-grid.njk" %}
+          <div class="catalog-content__load-more">
+            {% set button = catalogLoadMore.button %}
+            {% include "partials/components/button.njk" %}
+          </div>
         </div>
       </div>
     </section>

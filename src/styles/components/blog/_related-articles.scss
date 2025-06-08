@@ -7,6 +7,10 @@
   padding-block: 32px;
   background-color: var(--background-color-secondary);
 
+  @include tab {
+    padding-block: 40px;
+  }
+
   &__list {
     display: grid;
     grid-template-rows: 1fr;
@@ -19,5 +23,14 @@
     @include desk {
       grid-template-columns: repeat(3, 1fr);
     }
+  }
+}
+
+.related-articles .section-header {
+  gap: 16px;
+
+  @include tab {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

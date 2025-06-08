@@ -20,6 +20,7 @@
     flex-direction: column;
     gap: 16px;
     width: 100%;
+    height: fit-content;
     justify-content: center;
 
     @include tab {
@@ -30,5 +31,14 @@
     @include desk {
       padding-top: 32px;
     }
+  }
+}
+
+.pricing .section-header__title {
+  max-width: 80%;
+  align-self: center;
+
+  @include tab {
+    max-width: 100%;
   }
 }

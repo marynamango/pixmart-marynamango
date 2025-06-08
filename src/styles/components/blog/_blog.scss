@@ -6,6 +6,10 @@
   gap: 48px;
   padding-bottom: 64px;
 
+  @include tab {
+    padding-bottom: 120px;
+  }
+
   &__feature-picture {
     display: block;
     border-radius: 20px;

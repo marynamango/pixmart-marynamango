@@ -17,6 +17,17 @@
     gap: 24px;
   }
 
+  &__controls  {
+    @include visually-hidden;
+
+    @include tab {
+      position: static;
+      opacity: 1;
+      width: auto;
+      height: auto;
+    }
+  }
+
   &__slider {
     display: flex;
     overflow-x: auto;

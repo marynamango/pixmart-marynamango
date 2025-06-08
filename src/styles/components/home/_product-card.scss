@@ -4,7 +4,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
   width: 305px;
   flex: 0 0 auto;
 
@@ -12,6 +11,7 @@
     position: relative;
     border-radius: 20px;
     overflow: hidden;
+    margin-bottom: 16px;
     transition: box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;
 
     &:hover::before,
@@ -73,6 +73,7 @@
   &__img {
     display: block;
     object-fit: cover;
+    object-position: 15% center;
   }
 
   &__info {

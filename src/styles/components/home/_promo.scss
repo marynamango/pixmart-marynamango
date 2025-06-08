@@ -12,12 +12,8 @@
   gap: 36px;
 
   @include tab {
-    padding-block: 120px 110px;
+    padding-block: 0;
     flex-direction: row;
-  }
-
-  @include desk {
-    padding-block: 120px;
   }
 
   &__content {
@@ -30,12 +26,22 @@
       width: 100%;
       max-width: 410px;
       min-width: 300px;
+      padding-block: 120px 110px;
     }
 
     @include desk {
       flex: 0 0 520px;
       max-width: 520px;
+      padding-block: 120px;
     }
+  }
+
+  &__line {
+    display: block;
+  }
+
+  &__line--constrained {
+    max-width: 80%;
   }
 
   &__highlight {
@@ -69,6 +75,7 @@
       height: 386px;
       max-width: 443px;
       margin-right: -11.5px;
+      align-self: center;
     }
 
     @include desk {
