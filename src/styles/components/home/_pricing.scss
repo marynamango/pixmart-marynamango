@@ -20,6 +20,7 @@
     flex-direction: column;
     gap: 16px;
     width: 100%;
+    height: fit-content;
     justify-content: center;
 
     @include tab {
