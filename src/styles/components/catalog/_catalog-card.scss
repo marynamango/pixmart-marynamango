@@ -5,6 +5,12 @@
   flex-direction: column;
   gap: 20px;
 
+  &:hover {
+    .catalog-card__price {
+      color: var(--color-accent);
+    }
+  }
+
   &--sold-out {
     .catalog-card__image {
       opacity: 0.5;
@@ -22,6 +28,17 @@
     border-radius: 20px;
     overflow: hidden;
     height: 260px;
+    transition: box-shadow 0.3s ease, transform 0.1s ease-in-out;
+
+    &:focus {
+      box-shadow: 0 0 0 2px var(--color-accent);
+      outline: none;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 2px var(--color-accent);
+      transform: scale(0.98);
+    }
   }
 
   &__picture {
@@ -56,6 +73,7 @@
 
   &__price {
     @include text-lg($fw:700);
+    transition: color 0.3s ease;
   }
 
   &__bottom {
