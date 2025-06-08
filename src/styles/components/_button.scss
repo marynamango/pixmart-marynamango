@@ -137,6 +137,10 @@
     width: 100%;
   }
 
+  &--icon-large {
+    padding: var(--padding-icon-big);
+  }
+
   &--tab-hidden {
     @include tab {
       display: none;
