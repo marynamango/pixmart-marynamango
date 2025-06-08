@@ -59,15 +59,16 @@
   }
 
   &__item {
-    padding: var(--padding-button);
+    padding: var(--padding-button-lg);
 
     @include tab {
-      padding: 0;
+      padding: var(--padding-nav);
     }
   }
 
   &__link {
     color: var(--color-primary);
-    padding: var(--padding-filters);
+    @include general-link;
+    display: block;
   }
 }

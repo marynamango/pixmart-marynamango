@@ -22,8 +22,8 @@
     @include text-lg($fw: 700, $lh: 26px);
     padding: 7px 24px;
     color: var(--background-color);
-    top: -2px;
-    right: -2px;
+    top: 0px;
+    right: 0px;
   }
 
   &--round {
@@ -39,6 +39,15 @@
   &--related {
     top: 272px;
     left: 36px;
+  }
+
+  &--article {
+    top: 16px;
+    right: 16px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1;
   }
 
   &--new {

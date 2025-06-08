@@ -11,7 +11,9 @@
     </svg>
   </a>
 {% else %}
-  <svg class="{{ logoClass }}" role="img" aria-label="{{ logo.alt }}" focusable="false">
-    <use href="/img/sprite.svg#{{ logo.img }}"></use>
-  </svg>
+  <span class="logo">
+    <svg class="{{ logoClass }}" role="img" aria-label="{{ logo.alt }}" focusable="false">
+      <use href="/img/sprite.svg#{{ logo.img }}"></use>
+    </svg>
+  </span>
 {% endif %}

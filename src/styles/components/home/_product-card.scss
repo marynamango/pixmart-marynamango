@@ -1,17 +1,73 @@
 @use "../base/base" as *;
 
 .product-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
-  position: relative;
   width: 305px;
   flex: 0 0 auto;
 
-  &__picture {
+  &__media-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;
+
+    &:hover::before,
+    &:focus-within::before {
+      opacity: 1;
+    }
+
+    &:hover .product-card__overlay,
+    &:focus-within .product-card__overlay {
+      opacity: 1;
+    }
+
+    &:focus-within {
+      box-shadow: 0 0 0 2px var(--color-accent);
+    }
+
+    &:active {
+      box-shadow: 0 0 0 2px var(--color-accent);
+      transform: scale(0.98);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: var(--color-terms);
+      opacity: 0;
+      z-index: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+
+  &__link {
+    position: relative;
     display: block;
     border-radius: 20px;
     overflow: hidden;
+    outline: none;
+  }
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding-inline: 16px;
+    opacity: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__picture {
+    display: block;
   }
 
   &__img {

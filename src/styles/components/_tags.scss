@@ -8,6 +8,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  transition: color 0.3s ease-in-out;
 
   @include tab {
     white-space: nowrap;
@@ -27,6 +28,7 @@
       margin-inline: 8px;
       background-color: var(--color-muted-light);
       vertical-align: middle;
+      transition: background-color 0.3s ease-in-out;
     }
   }
 }

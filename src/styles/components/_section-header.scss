@@ -32,5 +32,6 @@
     color: var(--color-accent);
     display: inline-flex;
     gap: 8px;
+    @include general-link($focus-color:var(--color-accent));
   }
 }

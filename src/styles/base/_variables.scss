@@ -65,18 +65,22 @@ $screen-desk: 1440px;
 
 /* States */
 --color-active-background: rgb(181 222 255 / 1);
+--color-active-button: rgb(0 84 182 / 1);
 --color-focus: rgb(56 146 243 / 1);
 --color-focus-background: rgb(248 250 252 / 1);
 --color-invalid: rgb(234 56 41 / 1);
 --color-disabled: rgb(41 77 117 / 0.09);
 --color-text-disabled: rgb(34 52 73 / 0.4)
 --color-valid: rgb(0 143 93 / 1);
+--color-hover-icon: rgb(224 242 255 / 1);
+--color-hover-tags: rgb(239 245 250 / 0.82);
 
 /* Paddings */
 --padding-button: 16px 30px;
 --padding-icon: 6px;
 --padding-icon-big: 18px;
 --padding-button-lg: 18px 38px;
+--padding-nav: 6px 12px;
 --padding-filters: 5px 11px;
 --padding-clear: 6px 18px;
 --padding-search: 8px 10px;

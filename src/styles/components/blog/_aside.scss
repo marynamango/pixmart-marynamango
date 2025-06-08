@@ -94,6 +94,7 @@
   &__link {
     @include text-md;
     color: var(--color-muted);
+    @include general-link;
 
     &--selected {
       font-weight: var(--font-weight-semibold);
@@ -111,6 +112,7 @@
   &__article-link {
     @include text-lg($fw:700);
     color: var(--color-primary);
+    @include news-link;
   }
 
   &__article:not(:last-child) {

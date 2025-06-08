@@ -106,7 +106,8 @@
       {
         "text": "UI Kit",
         "button": {
-          "extraClass": "catalog-toolbar__tag-button",
+          "modFirst": "tag",
+          "modSecond": "secondary",
           "typeAttr": "button",
           "ariaLabel": "Remove UI Kit",
           "text": "UI Kit",
@@ -119,7 +120,8 @@
       {
         "text": "UI Kit",
         "button": {
-          "extraClass": "catalog-toolbar__tag-button",
+          "modFirst": "tag",
+          "modSecond": "secondary",
           "typeAttr": "button",
           "ariaLabel": "Remove UI Kit",
           "text": "UI Kit",
