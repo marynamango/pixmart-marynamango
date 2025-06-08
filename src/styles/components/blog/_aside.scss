@@ -111,6 +111,7 @@
   &__article-link {
     @include text-lg($fw:700);
     color: var(--color-primary);
+    @include news-link;
   }
 
   &__article:not(:last-child) {

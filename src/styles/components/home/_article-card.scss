@@ -36,6 +36,7 @@
 
   &__link {
     color: var(--color-primary);
+    @include news-link;
   }
 
   &__picture {

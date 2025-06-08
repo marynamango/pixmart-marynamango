@@ -43,6 +43,48 @@
   white-space: normal;
 }
 
+//Link States Mixins
+@mixin news-link {
+  &:hover {
+    color: var(--color-accent);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 4px var(--color-accent);
+    outline: none;
+    border-radius: 4px;
+  }
+
+  &:visited {
+    color: var(--color-active-button);
+  }
+
+  &:disabled {
+    color: var(--color-text-disabled);
+  }
+}
+
+@mixin general-link($focus-color: var(--color-primary)) {
+  &:hover {
+    color: var(--color-focus);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 4px var(--color-focus);
+    outline: none;
+    border-radius: 4px;
+    color: $focus-color;
+  }
+
+  &:visited {
+    color: var(--color-active-button);
+  }
+
+  &:disabled {
+    color: var(--color-text-disabled);
+  }
+}
+
 //Typography Mixins
 @mixin heading-main {
   font-size: var(--font-size-title-main);
