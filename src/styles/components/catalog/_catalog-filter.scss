@@ -41,6 +41,10 @@
     @include sr-only-reset;
     position: static;
 
+    @include desk {
+      flex: 0 0 217px;
+    }
+
     &__header {
       display: none;
     }
@@ -62,5 +66,7 @@
 
   &__clear {
     gap: 8px;
+    @include text-md($fw:600);
+    padding: var(--padding-clear);
   }
 }
