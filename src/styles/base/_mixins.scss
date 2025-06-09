@@ -14,13 +14,6 @@
 }
 
 //Layout Mixins
-@mixin visually-hidden {
-  position: absolute;
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
 @mixin sr-only {
   position: absolute;
   width: 1px;
