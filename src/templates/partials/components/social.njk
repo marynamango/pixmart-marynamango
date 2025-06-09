@@ -1,11 +1,8 @@
 <ul class="social">
       {% for item in footer.social %}
         <li class="social__item">
-          <a class="social__link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ item.name }}">
-            <svg class="icon social__icon" aria-hidden="true" focusable="false">
-              <use href="/img/sprite.svg#{{ item.name }}"></use>
-            </svg>
-          </a>
+          {% set button = item.button %}
+          {% include "partials/components/button.njk" %}
         </li>
       {% endfor %}
     </ul>
