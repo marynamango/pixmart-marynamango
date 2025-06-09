@@ -132,16 +132,14 @@
         "ariaLabel": "Scroll left",
         "typeAttr": "button",
         "modFirst": "secondary",
-        "modSecond": "only-icon",
-        "modThird": "icon-large"
+        "modSecond": "icon-large"
       },
       {
         "icon": { "name": "chevron-right" },
         "ariaLabel": "Scroll right",
         "typeAttr": "button",
         "modFirst": "secondary",
-        "modSecond": "only-icon",
-        "modThird": "icon-large"
+        "modSecond": "icon-large"
       }
     ],
     "items": [

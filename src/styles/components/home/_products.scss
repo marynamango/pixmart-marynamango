@@ -18,13 +18,11 @@
   }
 
   &__controls  {
-    @include visually-hidden;
+    display: none;
 
     @include tab {
-      position: static;
-      opacity: 1;
-      width: auto;
-      height: auto;
+      display: flex;
+      gap: 12px;
     }
   }
 
