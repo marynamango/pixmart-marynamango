@@ -93,11 +93,9 @@
           "target": true,
           "ariaLabel": "twitter",
           "modFirst": "secondary",
-          "modSecond": "only-icon",
-          "modThird": "icon-large",
+          "modSecond": "icon-large",
           "icon": {
-            "name": "twitter",
-            "class": "social__icon"
+            "name": "twitter"
           }
         } 
       },
@@ -107,11 +105,9 @@
           "target": true,
           "ariaLabel": "facebook",
           "modFirst": "secondary",
-          "modSecond": "only-icon",
-          "modThird": "icon-large",
+          "modSecond": "icon-large",
           "icon": {
-            "name": "facebook",
-            "class": "social__icon"
+            "name": "facebook"
           }
         } 
       },
@@ -121,11 +117,9 @@
           "target": true,
           "ariaLabel": "telegram",
           "modFirst": "secondary",
-          "modSecond": "only-icon",
-          "modThird": "icon-large",
+          "modSecond": "icon-large",
           "icon": {
-            "name": "telegram",
-            "class": "social__icon"
+            "name": "telegram"
           }
         } 
       }
