@@ -5,6 +5,9 @@
   top: 0;
   left: 0;
   width: 100vw;
+  max-width: 1440px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 3;
   background-color: var(--background-color);
   padding-block: 26px;
