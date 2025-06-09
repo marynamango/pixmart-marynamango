@@ -37,13 +37,14 @@
     }
   }
 
+  @include tab {
+    max-width: 440px; //mobile screen size
+  }
+
   @include desk {
     @include sr-only-reset;
     position: static;
-
-    @include desk {
-      flex: 0 0 217px;
-    }
+    flex: 0 0 217px;
 
     &__header {
       display: none;
