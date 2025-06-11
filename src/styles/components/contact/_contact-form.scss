@@ -36,6 +36,8 @@
     padding: 20px;
     border-radius: 8px;
     width: 100%;
+    box-shadow: 0 0 0 2px transparent;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
     &::placeholder {
       color: var(--color-muted-light);
@@ -129,6 +131,8 @@
     cursor: pointer;
     appearance: none;
     width: 100%;
+    box-shadow: 0 0 0 2px transparent;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease, border-color 0.3s ease;
 
     &:hover {
       border-color: var(--color-focus);
@@ -203,6 +207,7 @@
     margin-bottom: 4px;
     line-height: normal;
     vertical-align: top;
+    box-shadow: 0 0 0 3px transparent;
 
     &:focus {
       box-shadow: 0 0 0 3px var(--color-focus);
