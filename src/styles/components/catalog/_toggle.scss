@@ -17,7 +17,9 @@
         border-radius: 19px;
         background-color: var(--color-border-default); //Should be --color-text-disabled here, but it's too light, and not rendered by the browsers.
         border: 2px solid transparent;
-        transition: background-color 0.3s ease;
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        transition: background-color 0.2s ease, outline-color 0.2s ease;
       }
       
       &::after {
@@ -30,7 +32,7 @@
         height: 16px;
         border-radius: 50%;
         background-color: var(--background-color);
-        transition: background-color 0.3s ease, transform 0.3s ease;
+        transition: background-color 0.2s ease, transform 0.2s ease;
       }
 
       &:hover::before {
@@ -49,8 +51,7 @@
 
     &:focus + .toggle-label::before {
       background-color: var(--color-border-default); //Should be --color-text-disabled here, but it's too light, and not rendered by the browsers.
-      outline: 2px solid var(--color-focus);
-      outline-offset: 2px;
+      outline-color: var(--color-focus);
     }
 
     &:checked + .toggle-label::before {

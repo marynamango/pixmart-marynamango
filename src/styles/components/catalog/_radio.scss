@@ -14,6 +14,9 @@
     border-radius: 50%;
     border: 2px solid var(--color-border-checkbox);
     background-color: var(--background-color);
+    outline: 2px solid transparent;
+    outline-offset: 1px; 
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, outline-color 0.2s ease;
   }
 }
 
@@ -25,8 +28,7 @@
   &:focus + .radio-label::before {
     background-color: var(--color-focus-background);
     border-color: var(--color-muted-light);
-    outline: 2px solid var(--color-focus);
-    outline-offset: 1px;
+    outline-color: var(--color-focus);
   }
 
   &:checked + .radio-label::before {
@@ -54,7 +56,6 @@
 
   &:checked:focus + .radio-label::before {
     border-color: var(--color-focus);
-    outline: 2px solid var(--color-focus);
-    outline-offset: 1px;
+    outline-color: var(--color-focus);
   }
 }

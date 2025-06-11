@@ -18,7 +18,8 @@
     background-color: var(--background-color);
     color: transparent;
     pointer-events: none;
-    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    outline: 2px solid transparent;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, outline-color 0.2s ease;
   }
 }
 
@@ -35,7 +36,7 @@
   &:focus + .checkbox-label .checkbox-label__icon {
     background-color: var(--color-focus-background);
     border-color: var(--color-focus-background);
-    box-shadow: 0 0 0 2px var(--color-focus);
+    outline-color: var(--color-focus);
   }
 
   &:disabled + .checkbox-label .checkbox-label__icon {
@@ -50,7 +51,7 @@
   }
 
   &:checked:focus + .checkbox-label .checkbox-label__icon {
-    box-shadow: 0 0 0 2px var(--color-focus);
+    outline-color: var(--color-focus);
   }
 
   &:checked:active + .checkbox-label .checkbox-label__icon {
@@ -60,7 +61,7 @@
   }
 
   &:checked:disabled + .checkbox-label .checkbox-label__icon {
-    color: rgb(34 52 73 / 0.4);
+    color: var(--color-text-disabled);
     background-color: var(--color-border-default);
     border-color: transparent;
   }
