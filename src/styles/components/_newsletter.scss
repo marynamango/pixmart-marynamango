@@ -11,6 +11,7 @@
   }
 
   &__title {
+    @include text-xl;
     margin: 0;
     max-width: 216px;
   }
