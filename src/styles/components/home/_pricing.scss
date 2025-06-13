@@ -26,6 +26,8 @@
     @include tab {
       flex-direction: row;
       padding-top: 56px;
+      overflow-x: auto;
+      justify-content: space-between;
     }
 
     @include desk {

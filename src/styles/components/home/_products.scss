@@ -30,7 +30,8 @@
     display: flex;
     overflow-x: auto;
     gap: 16px;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
 
     &--padding {
       padding-inline: 16px 0;
@@ -41,7 +42,6 @@
 
       @include desk {
         padding-inline: 80px;
-        overflow-x: visible;
       }
     }
   }

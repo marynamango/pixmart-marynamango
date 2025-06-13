@@ -4,7 +4,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 305px;
+  min-width: 305px;
   flex: 0 0 auto;
 
   &__media-wrapper {
