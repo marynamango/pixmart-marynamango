@@ -10,12 +10,6 @@
   text-overflow: ellipsis;
   transition: color 0.3s ease-in-out;
 
-  @include tab {
-    white-space: nowrap;
-    overflow: visible;
-    text-overflow: unset;
-  }
-
   &__text {
     display: inline;
 
