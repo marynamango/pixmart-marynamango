@@ -2,12 +2,32 @@
 
 .catalog-hero {
   position: relative;
-  overflow: hidden;
   height: 256px;
   width: 100%;
+  overflow: hidden;
+
+  background-image: -webkit-image-set(
+    url('/img/hero-wave-1x.webp') 1x,
+    url('/img/hero-wave-2x.webp') 2x
+  );
+  background-image: image-set(
+    url('/img/hero-wave-1x.webp') 1x,
+    url('/img/hero-wave-2x.webp') 2x
+  );
+
+  background-repeat: no-repeat;
+  background-position: top -20px left -139px;
+  background-size: auto 256px;
 
   @include tab {
     height: 289px;
+    background-position: top 0 left -3px;
+    background-size: auto 289px;
+  }
+
+  @include desk {
+    background-size: 100% 289px;
+    background-position: top center;
   }
 
   &__content {
@@ -16,8 +36,6 @@
 
   &__title {
     @include heading-title;
-    position: relative;
-    z-index: 1;
 
     @include tab {
       @include heading-main;
@@ -30,22 +48,5 @@
 
   &__highlight {
     color: var(--color-accent);
-  }
-
-  &__bg {
-    position: absolute;
-    top: 0;
-    left: -139px;
-    min-width: 1363px;
-    height: 256px;
-    z-index: 0;
-    pointer-events: none;
-    fill: #f1f5f9; /* or adjust based on symbol color */
-
-    @include tab {
-      left: -3px;
-      min-width: 1443px;
-      height: 289px;
-    }
   }
 }
