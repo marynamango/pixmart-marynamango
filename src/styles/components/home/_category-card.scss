@@ -1,7 +1,6 @@
 @use "../base/base" as *;
 
 .category-card {
-  @include heading-subtitle;
   color: var(--color-primary);
   background-color: var(--background-color-cards);
   border-radius: 20px;
@@ -51,6 +50,7 @@
   }
 
   &__title {
+    @include heading-subtitle;
     margin-block: 0 8px;
     display: block;
     overflow: hidden;

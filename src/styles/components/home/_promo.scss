@@ -47,7 +47,9 @@
   }
 
   &__line--constrained {
-    max-width: 80%;
+    @include desk {
+      max-width: 80%;
+    }
   }
 
   &__highlight {

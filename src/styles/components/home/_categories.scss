@@ -14,6 +14,10 @@
   &__header {
     @include tab {
       width: calc(50% - 32px);
+      padding-block: 82px;
+    }
+
+    @include desk {
       padding-block: 78px;
     }
   }
