@@ -7,8 +7,6 @@
 
   &__intro {
     @include tab {
-      max-width: clamp(63ch, 95%, 100%);
-
       .article__text {
         display: inline;
       }
@@ -22,8 +20,6 @@
   }
 
   &__text {
-    max-width: clamp(39ch, 95%, 100%);
-    
     &--final {
       display: -webkit-box;
       line-clamp: 2;
