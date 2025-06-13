@@ -1,10 +1,10 @@
 <div class="footer-nav">
-        <strong class="footer-nav__title">{{ nav.title }}</strong>
-        <ul class="footer-nav__list">
-          {% for item in nav.links %}
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="{{ item.href }}">{{ item.text }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+  <strong class="footer-nav__title">{{ nav.title }}</strong>
+  <ul class="footer-nav__list">
+    {% for item in nav.links %}
+      <li class="footer-nav__item">
+        <a class="footer-nav__link" href="{{ item.href }}">{{ item.text }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

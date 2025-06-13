@@ -1,8 +1,8 @@
 <ul class="social">
-      {% for item in footer.social %}
-        <li class="social__item">
-          {% set button = item.button %}
-          {% include "partials/components/button.njk" %}
-        </li>
-      {% endfor %}
-    </ul>
+  {% for item in footer.social %}
+    <li class="social__item">
+      {% set button = item.button %}
+      {% include "partials/components/button.njk" %}
+    </li>
+  {% endfor %}
+</ul>
