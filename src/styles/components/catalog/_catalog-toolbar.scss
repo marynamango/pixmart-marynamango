@@ -58,6 +58,7 @@
   &__select {
     @include text-md($fw: 600);
     color: var(--color-primary);
+    background-color: transparent;
     border: 1px solid var(--color-border-default);
     padding: var(--padding-clear);
     border-radius: 8px;
