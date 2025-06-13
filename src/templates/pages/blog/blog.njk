@@ -3,7 +3,7 @@
 {% block content %}
   <main class="main-container">
     {% include "partials/blog/blog-hero.njk" %}
-    <section class="blog section-wrapper">
+    <section class="blog section-wrapper layout-container">
       <h2 class="sr-only">{{ blog.title }}</h2>
       {% set picture = blog.featureImage %}
       {% include "partials/components/picture.njk" %}

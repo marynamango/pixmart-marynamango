@@ -11,14 +11,17 @@
   }
 
   &__top {
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
     padding-block: 32px;
 
     @include tab {
       padding-block: 64px 80px;
     }
+  }
+
+  &__top-content {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
   }
 
   &__wrapper {
@@ -61,10 +64,13 @@
 
   &__bottom {
     padding-block: 24px;
+    background-color: var(--color-primary);
+  }
+
+  &__bottom-content {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    background-color: var(--color-primary);
     color: var(--color-terms);
 
     @include tab {

@@ -7,13 +7,19 @@
     var(--background-color) 100%
   );
   padding-block: 32px 64px;
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 36px;
-
+  
   @include tab {
     padding-block: 0;
-    flex-direction: row;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 36px;
+
+    @include tab{
+      flex-direction: row;
+    }
   }
 
   &__content {

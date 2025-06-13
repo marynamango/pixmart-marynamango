@@ -1,31 +1,31 @@
-<header class="header section-wrapper">
-      <div class="header__wrapper">
-        <div class="header__nav-group">
-          <div class="header__burger-group">
-            <button
-              type="button"
-              class="header__menu"
-              aria-label="Toggle menu"
-              aria-expanded="false"
-              aria-controls="nav">
-              <span class="header__menu-icon"></span>
-            </button>
-          
-            {% set logo = header.logo %}
-            {% set disableLogoLink = disableLogoLink | default(false) %}
-            {% include "partials/components/logo.njk" %}
-          </div>
+<header class="header">
+  <div class="header__wrapper section-wrapper layout-container">
+    <div class="header__nav-group">
+      <div class="header__burger-group">
+        <button
+          type="button"
+          class="header__menu"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="nav">
+          <span class="header__menu-icon"></span>
+        </button>
 
-          {% include "partials/components/nav.njk" %}
-        </div>
-
-        <div class="header__actions">
-        
-          {% set form = header.search %}
-          {% include "partials/components/input-form.njk" %}
-
-          {% set button = header.button %}
-          {% include "partials/components/button.njk" %}
-        </div>
+        {% set logo = header.logo %}
+        {% set disableLogoLink = disableLogoLink | default(false) %}
+        {% include "partials/components/logo.njk" %}
       </div>
-    </header>
+
+      {% include "partials/components/nav.njk" %}
+    </div>
+
+    <div class="header__actions">
+
+      {% set form = header.search %}
+      {% include "partials/components/input-form.njk" %}
+
+      {% set button = header.button %}
+      {% include "partials/components/button.njk" %}
+    </div>
+  </div>
+</header>

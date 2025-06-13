@@ -3,7 +3,7 @@
 {% block content %}
   <main class="main-container">
     {% include "partials/catalog/catalog-hero.njk" %}
-    <section class="catalog section-wrapper">
+    <section class="catalog layout-container section-wrapper">
       <h2 class="sr-only">Product Catalog</h2>
       <div class="catalog-layout">
         {% include "partials/catalog/catalog-filter.njk" %}
@@ -17,5 +17,5 @@
         </div>
       </div>
     </section>
-    </main>
-  {% endblock %}
+  </main>
+{% endblock %}
