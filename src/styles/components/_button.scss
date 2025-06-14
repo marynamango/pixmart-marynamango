@@ -72,6 +72,8 @@
   }
 
   &--tertiary {
+    border: 1px solid transparent;
+    padding: var(--padding-button-white);
     color: var(--color-primary);
     background-color: var(--background-color);
 
