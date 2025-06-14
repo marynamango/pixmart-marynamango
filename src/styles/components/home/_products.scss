@@ -1,13 +1,13 @@
 @use "../base/base" as *;
 
 .products {
-  padding-block: 0 64px;
+  padding-block: 0 54px;
   display: flex;
   flex-direction: column;
   gap: 48px;
 
   @include tab {
-    padding-block: 0 120px;
+    padding-block: 0 110px;
   }
 
   &__header {
@@ -35,6 +35,7 @@
 
     &--padding {
       padding-inline: 16px 0;
+      padding-block-end: 10px;
 
       @include tab {
         padding-inline: 40px 0;

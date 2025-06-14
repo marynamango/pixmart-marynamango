@@ -8,7 +8,7 @@
   gap: 48px;
 
   @include tab {
-    padding-block: 0 120px;
+    padding-block: 0 80px;
   }
 
   .section-header__text {
@@ -25,7 +25,7 @@
 
     @include tab {
       flex-direction: row;
-      padding-top: 56px;
+      padding-block: 56px 40px;
       overflow-x: auto;
       justify-content: space-between;
     }
