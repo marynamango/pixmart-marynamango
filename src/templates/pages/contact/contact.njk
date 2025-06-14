@@ -2,11 +2,13 @@
 
 {% block content %}
   <main class="main-container">
-    <section class="contact section-wrapper layout-container">
-      <h2 class="sr-only">{{ contact.heading }}</h2>
-      <div class="contact__layout">
-        {% include "partials/contact/contact-info.njk" %}
-        {% include "partials/contact/contact-form.njk" %}
+    <section class="contact">
+      <div class="section-wrapper layout-container">
+        <h2 class="sr-only">{{ contact.heading }}</h2>
+        <div class="contact__layout">
+          {% include "partials/contact/contact-info.njk" %}
+          {% include "partials/contact/contact-form.njk" %}
+        </div>
       </div>
     </section>
   </main>
