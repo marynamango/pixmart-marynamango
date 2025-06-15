@@ -1,0 +1,19 @@
+@use "../base/base" as *;
+
+.catalog-layout {
+  @include desk {
+    display: flex;
+    gap: 24px;
+    position: relative;
+  }
+}
+
+.catalog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  &__load-more {
+    align-self: center;
+  }
+}

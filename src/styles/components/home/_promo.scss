@@ -1,0 +1,226 @@
+@use "../base/base" as *;
+
+.promo {
+  background: linear-gradient(
+    90deg,
+    var(--background-color-secondary) 0%,
+    var(--background-color) 100%
+  );
+  padding-block: 32px 64px;
+  
+  @include tab {
+    padding-block: 0;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 36px;
+
+    @include tab{
+      flex-direction: row;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @include tab {
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: 410px;
+      min-width: 300px;
+      padding-block: 120px 110px;
+    }
+
+    @include desk {
+      flex: 0 0 520px;
+      max-width: 520px;
+      padding-block: 120px;
+    }
+  }
+
+  &__line {
+    display: block;
+  }
+
+  &__line--constrained {
+    @include desk {
+      max-width: 80%;
+    }
+  }
+
+  &__highlight {
+    color: var(--color-accent);
+  }
+
+  &__desc {
+    @include text-lg($lh: 28px, $fw: 500);
+    margin-block: 0;
+    color: var(--color-muted);
+  }
+
+  &__actions {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  &__media {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  &__visual {
+    position: relative;
+    width: 100%;
+    height: 276px;
+
+    @include tab {
+      height: 386px;
+      max-width: 443px;
+      margin-right: -11.5px;
+      align-self: center;
+    }
+
+    @include desk {
+      height: 544px;
+      max-width: 624px;
+      margin-right: -40px;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+
+    &--about {
+      top: 29px;
+      left: 0;
+      width: 131px;
+      height: 197px;
+      z-index: 1;
+      border-radius: var(--radius-sm);
+
+      @include tab {
+        top: 0;
+        width: 150px;
+        height: 300px;
+        border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+      }
+
+      @include desk {
+        width: 281px;
+        height: 422px;
+        border-radius: var(--radius-lg);
+      }
+    }
+
+    &--program {
+      top: 13px;
+      left: 177px;
+      width: 171px;
+      height: 96px;
+      border-radius: var(--radius-sm);
+      border: 3px solid var(--background-color);
+
+      @include tab {
+        top: 35px;
+        left: 221px;
+        width: 207px;
+        height: 117px;
+        border-radius: var(--radius-lg);
+        box-shadow: 0 0 0 2px var(--background-color);
+      }
+
+      @include desk {
+        top: 49px;
+        left: 317px;
+        width: 291px;
+        height: 164px;
+      }
+    }
+
+    &--screens {
+      top: 122px;
+      left: 106px;
+      width: 242px;
+      height: 140px;
+
+      @include tab {
+        top: 174px;
+        left: 94px;
+        width: 349px;
+        height: 212px;
+      }
+
+      @include desk {
+        top: 245px;
+        left: 110px;
+        width: 514px;
+        height: 299px;
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__icon {
+    position: absolute;
+    z-index: 2;
+    color: var(--color-icon-accent);
+    background-color: var(--background-color);
+    box-shadow: 0px 2.5px 25px var(--color-shadow);
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+
+    @include tab {
+      width: 56px;
+      height: 56px;
+      padding: 12px;
+      box-shadow: 0px 4px 40px var(--color-shadow);
+    }
+
+    &--theme {
+      top: 235px;
+      left: 19px;
+      border-radius: var(--radius-sm);
+
+      @include tab {
+        top: 289px;
+        left: 30px;
+        border-radius: var(--radius-lg);
+      }
+
+      @include desk {
+        top: 446px;
+      }
+    }
+
+    &--bezier {
+      top: 5px;
+      left: 305px;
+      border-radius: 3px;
+
+      @include tab {
+        top: 9px;
+        left: 314px;
+        border-radius: var(--radius-xs);
+      }
+
+      @include desk {
+        left: 494px;
+      }
+    }
+  }
+}

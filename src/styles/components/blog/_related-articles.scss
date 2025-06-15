@@ -1,0 +1,40 @@
+@use "../base/base" as *;
+
+.related-articles {
+  padding-block: 32px;
+  background-color: var(--background-color-secondary);
+
+  @include tab {
+    padding-block: 40px;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 24px;
+
+    @include tab {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desk {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.related-articles .section-header {
+  gap: 16px;
+
+  @include tab {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}

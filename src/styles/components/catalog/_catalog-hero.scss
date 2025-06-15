@@ -1,0 +1,53 @@
+@use "../base/base" as *;
+
+.catalog-hero {
+  position: relative;
+  height: 256px;
+  width: 100%;
+  overflow: hidden;
+
+  background-image: -webkit-image-set(
+    url('/img/hero-wave-1x.webp') 1x,
+    url('/img/hero-wave-2x.webp') 2x
+  );
+  background-image: image-set(
+    url('/img/hero-wave-1x.webp') 1x,
+    url('/img/hero-wave-2x.webp') 2x
+  );
+
+  background-repeat: no-repeat;
+  background-position: top -20px left -139px;
+  background-size: auto 256px;
+  background-color: var(--background-color);
+
+  @include tab {
+    height: 289px;
+    background-position: top 0 left -3px;
+    background-size: auto 289px;
+  }
+
+  @include desk {
+    background-size: 100% 289px;
+    background-position: top center;
+  }
+
+  &__content {
+    padding-block: 64px;
+  }
+
+  &__title {
+    @include heading-title;
+
+    @include tab {
+      @include heading-main;
+    }
+  }
+
+  &__line {
+    display: block;
+  }
+
+  &__highlight {
+    color: var(--color-accent);
+  }
+}

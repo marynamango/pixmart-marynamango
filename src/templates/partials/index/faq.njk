@@ -1,0 +1,11 @@
+<section class="faq section-wrapper layout-container">
+  {% set header = faq.header %}
+  {% set headerClass = header.class %}
+  {% include "partials/components/section-header.njk" %}
+
+  <div class="faq__container">
+    {% for question in faq.items %}
+      {% include "partials/index/faq-item.njk" %}
+    {% endfor %}
+  </div>
+</section>

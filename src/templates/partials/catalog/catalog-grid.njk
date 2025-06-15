@@ -1,0 +1,7 @@
+<ul class="catalog-grid">
+  {% for item in catalogItems %}
+    <li class="catalog-grid__item">
+      {% include "partials/catalog/catalog-card.njk" %}
+    </li>
+  {% endfor %}
+</ul>

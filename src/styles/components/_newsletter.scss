@@ -1,0 +1,112 @@
+@use "../base/base" as *;
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include tab {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__title {
+    @include text-xl;
+    margin: 0;
+    max-width: 216px;
+  }
+
+  &__field-wrapper {
+    position: relative;
+  }
+
+  &__form {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__input {
+    @include text-md;
+    border: 1px solid var(--color-border-default);
+    border-radius: var(--radius-md);
+    padding: 19px;
+    box-shadow: 0 0 0 2px transparent;
+    transition: var(--transition-shadow), var(--transition-border-color), var(--transition-bg-color);
+
+    &:hover {
+      border-color: var(--color-focus);
+      box-shadow: 0 0 0 1px var(--color-focus);
+    }
+    
+    &:focus {
+      border-color: var(--color-focus);
+      box-shadow: 0 0 0 2px var(--color-focus);
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: var(--color-disabled);
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    &:user-invalid {
+      border-color: var(--color-invalid);
+      box-shadow: none;
+    }
+    //Show and hide text on help, valid, invalid
+    &:focus + .newsletter__help {
+      @include sr-only-reset;
+    }
+
+    &:user-invalid ~ .newsletter__help {
+      @include sr-only;
+    }
+
+    &:user-invalid ~ .newsletter__error {
+      @include sr-only-reset;
+    }
+
+    &:valid ~ .newsletter__valid {
+      @include sr-only-reset;
+    }
+
+    &:valid ~ .newsletter__help {
+      @include sr-only;
+    }
+
+    &:valid ~ .newsletter__error {
+      @include sr-only;
+    }
+
+    &:user-invalid ~ .newsletter__valid {
+      @include sr-only;
+    }
+  }
+
+  &__help,
+  &__error,
+  &__valid {
+    @include text-xs;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+  }
+
+  &__help {
+    color: var(--color-muted);
+  }
+
+  &__error {
+    color: var(--color-invalid);
+  }
+
+  &__valid {
+    color: var(--color-valid);
+  }
+
+  &__button {
+    padding: var(--padding-button-lg);
+    @include text-md($fw: 600);
+  }
+}

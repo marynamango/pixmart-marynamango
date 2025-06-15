@@ -1,0 +1,28 @@
+@use "../base/base" as *;
+
+.tags {
+  @include text-md;
+  color: var(--color-muted-light);
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: var(--transition-color);
+
+  &__text {
+    display: inline;
+
+    &:not(:first-child)::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: var(--radius-full);
+      margin-inline: 8px;
+      background-color: var(--color-muted-light);
+      vertical-align: middle;
+      transition: var(--transition-bg-color);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use "../base/base" as *;
+
+.icon {
+  width: 24px;
+  height: 24px;
+
+  &--white {
+    color: var(--color-icon-white);
+  }
+
+  &--black {
+    color: var(--color-primary);
+  }
+
+  &--black-neutral {
+    color: var(--color-black-neutral);
+  }
+
+  &--accent {
+    color: var(--color-accent);
+  }
+
+  &--small {
+    width: 16px;
+    height: 16px;
+  }
+}

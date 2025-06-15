@@ -1,0 +1,12 @@
+<details class="faq__item" {% if question.open %}open{% endif %}>
+  <summary class="faq__question">{{ question.question }}
+    <span class="faq__icon-wrapper">
+      <svg class="faq__icon" aria-hidden="true" focusable="false">
+        <use href="/img/sprite.svg#{{ question.icon }}"></use>
+      </svg>
+    </span>
+  </summary>
+  <div class="faq__content">
+    <p class="faq__answer">{{ question.answer }}</p>
+  </div>
+</details>

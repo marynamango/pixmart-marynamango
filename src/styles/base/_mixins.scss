@@ -1,0 +1,151 @@
+@use "../base/variables" as *;
+
+//Breakpoint Mixins
+@mixin desk {
+  @media screen and (min-width: #{$screen-desk}) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (min-width: #{$screen-tab}) {
+    @content;
+  }
+}
+
+//Layout Mixins
+@mixin sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@mixin sr-only-reset {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+//Link States Mixins
+@mixin news-link {
+  box-shadow: 0 0 0 4px transparent;
+  border-radius: var(--radius-xs);
+  transition: var(--transition-shadow), var(--transition-color);
+
+  &:visited {
+    color: var(--color-active-button);
+  }
+
+  &:hover {
+    color: var(--color-accent);
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 4px var(--color-accent);
+    outline: none;
+  }
+
+  &:disabled {
+    color: var(--color-text-disabled);
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+@mixin general-link($focus-color: var(--color-primary)) {
+  box-shadow: 0 0 0 4px transparent;
+  border-radius: var(--radius-xs);
+  transition: var(--transition-shadow), var(--transition-color);
+
+  &:visited {
+    color: var(--color-active-button);
+  }
+  
+  &:hover {
+    color: var(--color-focus);
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 4px var(--color-focus);
+    outline: none;
+    color: $focus-color;
+  }
+
+  &:disabled {
+    color: var(--color-text-disabled);
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+//Typography Mixins
+@mixin heading-main {
+  font-size: var(--font-size-title-main);
+  line-height: var(--line-height-title-main);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-secondary);
+  letter-spacing: -0.5px;
+}
+
+@mixin heading-title {
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-secondary);
+  letter-spacing: -0.5px;
+}
+
+@mixin heading-subtitle {
+  font-size: var(--font-size-subtitle);
+  line-height: var(--line-height-subtitle);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-secondary);
+}
+
+@mixin text-xl {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-secondary);
+}
+
+@mixin text-lg ($lh: var(--line-height-lg), $fw: var(--font-weight-medium)) {
+  font-size: var(--font-size-lg);
+  line-height: $lh; //Assets title/promo desc 28px, details/membership 26px
+  font-weight: $fw; //Assets title/promo desc 500, details/membership 700
+  font-family: var(--font-secondary);
+}
+
+@mixin text-base ($fw: var(--font-weight-base)) {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  font-weight: $fw; //buttons need 600
+}
+
+@mixin text-md($fw: var(--font-weight-base)) {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+  font-weight: $fw; //subscribe btn/select/explore link needs 600, badges 500, placeholder/benefits 400
+}
+
+@mixin text-sm($fw: var(--font-weight-base)) {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  font-weight: $fw; //nav/filters need 600, subscribe placeholder 400
+}
+
+@mixin text-xs {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  font-weight: var(--font-weight-base);
+}

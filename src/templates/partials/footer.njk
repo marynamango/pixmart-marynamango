@@ -1,0 +1,49 @@
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__top-content layout-container section-wrapper">
+      <div class="footer__wrapper">
+        <div class="footer__col footer__col--intro">
+          {% set logo = footer.logo %}
+          {% include "partials/components/logo.njk" %}
+          <p class="footer__text">
+            {{ footer.description }}
+          </p>
+        </div>
+
+        <div class="footer__col">
+          {% for group in footer.nav %}
+            {% set nav = group %}
+            {% include "partials/components/footer-nav.njk" %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="footer__wrapper">
+        {% include "partials/components/social.njk" %}
+
+        <div class="newsletter">
+          <h2 class="newsletter__title">{{ footer.newsletter.title | safe }}</h2>
+          {% set form = footer.newsletter.form %}
+          {% include "partials/components/input-form.njk" %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="footer__bottom-content layout-container section-wrapper">
+      <nav class="footer-legal">
+        <ul class="footer-legal__list">
+          {% for link in footer.legal %}
+            <li class="footer-legal__item">
+              <a class="footer-legal__link" href="{{ link.href }}">{{ link.text }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <p class="footer__copyright">
+        {{ footer.copyright }}
+      </p>
+    </div>
+  </div>
+</footer>

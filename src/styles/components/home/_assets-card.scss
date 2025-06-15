@@ -1,0 +1,66 @@
+@use "../base/base" as *;
+
+.assets-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 272px;
+
+  &:hover {
+    .assets-card__icon-wrapper {
+      background-color: var(--color-accent);
+    }
+
+    .assets-card__icon {
+      color: var(--color-hover-icon)
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    .assets-card__icon-wrapper {
+      box-shadow: inset 0 0 0 2px var(--color-accent);
+    }
+  }
+
+  &:active {
+    .assets-card__icon-wrapper {
+      box-shadow: inset 0 0 0 2px var(--color-accent);
+      transform: scale(0.98);
+    }
+  }
+
+  &__icon-wrapper {
+    background-color: var(--background-color-cards);
+    padding: 37px;
+    border-radius: var(--radius-xl);
+    box-shadow: inset 0 0 0 2px transparent;
+    transition: var(--transition-bg-color), var(--transition-shadow);
+
+    @include tab {
+      padding-inline: 13px;
+    }
+
+    @include desk {
+      padding-inline: 37px;
+    }
+  }
+
+  &__icon {
+    width: 150px;
+    height: 150px;
+    color: var(--color-accent);
+    display: block;
+    transition: var(--transition-color);
+  }
+
+  &__name {
+    @include text-lg;
+    color: var(--color-primary);
+  }
+}

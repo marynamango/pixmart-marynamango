@@ -1,0 +1,120 @@
+@use "../base/base" as *;
+
+.catalog-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include tab {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__filters {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+
+    @include tab {
+      max-width: 204px;
+    }
+
+    @include desk {
+      max-width: 156px;
+    }
+  }
+
+  &__filter-toggle {
+    @include desk {
+      display: none;
+    }
+  }
+
+  &__select-wrapper {
+    display: flex;
+    width: 100%;
+    order: -1;
+    position: relative;
+
+    &:focus-within .catalog-toolbar__arrow {
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%)  rotate(270deg);
+    transition: var(--transition-transform);
+  }
+
+  &__select {
+    @include text-md($fw: 600);
+    color: var(--color-primary);
+    background-color: transparent;
+    border: 1px solid var(--color-border-default);
+    padding: var(--padding-clear);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    appearance: none;
+    width: 100%;
+    box-shadow: 0 0 0 3px transparent;
+    transition: var(--transition-bg-color), var(--transition-border-color), var(--transition-shadow);
+
+    &:hover {
+      border-color: var(--color-focus);
+      box-shadow: 0 0 0 1px var(--color-focus);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      border-color: var(--color-accent);
+      box-shadow: 0 0 0 1px var(--color-accent);
+    }
+
+    &:focus {
+      background-color: var(--color-disabled);
+      border-color: var(--color-focus);
+      box-shadow: 0 0 0 3px var(--color-focus);
+    }
+
+    &:disabled {
+      background-color: var(--color-border-default);
+      color: var(--color-text-disabled);
+    }
+  }
+
+  &__results-ui {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__result-count {
+    @include text-md;
+  }
+
+  &__tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+  }
+
+  &__layout-buttons {
+    display: flex;
+    gap: 8px;
+  }
+}

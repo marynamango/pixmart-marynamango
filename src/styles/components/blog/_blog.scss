@@ -1,0 +1,35 @@
+@use "../base/base" as *;
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-bottom: 64px;
+
+  @include tab {
+    padding-bottom: 120px;
+  }
+
+  &__feature-picture {
+    display: block;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+  }
+
+  &__feature-img {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+}
+
+.blog-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 4px;
+
+  @include tab {
+    flex-direction: row;
+  }
+}

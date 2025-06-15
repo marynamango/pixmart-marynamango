@@ -1,0 +1,17 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <main class="main-container">
+    {% include "partials/blog/blog-hero.njk" %}
+    <section class="blog section-wrapper layout-container">
+      <h2 class="sr-only">{{ blog.title }}</h2>
+      {% set picture = blog.featureImage %}
+      {% include "partials/components/picture.njk" %}
+      <div class="blog-layout">
+        {% include "partials/blog/aside.njk" %}
+        {% include "partials/blog/article.njk" %}
+      </div>
+    </section>
+    {% include "partials/blog/related-articles.njk" %}
+  </main>
+{% endblock %}

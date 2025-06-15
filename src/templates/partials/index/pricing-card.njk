@@ -1,0 +1,26 @@
+<article class="pricing-card{% if item.highlighted %} pricing-card--highlighted{% endif %}">
+  {% if item.badge %}
+    {% set badge = item.badge %}
+    {% include "partials/components/badge.njk" %}
+  {% endif %}
+
+  <h3 class="pricing-card__title">{{ item.title }}</h3>
+  <p class="pricing-card__price">
+    {{ item.price }}
+    <span class="pricing-card__period">/ {{ item.period }}</span>
+  </p>
+
+  <ul class="pricing-card__features">
+    {% for benefit in item.benefits %}
+      <li class="pricing-card__feature">
+        <svg class="icon icon--small icon--accent" aria-hidden="true" focusable="false">
+          <use href="/img/sprite.svg#check"></use>
+        </svg>
+        {{ benefit }}
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% set button = item.button %}
+  {% include "partials/components/button.njk" %}
+</article>

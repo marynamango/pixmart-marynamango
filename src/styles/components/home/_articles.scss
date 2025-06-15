@@ -1,0 +1,27 @@
+@use "../base/base" as *;
+
+.articles {
+  .section-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+    gap: 16px;
+
+    @include tab {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    @include tab {
+      flex-direction: row;
+      gap: 32px;
+    }
+  }
+}

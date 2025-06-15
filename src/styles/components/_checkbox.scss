@@ -1,0 +1,77 @@
+@use "../base/base" as *;
+
+.checkbox-label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+
+  &__icon {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    padding: 2px 1px;
+    border-radius: var(--radius-checkbox);
+    border: 1px solid var(--color-border-checkbox);
+    background-color: var(--background-color);
+    color: transparent;
+    pointer-events: none;
+    outline: 2px solid transparent;
+    transition: var(--transition-color), var(--transition-bg-color), var(--transition-border-color), var(--transition-outline);
+  }
+}
+
+.checkbox-input {
+  &:hover + .checkbox-label .checkbox-label__icon {
+    background-color: var(--background-color-cards);
+  }
+
+  &:active + .checkbox-label .checkbox-label__icon {
+    background-color: var(--color-active-background);
+    border-color: var(--color-active-background);
+  }
+
+  &:focus-visible + .checkbox-label .checkbox-label__icon {
+    background-color: var(--color-focus-background);
+    border-color: var(--color-focus-background);
+    outline-color: var(--color-focus);
+  }
+
+  &:disabled + .checkbox-label .checkbox-label__icon {
+    background-color: var(--color-border-default);
+    border-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &:checked + .checkbox-label .checkbox-label__icon {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-button-white);
+  }
+
+  &:checked:focus-visible + .checkbox-label .checkbox-label__icon {
+    outline-color: var(--color-focus);
+  }
+
+  &:checked:active + .checkbox-label .checkbox-label__icon {
+    background-color: var(--color-active-background);
+    border-color: var(--color-active-background);
+    color: var(--color-accent);
+  }
+
+  &:checked:disabled + .checkbox-label .checkbox-label__icon {
+    color: var(--color-text-disabled);
+  }
+
+  &:user-invalid + .checkbox-label .checkbox-label__icon {
+    border-color: var(--color-invalid);
+    background-color: var(--background-color);
+  }
+
+  &:user-invalid:hover + .checkbox-label .checkbox-label__icon {
+    background-color: var(--color-disabled);
+  }
+}

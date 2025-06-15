@@ -1,0 +1,73 @@
+@use "../base/base" as *;
+
+.catalog-filter {
+  @include sr-only;
+
+  &--visible {
+    @include sr-only-reset;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    background-color: var(--background-color);
+    max-height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    .catalog-filter__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 16px;
+    }
+
+    .catalog-filter__title {
+      @include text-xl;
+      margin-block: 0;
+    }
+
+    .catalog-filter__wrapper {
+      background-color: var(--background-color-secondary);
+      padding: 40px 16px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  @include tab {
+    max-width: 440px; //mobile screen size
+  }
+
+  @include desk {
+    @include sr-only-reset;
+    position: static;
+    flex: 0 0 217px;
+
+    &__header {
+      display: none;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__save {
+      display: none;
+    }
+
+    &__clear {
+      order: 1;
+    }
+  }
+
+  &__clear {
+    gap: 8px;
+    @include text-md($fw:600);
+    padding: var(--padding-clear);
+  }
+}

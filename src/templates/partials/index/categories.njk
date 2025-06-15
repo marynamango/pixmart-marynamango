@@ -1,0 +1,15 @@
+<section class="categories section-wrapper layout-container">
+  {% set header = categories.header %}
+  {% set headerClass = header.class %}
+  {% include "partials/components/section-header.njk" %}
+
+  <div class="categories__container">
+    {% for column in categories.columns %}
+      <div class="categories__column">
+        {% for item in column %}
+          {% include "partials/index/category-card.njk" %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</section>

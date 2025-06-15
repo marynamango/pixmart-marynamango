@@ -1,0 +1,65 @@
+{% set promo = promo or {} %}
+<section class="promo">
+  <div class="promo__content-wrapper layout-container section-wrapper">
+    <div class="promo__content">
+      <h1 class="promo__title">
+        {{ promo.title | safe }}
+      </h1>
+      <p class="promo__desc">
+        {{ promo.description }}
+      </p>
+      <div class="promo__actions">
+        {% for button in promo.buttons %}
+          {% include "partials/components/button.njk" %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="promo__media">
+      <div class="promo__visual">
+        <div class="promo__images">
+          {% for image in promo.images %}
+            {% set base = "/img/" + image.folder + "/" + image.basename %}
+            <picture class="promo__picture {{ image.class }}">
+              <!-- Desktop -->
+              <source media="(min-width: 1025px)" type="image/avif"
+              srcset="{{ base }}-desktop-1x.avif 1x, {{ base }}-desktop-2x.avif 2x">
+              <source media="(min-width: 1025px)" type="image/webp"
+              srcset="{{ base }}-desktop-1x.webp 1x, {{ base }}-desktop-2x.webp 2x">
+
+              <!-- Tablet -->
+              <source media="(min-width: 441px)" type="image/avif"
+              srcset="{{ base }}-tab-1x.avif 1x, {{ base }}-tab-2x.avif 2x">
+              <source media="(min-width: 441px)" type="image/webp"
+              srcset="{{ base }}-tab-1x.webp 1x, {{ base }}-tab-2x.webp 2x">
+
+              <!-- Mobile -->
+              <source type="image/avif"
+              srcset="{{ base }}-mobile-1x.avif 1x, {{ base }}-mobile-2x.avif 2x">
+              <source type="image/webp"
+              srcset="{{ base }}-mobile-1x.webp 1x, {{ base }}-mobile-2x.webp 2x">
+
+              <!-- Fallback -->
+              <img
+              src="{{ base }}-mobile-1x.webp"
+              alt="{{ image.alt }}"
+              width="{{ image.width }}"
+              height="{{ image.height }}"
+              class="promo__img"
+              loading="lazy"
+            >
+            </picture>
+          {% endfor %}
+        </div>
+
+        <div class="promo__icons">
+          {% for icon in promo.icons %}
+            <svg class="promo__icon {{ icon.class }}" aria-hidden="true" focusable="false">
+              <use href="/img/sprite.svg#{{ icon.name }}"></use>
+            </svg>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

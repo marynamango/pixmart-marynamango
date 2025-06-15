@@ -1,0 +1,11 @@
+<section class="pricing section-wrapper layout-container">
+  {% set header = pricing.header %}
+  {% include "partials/components/section-header.njk" %}
+
+  <div class="pricing__plans">
+    {% for plan in pricing.plans %}
+      {% set item = plan %}
+      {% include "partials/index/pricing-card.njk" %}
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,19 @@
+{% set modifier = logo.modifier | default('') %}
+{% set logoClass = "logo__img" %}
+{% if modifier %}
+  {% set logoClass = logoClass + " logo__img--" + modifier %}
+{% endif %}
+
+{% if not disableLogoLink %}
+  <a class="logo" href="{{ logo.url }}">
+    <svg class="{{ logoClass }}" role="img" aria-label="{{ logo.alt }}" focusable="false">
+      <use href="/img/sprite.svg#{{ logo.img }}"></use>
+    </svg>
+  </a>
+{% else %}
+  <span class="logo">
+    <svg class="{{ logoClass }}" role="img" aria-label="{{ logo.alt }}" focusable="false">
+      <use href="/img/sprite.svg#{{ logo.img }}"></use>
+    </svg>
+  </span>
+{% endif %}

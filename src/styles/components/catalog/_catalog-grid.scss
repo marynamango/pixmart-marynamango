@@ -1,0 +1,26 @@
+@use "../base/base" as *;
+
+.catalog-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 32px;
+  position: relative;
+
+  @include tab {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 52px;
+    width: 100%;
+    pointer-events: none;
+    background: linear-gradient(188.91deg, var(--color-fade-white) -118.9%, var(--background-color) 93.08%);
+  }
+}

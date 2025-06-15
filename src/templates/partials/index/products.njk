@@ -1,0 +1,21 @@
+<section class="products layout-container">
+  <!-- Produucts__header has .section-wrapper for consistent padding -->
+  <div class="products__header section-wrapper">
+    {% set header = products.header %}
+    {% include "partials/components/section-header.njk" %}
+
+    <div class="products__controls">
+      {% for button in products.controls %}
+        {% include "partials/components/button.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Slider needs no right padding, so no wrapper here, modifier instead -->
+  <div class="products__slider products__slider--padding">
+    {% for product in products.items %}
+      {% set item = product %}
+      {% include "partials/index/product-card.njk" %}
+    {% endfor %}
+  </div>
+</section>

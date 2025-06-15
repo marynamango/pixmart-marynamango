@@ -1,0 +1,28 @@
+<article class="product-card">
+  <div class="product-card__media-wrapper">
+    <a class="product-card__link" href="{{ item.url }}">
+      {% if item.badge %}
+        {% set badge = item.badge %}
+        {% include "partials/components/badge.njk" %}
+      {% endif %}
+
+      {% set picture = item.image %}
+      {% include "partials/components/picture.njk" %}
+    </a>
+
+    {% if item.hoverButton %}
+      <div class="product-card__overlay">
+        {% set button = item.hoverButton %}
+        {% include "partials/components/button.njk" %}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="product-card__info">
+    <a class="product-card__title" href="{{ item.url }}">{{ item.title }}</a>
+    <span class="product-card__price">{{ item.price }}</span>
+  </div>
+
+  {% set tags = item.tags %}
+  {% include "partials/components/tags.njk" %}
+</article>

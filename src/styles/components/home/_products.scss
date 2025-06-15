@@ -1,0 +1,48 @@
+@use "../base/base" as *;
+
+.products {
+  padding-block: 0 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+
+  @include tab {
+    padding-block: 0 110px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+  }
+
+  &__controls  {
+    display: none;
+
+    @include tab {
+      display: flex;
+      gap: 12px;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &--padding {
+      padding: 2px 0 10px 16px;
+
+      @include tab {
+        padding-left: 40px;
+      }
+
+      @include desk {
+        padding-inline: 80px;
+      }
+    }
+  }
+}

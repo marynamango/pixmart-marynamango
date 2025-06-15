@@ -1,0 +1,40 @@
+<div class="contact-info">
+  <div class="contact-info__header">
+    <span class="contact-info__label">{{ contact.intro.label }}</span>
+    <h1 class="contact-info__title">{{ contact.intro.title }}</h1>
+    <p class="contact-info__desc">{{ contact.intro.description }}</p>
+  </div>
+
+  {% set button = contact.intro.button %}
+  {% include "partials/components/button.njk" %}
+
+  <ul class="contact-info__list">
+    {% for item in contact.info.items %}
+      <li class="contact-info__item">
+        <svg class="icon icon--accent" aria-hidden="true" focusable="false">
+          <use href="/img/sprite.svg#{{ item.icon }}"></use>
+        </svg>
+        {% if item.href %}
+          <a class="contact-info__info" href="{{ item.href }}">{{ item.value }}</a>
+        {% else %}
+          <span class="contact-info__info">{{ item.value }}</span>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="contact-info__map">
+    {% set picture = contact.map.picture %}
+    {% include "partials/components/picture.njk" %}
+
+    <div class="contact-info__map-info">
+      <svg class="icon icon--accent" aria-hidden="true" focusable="false">
+        <use href="/img/sprite.svg#{{ contact.map.icon }}"></use>
+      </svg>
+      <div class="contact-info__map-text">
+        <h2 class="contact-info__map-title">{{ contact.map.textPrimary }}</h2>
+        <p class="contact-info__map-address">{{ contact.map.textSecondary }}</p>
+      </div>
+    </div>
+  </div>
+</div>

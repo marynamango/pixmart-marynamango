@@ -1,0 +1,35 @@
+<aside class="aside">
+  <div class="aside__author">
+    {% set picture = aside.author.picture %}
+    {% include "partials/components/picture.njk" %}
+    <div class="aside__author-info">
+      <p class="aside__author-name">{{ aside.author.name }}</p>
+      <time class="aside__author-date" datetime="{{ aside.author.date.datetime }}">
+        {{ aside.author.date.display }}
+      </time>
+    </div>
+  </div>
+
+  <div class="aside__block">
+    <h2 class="aside__title">{{ aside.categoriesHeading }}</h2>
+    <ul class="aside__list aside__list--categories">
+      {% for category in aside.categories %}
+        <li class="aside__category{% if category.selected %} aside__category--selected{% endif %}">
+          <a href="{{ category.href }}" class="aside__link{% if category.selected %} aside__link--selected{% endif %}">{{ category.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="aside__block">
+    <h2 class="aside__title aside__title--articles">{{ aside.latestArticlesHeading }}</h2>
+    {% for article in aside.latestArticles %}
+      <div class="aside__article">
+        <a class="aside__article-link" href="{{ article.href }}">{{ article.title }}</a>
+        <time class="aside__date" datetime="{{ article.date.datetime }}">
+          {{ article.date.display }}
+        </time>
+      </div>
+    {% endfor %}
+  </div>
+</aside>

@@ -1,0 +1,64 @@
+@use "../base/base" as *;
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+
+  &__media {
+    position: relative;
+    display: block;
+    margin-bottom: 24px;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: 0 0 0 2px transparent;
+    transition: var(--transition-shadow);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover,
+    &:focus-visible {
+      box-shadow: 0 0 0 2px var(--color-accent);
+
+      .badge--article {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  &__subtitle {
+    @include heading-subtitle;
+    margin-block: 0 8px;
+  }
+
+  &__link {
+    color: var(--color-primary);
+    @include news-link;
+  }
+
+  &__picture {
+    display: block;
+    border-radius: var(--radius-xl);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__date {
+    @include text-md;
+    color: var(--color-muted-light);
+  }
+}

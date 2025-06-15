@@ -1,0 +1,160 @@
+{
+  "header": {
+    "logo": {
+      "url": "/",
+      "img": "logo",
+      "alt": "Pixmart logo"
+    },
+    "nav": [
+      { "href": "/", "text": "About" },
+      { "href": "catalog.html", "text": "Products" },
+      { "href": "creators.html", "text": "Creators" },
+      { "href": "blog.html", "text": "Blog" },
+      { "href": "contact.html", "text": "Contact" }
+    ],
+    "search": {
+      "class": "search search--header",
+      "action": "/search",
+      "name": "q",
+      "idPrefix": "search",
+      "type": "search",
+      "placeholder": "Search for Digital Assets",
+      "inputClass": "search__input search__input--mobile-hidden",
+      "buttonClass": "button button--secondary button--only-icon button--tab-hidden",
+      "buttonType": "submit",
+      "icon": "search",
+      "iconClass": "icon--black",
+      "ariaLabel": "Search",
+      "help": "Enter at least 3 characters to search.",
+      "helpExtraClass": "search__help",
+      "error": "Please enter at least 3 characters.",
+      "errorExtraClass": "search__error",
+      "validated": "Field validation is successful.",
+      "validExtraClass": "search__valid"
+    },
+    "button": {
+      "url": "#",
+      "modFirst": "primary",
+      "modSecond": "only-icon",
+      "icon": {
+        "name": "cart",
+        "class": "icon--white"
+      },
+      "ariaLabel": "Open shopping cart"
+    }
+  },
+  "footer": {
+    "logo": {
+      "url": "/",
+      "img": "logo",
+      "alt": "Pixmart logo",
+      "modifier": "large"
+    },
+    "description": "Your premium digital assets solution with high quality and comprehensive range of products and services.",
+    "nav": [
+      {
+        "title": "Company",
+        "links": [
+          { "text": "Homepage v1", "href": "/" },
+          { "text": "Homepage v2", "href": "/" },
+          { "text": "Homepage v3", "href": "/" },
+          { "text": "About Us", "href": "/" },
+          { "text": "About Us", "href": "/" },
+          { "text": "Blog Articles", "href": "blog.html" }
+        ]
+      },
+      {
+        "title": "Products",
+        "links": [
+          { "text": "Website", "href": "/" },
+          { "text": "Mobile App", "href": "/" },
+          { "text": "Social Media Feeds", "href": "/" },
+          { "text": "Presentation", "href": "/" },
+          { "text": "Product Mockups", "href": "catalog.html" },
+          { "text": "Illustrations", "href": "/" }
+        ]
+      },
+      {
+        "title": "Account",
+        "links": [
+          { "text": "Your Cart", "href": "#" },
+          { "text": "Check Out", "href": "#" },
+          { "text": "Refund Policy", "href": "#" },
+          { "text": "Company Policy", "href": "#" },
+          { "text": "Send A Message", "href": "contact.html" },
+          { "text": "Customer Support", "href": "#" }
+        ]
+      }
+    ],
+    "social": [
+      { 
+        "button": {
+          "url": "#",
+          "target": true,
+          "ariaLabel": "twitter",
+          "modFirst": "secondary",
+          "modSecond": "icon-large",
+          "icon": {
+            "name": "twitter"
+          }
+        } 
+      },
+      { 
+        "button": {
+          "url": "#",
+          "target": true,
+          "ariaLabel": "facebook",
+          "modFirst": "secondary",
+          "modSecond": "icon-large",
+          "icon": {
+            "name": "facebook"
+          }
+        } 
+      },
+      { 
+        "button": {
+          "url": "#",
+          "target": true,
+          "ariaLabel": "telegram",
+          "modFirst": "secondary",
+          "modSecond": "icon-large",
+          "icon": {
+            "name": "telegram"
+          }
+        } 
+      }
+    ],
+    "newsletter": {
+      "title": "Subscribe to Design Newsletter",
+      "form": {
+        "class": "newsletter__form",
+        "groupWrapperClass": "newsletter__field-wrapper",
+        "action": "/subscribe",
+        "method": "post",
+        "name": "email",
+        "idPrefix": "newsletter",
+        "type": "email",
+        "placeholder": "Enter your email address ...",
+        "inputClass": "newsletter__input",
+        "minlength": 3,
+        "required": true,
+        "help": "Enter at least 3 characters to subscribe.",
+        "error": "Please provide a valid email address.",
+        "validated": "Field validation is successful.",
+        "helpExtraClass": "newsletter__help",
+        "errorExtraClass": "newsletter__error",
+        "validExtraClass": "newsletter__valid",
+        "buttonClass": "button button--primary newsletter__button",
+        "buttonType": "submit",
+        "buttonText": "Subscribe",
+        "ariaLabel": "Subscribe to newsletter"
+      }
+    },
+    "legal": [
+      { "text": "Privacy Policy", "href": "#" },
+      { "text": "Terms and Condition", "href": "#" },
+      { "text": "Site Map", "href": "#" }
+    ],
+    "copyright": "Copyright © 2024 Pixmart. All rights reserved."
+  }
+}

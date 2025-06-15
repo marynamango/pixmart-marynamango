@@ -1,0 +1,26 @@
+@use "../base/base" as *;
+
+.footer-nav {
+  @include text-md;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__title {
+    @include text-lg($fw: 700, $lh: var(--line-height-lg-short));
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__link {
+    color: var(--color-muted);
+    @include general-link;
+  }
+}

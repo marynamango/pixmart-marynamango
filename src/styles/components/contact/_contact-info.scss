@@ -1,0 +1,101 @@
+@use "../base/base" as *;
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__label {
+    @include text-md;
+    color: var(--color-accent);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    max-width: 11ch;
+  }
+
+  &__desc {
+    margin-block: 0;
+    color: var(--color-muted);
+    
+    @include tab {
+      max-width: 44ch;
+    }
+
+    @include desk {
+      max-width: 100%;
+    }
+  }
+
+  &__button {
+    align-self: flex-start;
+    padding: var(--padding-icon-big);
+    @include text-md($fw: 600);
+  }
+
+  &__list {
+    margin-block: 0 16px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__info {
+    @include text-base($fw: 600);
+    color: var(--color-primary);
+  }
+
+  &__map {
+    position: relative;
+    height: 314px;
+    width: 100%;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+  }
+
+  &__map-picture,
+  &__map-image {
+    object-fit: cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__map-info {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background-color: var(--background-color);
+    padding: 12px 16px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    box-shadow: 0px 4px 40px var(--color-shadow);
+  }
+
+  &__map-title {
+    @include text-md($fw: 700);
+    margin-block: 0;
+  }
+
+  &__map-address {
+    @include text-md;
+    color: var(--color-muted);
+    margin-block: 0;
+  }
+}

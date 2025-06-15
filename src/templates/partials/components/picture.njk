@@ -1,0 +1,25 @@
+{% set folder = picture.folder | default("") %}
+{% set basename = picture.basename | default("") %}
+{% set alt = picture.alt | default("") %}
+{% set width = picture.width | default("") %}
+{% set height = picture.height | default("") %}
+{% set pictureClass = picture.pictureClass | default("") %}
+{% set imgClass = picture.class | default("") %}
+{% set loading = picture.loading | default("lazy") %}
+
+{% if folder %}
+  {% set base = "/img/" + folder + "/" + basename %}
+{% else %}
+  {% set base = "/img/" + basename %}
+{% endif %}
+<picture class="{{ pictureClass }}">
+  <source srcset="{{ base }}-1x.avif 1x, {{ base }}-2x.avif 2x" type="image/avif">
+  <source srcset="{{ base }}-1x.webp 1x, {{ base }}-2x.webp 2x" type="image/webp">
+  <img
+    src="{{ base }}-1x.webp"
+    alt="{{ alt }}"
+    class="{{ imgClass }}"
+    width="{{ width }}"
+    height="{{ height }}"
+    loading="{{ loading }}">
+</picture>

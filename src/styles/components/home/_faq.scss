@@ -1,0 +1,140 @@
+@use "../base/base" as *;
+
+.faq {
+  padding-block: 0 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  position: relative;
+  z-index: 1;
+
+  @include tab {
+    padding-block: 0 120px;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &::before {
+    @include tab {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      width: 689px;
+      height: 498px;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: -1;
+
+      background: radial-gradient(
+        ellipse at center,
+        var(--color-icon-accent) 70%
+      );
+      border-radius: var(--radius-full);
+      opacity: 0.1;
+      filter: blur(100px)
+    }
+
+    @include desk {
+      top: 70%;
+      left: 50%;
+    }
+  }
+
+  &__header {
+    @include tab {
+      width: calc(50% - 20px);
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include tab {
+      width: calc(50% - 20px);
+    }
+  }
+
+  &__item {
+    background-color: var(--background-color);
+    box-shadow: 0px 4px 40px var(--color-shadow);
+    border-radius: var(--radius-lg);
+    transition: var(--transition-bg-color);
+
+    &:hover {
+      background-color: var(--color-hover-tags);
+    }
+  }
+
+  &__item[open] {
+    box-shadow: 0 0 0 2px var(--color-accent);
+  }
+
+  &__question {
+    @include text-lg($fw: 700, $lh: var(--line-height-lg-short));
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 24px;
+    box-shadow: 0 0 0 2px transparent;
+    
+    &:focus {
+      outline: none;
+    }
+
+    // Apply box-shadow ONLY when parent details is NOT open
+    .faq__item:not([open]) & {
+      &:focus-visible {
+        box-shadow: 0 0 0 2px var(--color-accent);
+        border-radius: var(--radius-lg);
+      }
+    }
+  }
+
+  &__icon-wrapper {
+    display: inline-flex;
+    padding: var(--padding-icon);
+    border: 2px solid var(--color-border-default);
+    border-radius: var(--radius-md);
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    transform: rotate(90deg);
+    transition: var(--transition-transform);
+
+    .faq__item[open] & {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__content {
+    padding: 0 24px 24px;
+  }
+
+  &__answer {
+    @include text-md;
+    margin-block: 0;
+  }
+}
+
+.faq__item[open] .faq__question {
+  padding-bottom: 16px;
+}
+
+.faq .section-header__button a {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  @include tab {
+    width: auto;
+    display: inline-flex;
+  }
+}

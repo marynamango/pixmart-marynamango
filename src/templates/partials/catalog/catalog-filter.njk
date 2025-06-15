@@ -1,0 +1,76 @@
+<aside class="catalog-filter" id="catalog_filter">
+  <div class="catalog-filter__header">
+    <h2 class="catalog-filter__title">{{ filterForm.title }}</h2>
+    {% set button = filterCloseButton %}
+    {% include "partials/components/button.njk" %}
+  </div>
+
+  <div class="catalog-filter__wrapper">
+    <!-- Clear All Button -->
+    {% set button = filterClearButton %}
+    {% include "partials/components/button.njk" %}
+
+    <form class="filter-form" action="/catalog" method="get">
+      {% for filter in filters %}
+        <div class="filter-form__group">
+          <h2 class="filter-form__title">{{ filter.title }}</h2>
+
+          <div class="filter-form__options">
+            {% for option in filter.options %}
+              {% set id = (filter.name + "_" + (option
+                | lower
+                | replace(' ', '_')
+                | replace('-', '_')
+                | replace('&', 'and')
+              )) | safe %}
+
+              {% if filter.type == 'toggle' %}
+                {% set inputType = 'checkbox' %}
+                {% set inputClass = 'toggle-input' %}
+                {% set labelClass = 'toggle-label' %}
+              {% else %}
+                {% set inputType = filter.type %}
+                {% set inputClass = filter.type + '-input' %}
+                {% set labelClass = filter.type + '-label' %}
+              {% endif %}
+
+              <input
+                class="visually-hidden {{ inputClass }}"
+                type="{{ inputType }}"
+                name="{{ filter.name }}{% if inputType == 'checkbox' %}[]{% endif %}"
+                value="{{ option | lower }}"
+                id="{{ id }}"/>
+
+              <label class="{{ labelClass }} form-label" for="{{ id }}">
+                {% if filter.type == 'checkbox' %}
+                  <svg class="checkbox-label__icon" aria-hidden="true" focusable="false">
+                    <use href="/img/sprite.svg#checkmark"></use>
+                  </svg>
+                {% endif %}
+                {{ option }}
+              </label>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+
+      <!-- Price slider (visual only) -->
+      <div class="filter-form__group">
+        <h3 class="filter-form__title">{{ price.title }}</h3>
+        <div class="range-slider">
+          <div class="range-slider__inputs">
+            <input type="range" class="range-slider__input range-slider__input--top">
+            <input type="range" class="range-slider__input range-slider__input--bottom">
+          </div>
+          <div class="range-slider__labels">
+            <span class="range-slider__label">{{ price.min }}</span>
+            <span class="range-slider__label">{{ price.max }}</span>
+          </div>
+        </div>
+      </div>
+
+      {% set button = filterForm.button %}
+      {% include "partials/components/button.njk" %}
+    </form>
+  </div>
+</aside>
