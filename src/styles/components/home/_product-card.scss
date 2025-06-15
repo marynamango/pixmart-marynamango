@@ -13,7 +13,7 @@
     overflow: hidden;
     margin-bottom: 16px;
     box-shadow: 0 0 0 2px transparent;
-    transition: box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;
+    transition: var(--transition-shadow);
 
     &:hover::before,
     &:focus-within::before {
@@ -41,7 +41,7 @@
       background-color: var(--color-terms);
       opacity: 0;
       z-index: 1;
-      transition: opacity 0.3s ease-in-out;
+      transition: var(--transition-opacity-out);
     }
   }
 
@@ -62,7 +62,7 @@
     z-index: 2;
     display: flex;
     justify-content: center;
-    transition: opacity 0.3s ease-in-out;
+    transition: var(--transition-opacity-out);
   }
 
   &__picture {

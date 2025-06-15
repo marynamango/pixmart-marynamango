@@ -62,10 +62,10 @@
     background-color: var(--background-color);
     box-shadow: 0px 4px 40px var(--color-shadow);
     border-radius: var(--radius-lg);
+    transition: var(--transition-bg-color);
 
     &:hover {
       background-color: var(--color-hover-tags);
-      transition: background-color 0.2s ease-in-out;
     }
   }
 
@@ -100,14 +100,14 @@
     display: inline-flex;
     padding: var(--padding-icon);
     border: 2px solid var(--color-border-default);
-    border-radius: 8px;
+    border-radius: var(--radius-md);
   }
 
   &__icon {
     width: 16px;
     height: 16px;
     transform: rotate(90deg);
-    transition: transform 0.3s ease;
+    transition: var(--transition-transform);
 
     .faq__item[open] & {
       transform: rotate(-90deg);

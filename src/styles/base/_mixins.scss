@@ -40,7 +40,7 @@
 @mixin news-link {
   box-shadow: 0 0 0 4px transparent;
   border-radius: 5px;
-  transition: box-shadow 0.3s ease, color 0.3s ease;
+  transition: var(--transition-shadow), var(--transition-color);
 
   &:visited {
     color: var(--color-active-button);
@@ -63,7 +63,7 @@
 @mixin general-link($focus-color: var(--color-primary)) {
   box-shadow: 0 0 0 4px transparent;
   border-radius: 5px;
-  transition: box-shadow 0.3s ease, color 0.3s ease;
+  transition: var(--transition-shadow), var(--transition-color);
 
   &:visited {
     color: var(--color-active-button);

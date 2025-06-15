@@ -104,4 +104,17 @@ $screen-desk: 1440px;
 --radius-toggle: 19px;
 --radius-checkbox: 4px;
 --radius-full: 50%;
+
+/* Transitions */
+--transition-timing: 0.2s ease-in-out;
+--transition-timing-ease: 0.2s ease;
+--transition-transform: transform var(--transition-timing);
+--transition-outline: outline-color var(--transition-timing);
+--transition-shadow: box-shadow var(--transition-timing);
+--transition-border-color: border-color var(--transition-timing);
+--transition-bg-color: background-color var(--transition-timing);
+--transition-color: color var(--transition-timing);
+--transition-top: top var(--transition-timing);
+--transition-opacity-out: opacity var(--transition-timing);
+--transition-opacity: opacity var(--transition-timing-ease);
 }

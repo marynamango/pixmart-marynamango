@@ -37,7 +37,7 @@
     border-radius: var(--radius-md);
     width: 100%;
     box-shadow: 0 0 0 2px transparent;
-    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: var(--transition-bg-color), var(--transition-border-color), var(--transition-shadow);
 
     &::placeholder {
       color: var(--color-muted-light);
@@ -133,7 +133,7 @@
     appearance: none;
     width: 100%;
     box-shadow: 0 0 0 2px transparent;
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease, border-color 0.3s ease;
+    transition: var(--transition-bg-color), var(--transition-border-color), var(--transition-shadow);
 
     &:hover {
       border-color: var(--color-focus);
@@ -199,7 +199,7 @@
     top: 50%;
     right: 20px;
     transform: translateY(-50%)  rotate(270deg);
-    transition: transform 0.3s ease;
+    transition: var(--transition-transform);
   }
 
   &__textarea {

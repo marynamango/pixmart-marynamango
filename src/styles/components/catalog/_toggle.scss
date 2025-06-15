@@ -19,7 +19,7 @@
         border: 2px solid transparent;
         outline: 2px solid transparent;
         outline-offset: 2px;
-        transition: background-color 0.2s ease, outline-color 0.2s ease;
+        transition: var(--transition-bg-color), var(--transition-outline);
       }
       
       &::after {
@@ -32,7 +32,7 @@
         height: 16px;
         border-radius: var(--radius-full);
         background-color: var(--background-color);
-        transition: background-color 0.2s ease, transform 0.2s ease;
+        transition: var(--transition-bg-color), var(--transition-transform);
       }
 
       &:hover::before {

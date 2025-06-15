@@ -54,7 +54,7 @@
       height: 2px;
       width: 18px;
       background-color: var(--color-icon-white);
-      transition: all 0.3s ease;
+      transition: var(--transition-transform), var(--transition-top), var(--transition-bg-color);
       position: absolute;
       border-radius: 2px;
     }
