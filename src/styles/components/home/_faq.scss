@@ -31,7 +31,7 @@
         ellipse at center,
         var(--color-icon-accent) 70%
       );
-      border-radius: 50%;
+      border-radius: var(--radius-full);
       opacity: 0.1;
       filter: blur(100px)
     }
@@ -91,7 +91,7 @@
     .faq__item:not([open]) & {
       &:focus {
         box-shadow: 0 0 0 2px var(--color-accent);
-        border-radius: 10px;
+        border-radius: var(--radius-lg);
       }
     }
   }

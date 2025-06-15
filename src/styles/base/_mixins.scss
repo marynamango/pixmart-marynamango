@@ -39,7 +39,7 @@
 //Link States Mixins
 @mixin news-link {
   box-shadow: 0 0 0 4px transparent;
-  border-radius: 5px;
+  border-radius: var(--radius-xs);
   transition: var(--transition-shadow), var(--transition-color);
 
   &:visited {
@@ -62,7 +62,7 @@
 
 @mixin general-link($focus-color: var(--color-primary)) {
   box-shadow: 0 0 0 4px transparent;
-  border-radius: 5px;
+  border-radius: var(--radius-xs);
   transition: var(--transition-shadow), var(--transition-color);
 
   &:visited {

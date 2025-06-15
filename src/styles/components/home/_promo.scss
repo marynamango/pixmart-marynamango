@@ -215,7 +215,7 @@
       @include tab {
         top: 9px;
         left: 314px;
-        border-radius: 5px;
+        border-radius: var(--radius-xs);
       }
 
       @include desk {
