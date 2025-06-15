@@ -43,7 +43,7 @@
     content: "";
     display: block;
     height: 60px;
-    background: linear-gradient(0.23deg, rgb(240 246 253 / 1), rgba(255, 255, 255, 0) 99.8%);
+    background: linear-gradient(0.23deg, var(--background-color-secondary), var(--color-transparent) 99.8%);
     border-radius: 20px;
     flex-shrink: 0;
   }
@@ -52,7 +52,7 @@
     content: "";
     display: block;
     height: 60px;
-    background: linear-gradient(180deg, rgb(240 246 253 / 1) 0%, rgba(255, 255, 255, 0) 99.8%);
+    background: linear-gradient(180deg, var(--background-color-secondary) 0%, var(--color-transparent) 99.8%);
     border-radius: 20px;
     flex-shrink: 0;
   }
