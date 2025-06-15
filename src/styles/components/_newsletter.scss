@@ -46,6 +46,8 @@
 
     &:disabled {
       background-color: var(--color-disabled);
+      cursor: not-allowed;
+      pointer-events: none;
     }
 
     &:user-invalid {

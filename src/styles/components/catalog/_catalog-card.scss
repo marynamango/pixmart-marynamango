@@ -32,8 +32,11 @@
     transition: var(--transition-shadow);
 
     &:focus {
-      box-shadow: 0 0 0 2px var(--color-accent);
       outline: none;
+    }
+    
+    &:focus-visible {
+      box-shadow: 0 0 0 2px var(--color-accent);
     }
 
     &:active {

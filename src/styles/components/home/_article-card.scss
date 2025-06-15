@@ -13,10 +13,13 @@
     box-shadow: 0 0 0 2px transparent;
     transition: var(--transition-shadow);
 
-    &:hover,
     &:focus {
-      box-shadow: 0 0 0 2px var(--color-accent);
       outline: none;
+    }
+
+    &:hover,
+    &:focus-visible {
+      box-shadow: 0 0 0 2px var(--color-accent);
 
       .badge--article {
         opacity: 1;
@@ -25,7 +28,6 @@
     }
 
     &:active {
-      box-shadow: 0 0 0 2px var(--color-accent);
       transform: scale(0.98);
     }
   }

@@ -50,13 +50,15 @@
     color: var(--color-accent);
   }
 
-  &:focus {
+  &:focus-visible {
     box-shadow: 0 0 0 4px var(--color-accent);
     outline: none;
   }
 
   &:disabled {
     color: var(--color-text-disabled);
+    cursor: not-allowed;
+    pointer-events: none;
   }
 }
 
@@ -73,7 +75,7 @@
     color: var(--color-focus);
   }
 
-  &:focus {
+  &:focus-visible {
     box-shadow: 0 0 0 4px var(--color-focus);
     outline: none;
     color: $focus-color;
@@ -81,6 +83,8 @@
 
   &:disabled {
     color: var(--color-text-disabled);
+    cursor: not-allowed;
+    pointer-events: none;
   }
 }
 

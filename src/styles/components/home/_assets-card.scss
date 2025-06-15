@@ -20,7 +20,9 @@
 
   &:focus {
     outline: none;
+  }
 
+  &:focus-visible {
     .assets-card__icon-wrapper {
       box-shadow: inset 0 0 0 2px var(--color-accent);
     }

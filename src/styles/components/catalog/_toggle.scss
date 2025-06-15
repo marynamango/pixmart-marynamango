@@ -43,13 +43,15 @@
   .toggle-input {
     &:disabled + .toggle-label::before {
       background-color: var(--color-border-default);
+      cursor: not-allowed;
+      pointer-events: none;
     }
 
     &:active + .toggle-label::before {
       background-color: var(--color-muted);
     }
 
-    &:focus + .toggle-label::before {
+    &:focus-visible + .toggle-label::before {
       background-color: var(--color-border-default); //Should be --color-text-disabled here, but it's too light, and not rendered by the browsers.
       outline-color: var(--color-focus);
     }

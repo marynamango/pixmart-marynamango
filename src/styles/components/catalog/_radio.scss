@@ -25,7 +25,7 @@
     background-color: var(--background-color-cards);
   }
 
-  &:focus + .radio-label::before {
+  &:focus-visible + .radio-label::before {
     background-color: var(--color-focus-background);
     border-color: var(--color-muted-light);
     outline-color: var(--color-focus);
@@ -38,6 +38,7 @@
   &:disabled + .radio-label {
     color: var(--color-text-disabled);
     cursor: not-allowed;
+    pointer-events: none;
   }
 
   &:disabled + .radio-label::before {
@@ -54,7 +55,7 @@
     background-color: var(--background-color-cards);
   }
 
-  &:checked:focus + .radio-label::before {
+  &:checked:focus-visible + .radio-label::before {
     border-color: var(--color-focus);
     outline-color: var(--color-focus);
   }

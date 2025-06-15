@@ -89,7 +89,7 @@
 
     // Apply box-shadow ONLY when parent details is NOT open
     .faq__item:not([open]) & {
-      &:focus {
+      &:focus-visible {
         box-shadow: 0 0 0 2px var(--color-accent);
         border-radius: var(--radius-lg);
       }

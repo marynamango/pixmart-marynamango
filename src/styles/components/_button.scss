@@ -13,7 +13,7 @@
   box-shadow: 0 0 0 2px transparent;
   transition: var(--transition-bg-color), var(--transition-border-color), var(--transition-shadow);
 
-  &:focus {
+  &:focus-visible {
     border-color: var(--color-focus);
     box-shadow: 0 0 0 2px var(--color-focus);
     outline: none;
@@ -60,7 +60,7 @@
       background-color: var(--color-disabled);
     }
 
-    &:focus {
+    &:focus-visible {
       background-color: var(--color-disabled);
     }
 
@@ -83,7 +83,7 @@
     }
 
     &:active,
-    &:focus {
+    &:focus-visible {
       background-color: var(--color-disabled);
     }
 
@@ -103,7 +103,7 @@
       background-color: var(--color-disabled);
     }
 
-    &:focus {
+    &:focus-visible {
       background-color: var(--color-disabled);
     }
 
