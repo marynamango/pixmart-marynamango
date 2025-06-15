@@ -50,7 +50,7 @@
 
   &__picture {
     display: block;
-    border-radius: 20px;
+    border-radius: var(--radius-xl);
     overflow: hidden;
     height: 462px;
     margin-bottom: 10px;

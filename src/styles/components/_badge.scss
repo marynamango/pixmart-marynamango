@@ -9,7 +9,7 @@
   text-transform: uppercase;
 
   &--ribbon {
-    border-radius: 0 20px 0 20px;
+    border-radius: 0 var(--radius-xl) 0 var(--radius-xl);
     top: 0;
     right: 0;
   }
@@ -28,7 +28,7 @@
 
   &--round {
     padding: 8px 16px;
-    border-radius: 100px;
+    border-radius: var(--radius-tags);
   }
 
   &--catalog {

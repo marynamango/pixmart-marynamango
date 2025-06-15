@@ -9,7 +9,7 @@
 
   &__media-wrapper {
     position: relative;
-    border-radius: 20px;
+    border-radius: var(--radius-xl);
     overflow: hidden;
     margin-bottom: 16px;
     box-shadow: 0 0 0 2px transparent;
@@ -48,8 +48,6 @@
   &__link {
     position: relative;
     display: block;
-    border-radius: 20px;
-    overflow: hidden;
     outline: none;
   }
 

@@ -14,7 +14,7 @@
         left: 0;
         width: 40px;
         height: 20px;
-        border-radius: 19px;
+        border-radius: var(--radius-toggle);
         background-color: var(--color-border-default); //Should be --color-text-disabled here, but it's too light, and not rendered by the browsers.
         border: 2px solid transparent;
         outline: 2px solid transparent;
@@ -30,7 +30,7 @@
         left: 2px;
         width: 16px;
         height: 16px;
-        border-radius: 50%;
+        border-radius: var(--radius-full);
         background-color: var(--background-color);
         transition: background-color 0.2s ease, transform 0.2s ease;
       }

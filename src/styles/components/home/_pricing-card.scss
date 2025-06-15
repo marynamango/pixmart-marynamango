@@ -2,7 +2,7 @@
 
 .pricing-card {
   padding: 32px;
-  border-radius: 20px;
+  border-radius: var(--radius-xl);
   box-shadow: 0px 4px 40px var(--color-shadow);
   width: 100%;
   height: fit-content;

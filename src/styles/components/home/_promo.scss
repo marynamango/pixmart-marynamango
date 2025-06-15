@@ -104,19 +104,19 @@
       width: 131px;
       height: 197px;
       z-index: 1;
-      border-radius: 6px;
+      border-radius: var(--radius-sm);
 
       @include tab {
         top: 0;
         width: 150px;
         height: 300px;
-        border-radius: 0 10px 10px 0;
+        border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
       }
 
       @include desk {
         width: 281px;
         height: 422px;
-        border-radius: 10px;
+        border-radius: var(--radius-lg);
       }
     }
 
@@ -125,7 +125,7 @@
       left: 177px;
       width: 171px;
       height: 96px;
-      border-radius: 6px;
+      border-radius: var(--radius-sm);
       border: 3px solid var(--background-color);
 
       @include tab {
@@ -133,7 +133,7 @@
         left: 221px;
         width: 207px;
         height: 117px;
-        border-radius: 10px;
+        border-radius: var(--radius-lg);
         box-shadow: 0 0 0 2px var(--background-color);
       }
 
@@ -194,12 +194,12 @@
     &--theme {
       top: 235px;
       left: 19px;
-      border-radius: 6px;
+      border-radius: var(--radius-sm);
 
       @include tab {
         top: 289px;
         left: 30px;
-        border-radius: 10px;
+        border-radius: var(--radius-lg);
       }
 
       @include desk {

@@ -40,7 +40,7 @@
     cursor: pointer;
     z-index: 2;
     position: relative;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
 
     @include tab {
       @include sr-only;

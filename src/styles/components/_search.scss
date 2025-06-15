@@ -6,7 +6,7 @@
   &__input {
     padding: var(--padding-search);
     border: 1px solid var(--color-border-default);
-    border-radius: 8px;
+    border-radius: var(--radius-md);
 
     &::placeholder {
       @include text-sm;

@@ -22,7 +22,7 @@
 
   &__author-picture {
     display: block;
-    border-radius: 50%;
+    border-radius: var(--radius-full);
     overflow: hidden;
   }
   

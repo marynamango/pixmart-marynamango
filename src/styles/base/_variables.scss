@@ -92,4 +92,16 @@ $screen-desk: 1440px;
 
 /* Header */
 --header-height: 92px;
+
+/* Radius scale */
+--radius-sm: 6px;
+--radius-md: 8px;
+--radius-lg: 10px;
+--radius-xl: 20px;
+
+/* Component-specific */
+--radius-tags: 100px;
+--radius-toggle: 19px;
+--radius-checkbox: 4px;
+--radius-full: 50%;
 }

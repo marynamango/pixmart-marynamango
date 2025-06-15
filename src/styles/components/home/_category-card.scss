@@ -3,7 +3,7 @@
 .category-card {
   color: var(--color-primary);
   background-color: var(--background-color-cards);
-  border-radius: 20px;
+  border-radius: var(--radius-xl);
   display: flex;
   flex-direction: column;
   padding: 24px;

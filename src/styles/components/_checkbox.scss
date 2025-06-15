@@ -13,7 +13,7 @@
     left: 5px;
     transform: translateY(-50%);
     padding: 2px 1px;
-    border-radius: 4px;
+    border-radius: var(--radius-checkbox);
     border: 1px solid var(--color-border-checkbox);
     background-color: var(--background-color);
     color: transparent;
