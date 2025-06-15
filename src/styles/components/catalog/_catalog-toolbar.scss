@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-top: 2px;
 
   &__wrapper {
     display: flex;
@@ -61,7 +62,7 @@
     background-color: transparent;
     border: 1px solid var(--color-border-default);
     padding: var(--padding-clear);
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     cursor: pointer;
     appearance: none;
     width: 100%;

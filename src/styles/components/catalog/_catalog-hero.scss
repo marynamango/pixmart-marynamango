@@ -18,15 +18,16 @@
   background-repeat: no-repeat;
   background-position: top -20px left -139px;
   background-size: auto 256px;
+  background-color: var(--background-color);
 
   @include tab {
-    height: 289px;
+    height: 287px;
     background-position: top 0 left -3px;
-    background-size: auto 289px;
+    background-size: auto 287px;
   }
 
   @include desk {
-    background-size: 100% 289px;
+    background-size: 100% 287px;
     background-position: top center;
   }
 
