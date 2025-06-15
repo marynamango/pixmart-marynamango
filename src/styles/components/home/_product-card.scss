@@ -83,6 +83,7 @@
 
   &__title {
     @include heading-subtitle;
+    @include general-link;
     color: var(--color-primary);
     margin-block: 0 8px;
   }
