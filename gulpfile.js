@@ -33,20 +33,22 @@ const paths = {
   viewsDir: dev + 'templates/',
   distDir: dist,
   dev: {
-    scss:  dev+'styles/**/*.{css,scss}',
-    styles: dev+'styles/pages/*.{css,scss}',
-    svg: dev+'images/sprite/*.svg',
-    views: dev+'templates/**/*.{json,njk,html}',
-    pages: dev+'templates/pages/*/*.{njk,html}',
-    modernImages: dev+'images/static/**/*.{webp,avif}',
-    svgStatic: dev+'images/static/**/*.svg',
-    images: dev+'images/static/**/*.{jpg,jpeg,png}',
+    scss: dev + 'styles/**/*.{css,scss}',
+    styles: dev + 'styles/pages/*.{css,scss}',
+    svg: dev + 'images/sprite/*.svg',
+    views: dev + 'templates/**/*.{json,njk,html}',
+    pages: dev + 'templates/pages/*/*.{njk,html}',
+    favicon: dev + 'favicon/*.*',
+    modernImages: dev + 'images/static/**/*.{webp,avif}',
+    svgStatic: dev + 'images/static/**/*.svg',
+    images: dev + 'images/static/**/*.{jpg,jpeg,png}',
   },
   dist: {
-      pages: dist,
-      styles: dist+'css',
-      scripts: dist+'js',
-      images: dist+'img',
+    pages: dist,
+    favicon: dist + 'favicon/',
+    styles: dist + 'css',
+    scripts: dist + 'js',
+    images: dist + 'img',
   }
 };
 
@@ -59,7 +61,7 @@ const sizeOptions = {
 }
 const sass = gulpSass(dartSass)
 
-const { values:args } = parseArgs({
+const { values: args } = parseArgs({
   options: {
     lint: {
       type: 'boolean',
@@ -111,6 +113,7 @@ function htmllintReporter(results) {
   function pluralize(word, count) {
     return (count === 1 ? word : `${word}s`);
   }
+
   let output = '\n',
     total = 0,
     errors = 0,
@@ -171,12 +174,15 @@ function htmllintReporter(results) {
 export const styles = () =>
   src(paths.dev.styles, { sourcemaps: true })
     .pipe(postcss([
-      args.lint ? stylelint() : () => {},
-      isDev ? debug : () => { },
+      args.lint ? stylelint() : () => {
+      },
+      isDev ? debug : () => {
+      },
       autoprefixer({
         cascade: false
       }),
-      args.min ? csso : () => { },
+      args.min ? csso : () => {
+      },
       reporter({
         clearReportedMessages: true,
         clearMessages: true
@@ -192,7 +198,7 @@ export const styles = () =>
 
 export const copyImages = () =>
   src(paths.dev.modernImages, { since: lastRun(copyImages), encoding: false })
-    .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Unotimised (modern raster): '})))
+    .pipe(gulpif(args.debug, size({ ...sizeOptions, title: 'Unotimised (modern raster): ' })))
     .pipe(sharpResponsive({
       formats: [
         {
@@ -220,12 +226,17 @@ export const copyImages = () =>
       ]
     }))
     .pipe(dest(paths.dist.images))
-    .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Optimized (modern raster): '})))
+    .pipe(gulpif(args.debug, size({ ...sizeOptions, title: 'Optimized (modern raster): ' })))
+    .pipe(bs.stream())
+
+export const favicon = () =>
+  src(paths.dev.favicon, { encoding: false })
+    .pipe(dest(paths.dist.favicon))
     .pipe(bs.stream())
 
 export const optimizeVectorImages = () =>
   src(paths.dev.svgStatic)
-    .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Unotimised (vector): '})))
+    .pipe(gulpif(args.debug, size({ ...sizeOptions, title: 'Unotimised (vector): ' })))
     .pipe(svgo({
       plugins: [{
         cleanupNumericValues: {
@@ -234,12 +245,12 @@ export const optimizeVectorImages = () =>
       }]
     }))
     .pipe(dest(paths.dist.images))
-    .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Optimised (vector): '})))
+    .pipe(gulpif(args.debug, size({ ...sizeOptions, title: 'Optimised (vector): ' })))
     .pipe(bs.stream())
 
 export const optimizeRasterImages = () =>
   src(paths.dev.images, { since: lastRun(images), encoding: false })
-    .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Unotimised (raster): '})))
+    .pipe(gulpif(args.debug, size({ ...sizeOptions, title: 'Unotimised (raster): ' })))
     .pipe(sharpResponsive({
       formats: [
         { format: 'webp', rename: { suffix: "-2x" } },
@@ -249,7 +260,7 @@ export const optimizeRasterImages = () =>
       ]
     }))
     .pipe(dest(paths.dist.images))
-    .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Optimised (raster): '})))
+    .pipe(gulpif(args.debug, size({ ...sizeOptions, title: 'Optimised (raster): ' })))
     .pipe(bs.stream())
 
 export const images = parallel(copyImages, optimizeRasterImages, optimizeVectorImages)
@@ -267,7 +278,7 @@ export const sprite = () =>
       }
     }))
     .pipe(dest('.'))
-    .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Optimised: '})))
+    .pipe(gulpif(args.debug, size({ ...sizeOptions, title: 'Optimised: ' })))
     .pipe(bs.stream())
 
 export const markup = () =>
@@ -305,13 +316,14 @@ export const liveReload = () =>
     server: paths.distDir
   })
 
-export const build = series(clean, parallel(styles, images, sprite, markup))
+export const build = series(clean, parallel(styles, images, sprite, markup, favicon))
 
 const watchFiles = (cb) => {
   watch(paths.dev.scss, { delay: 1000 }, styles)
   watch(paths.dev.images, images)
   watch(paths.dev.svg, sprite)
   watch(paths.dev.views, markup)
+  watch(paths.dev.favicon, favicon)
   cb()
 }
 export { watchFiles as watch }
