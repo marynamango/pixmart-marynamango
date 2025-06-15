@@ -21,13 +21,13 @@
   background-color: var(--background-color);
 
   @include tab {
-    height: 287px;
+    height: 289px;
     background-position: top 0 left -3px;
-    background-size: auto 287px;
+    background-size: auto 289px;
   }
 
   @include desk {
-    background-size: 100% 287px;
+    background-size: 100% 289px;
     background-position: top center;
   }
 
